@@ -492,6 +492,41 @@ const projectsData: Project[] = [
     isFeatured: true,
     designer: "Balaji Design Studio",
     tagline: "Where Contemporary Meets Comfort"
+  },
+  {
+    id: "mr-krushna-darekar-office",
+    title: "Mr. Krushna Darekar - BHAKTI Group Office",
+    category: "Commercial",
+    location: "Mumbai, Maharashtra",
+    size: "4,500 sq ft",
+    completionYear: "2024",
+    description: "A sophisticated commercial office design for BHAKTI Group of Companies featuring contemporary interiors with traditional elements. The project showcases a perfect blend of professional workspace design with warm hospitality, including reception areas, waiting lounges, meeting rooms, and executive offices with world map features and premium branding.",
+    features: [
+      "Elegant reception with BHAKTI Group branding and illuminated logo",
+      "Traditional prayer area with Ganesh statue and Sanskrit inscriptions",
+      "Modern waiting lounge with Indian map graphic and logistics branding",
+      "Executive meeting rooms with world map wall features",
+      "Professional conference rooms with wooden furniture",
+      "Integrated lighting with track systems and pendant fixtures",
+      "Contemporary office spaces with ergonomic furniture",
+      "Custom storage solutions with A-Z logistics branding",
+      "Premium marble flooring throughout"
+    ],
+    images: [
+      "/lovable-uploads/ecd110aa-b4d3-43e2-928d-4b870edb72d4.png",
+      "/lovable-uploads/1bf92a63-cfa7-467a-a1cf-ce7a035f9198.png",
+      "/lovable-uploads/d9636fad-5ba8-4767-bdc6-e0aa86adb773.png",
+      "/lovable-uploads/3d3d857f-4e86-4201-91e2-f121c6162654.png",
+      "/lovable-uploads/20e86e51-1521-4ae8-aac2-6e1515a3d1ce.png",
+      "/lovable-uploads/8141faab-238a-4ab7-9c65-9b99cdc38ced.png",
+      "/lovable-uploads/10ac51b7-722c-4697-bba5-48bbc3cce655.png",
+      "/lovable-uploads/75770701-b291-4632-9bb2-b16240b40ba1.png",
+      "/lovable-uploads/7d495044-60c2-442b-ba5d-4bf6602a8f47.png"
+    ],
+    isFeatured: true,
+    designer: "Balaji Design Studio",
+    tagline: "Corporate excellence with traditional values",
+    budget: "₹55 Lakhs"
   }
 ];
 
