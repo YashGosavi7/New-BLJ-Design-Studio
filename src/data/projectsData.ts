@@ -1,0 +1,95 @@
+// Project data for the interior design portfolio
+const projectsData = [
+  {
+    id: 1,
+    title: "Luxury Residential Villa",
+    category: "Residential",
+    location: "Mumbai, Maharashtra",
+    description: "A stunning 4-bedroom villa with contemporary design elements and luxury finishes.",
+    images: ["/assets/project-bedroom.jpg"],
+    mainImage: "/assets/project-bedroom.jpg",
+    area: "3,500 sq ft",
+    year: "2023",
+    isFeatured: true,
+    client: "Private Residence",
+    services: ["Space Planning", "Interior Design", "Furniture Selection"],
+    budget: "₹45 Lakhs"
+  },
+  {
+    id: 2,
+    title: "Corporate Office Headquarters",
+    category: "Commercial",
+    location: "Delhi, India",
+    description: "Modern corporate office space designed for productivity and employee wellbeing.",
+    images: ["/assets/project-office.jpg"],
+    mainImage: "/assets/project-office.jpg",
+    area: "15,000 sq ft",
+    year: "2023",
+    isFeatured: true,
+    client: "Tech Corporation",
+    services: ["Office Planning", "Ergonomic Design", "Lighting Solutions"],
+    budget: "₹1.2 Crores"
+  },
+  {
+    id: 3,
+    title: "Boutique Hotel Design",
+    category: "Hospitality",
+    location: "Goa, India",
+    description: "Elegant boutique hotel with coastal influences and modern amenities.",
+    images: ["/assets/hero-living-room.jpg"],
+    mainImage: "/assets/hero-living-room.jpg",
+    area: "8,000 sq ft",
+    year: "2022",
+    isFeatured: false,
+    client: "Hospitality Group",
+    services: ["Hospitality Design", "Guest Experience", "Branding Integration"],
+    budget: "₹80 Lakhs"
+  },
+  {
+    id: 4,
+    title: "Modern Family Home",
+    category: "Residential",
+    location: "Bangalore, Karnataka",
+    description: "Contemporary family home with open-plan living and sustainable materials.",
+    images: ["/assets/about-team.jpg"],
+    mainImage: "/assets/about-team.jpg",
+    area: "2,800 sq ft",
+    year: "2023",
+    isFeatured: true,
+    client: "Young Family",
+    services: ["Sustainable Design", "Family-Friendly Spaces", "Smart Home Integration"],
+    budget: "₹35 Lakhs"
+  },
+  {
+    id: 5,
+    title: "Retail Showroom",
+    category: "Commercial",
+    location: "Pune, Maharashtra",
+    description: "High-end retail showroom with dramatic lighting and display features.",
+    images: ["/assets/project-office.jpg"],
+    mainImage: "/assets/project-office.jpg",
+    area: "5,000 sq ft",
+    year: "2022",
+    isFeatured: false,
+    client: "Luxury Brand",
+    services: ["Retail Design", "Brand Experience", "Display Solutions"],
+    budget: "₹60 Lakhs"
+  },
+  {
+    id: 6,
+    title: "Penthouse Apartment",
+    category: "Residential",
+    location: "Chennai, Tamil Nadu",
+    description: "Sophisticated penthouse with panoramic city views and premium finishes.",
+    images: ["/assets/hero-living-room.jpg"],
+    mainImage: "/assets/hero-living-room.jpg",
+    area: "4,200 sq ft",
+    year: "2023",
+    isFeatured: false,
+    client: "Executive Professional",
+    services: ["Luxury Design", "Custom Furniture", "Art Curation"],
+    budget: "₹75 Lakhs"
+  }
+];
+
+export default projectsData;
