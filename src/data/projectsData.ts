@@ -298,6 +298,40 @@ const projectsData: Project[] = [
     designer: "Balaji Design Studio",
     tagline: "Professional workspace with modern elegance",
     budget: "₹28 Lakhs"
+  },
+  {
+    id: "sunil-jawale-residence",
+    title: "Mr. Sunil Jawale Residence",
+    category: "Residential",
+    location: "Mumbai, India",
+    size: "2,800 sq ft",
+    completionYear: "2024",
+    description: "A sophisticated residential project featuring contemporary design with warm wood accents and modern amenities. The space showcases custom entrance doors with artistic paneling, open-plan living and dining areas, and elegant ceiling treatments that create a harmonious blend of comfort and style.",
+    features: [
+      "Custom wood-paneled entrance doors with decorative nameplate",
+      "Contemporary living spaces with neutral color palette",
+      "Sophisticated ceiling design with wood accent strips",
+      "Open-plan dining area with modern pendant lighting",
+      "Premium flooring with elegant area rugs",
+      "Modern furniture with comfortable seating arrangements",
+      "Artistic wall treatments and botanical artwork",
+      "Seamless integration of living and dining spaces"
+    ],
+    images: [
+      "/lovable-uploads/d5d4a107-e610-42a9-bf27-36b3fa57243b.png",
+      "/lovable-uploads/e5a84077-f7e6-4bbd-bbe3-563b7bc2215e.png",
+      "/lovable-uploads/eea82f4b-0873-4687-a223-83d358ba73c6.png",
+      "/lovable-uploads/6504c478-fa0e-462b-a6c1-635914837a72.png",
+      "/lovable-uploads/ba70f42a-7d49-4c4f-ac90-55f168abc61f.png",
+      "/lovable-uploads/4ee72e3f-bdd0-491b-9522-2d3c459dccdf.png",
+      "/lovable-uploads/773a479b-3465-4131-9589-5b79424f5b62.png",
+      "/lovable-uploads/0c28cde4-b83e-4495-b144-b3a750363380.png",
+      "/lovable-uploads/2833e792-9807-43c4-a848-4943ad4a1ba1.png"
+    ],
+    isFeatured: true,
+    designer: "Balaji Design Studio",
+    tagline: "Contemporary elegance with warm wood accents",
+    budget: "₹42 Lakhs"
   }
 ];
 
