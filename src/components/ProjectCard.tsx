@@ -1,16 +1,30 @@
 import { Link } from "react-router-dom";
 
 interface ProjectCardProps {
-  id: number;
+  id: string;
   title: string;
   category: string;
   location: string;
-  mainImage: string;
-  area?: string;
-  year?: string;
+  image: string;
+  designer?: string;
+  tagline?: string;
+  index?: number;
+  size?: string;
+  completionYear?: string;
 }
 
-const ProjectCard = ({ id, title, category, location, mainImage, area, year }: ProjectCardProps) => {
+const ProjectCard = ({
+  id,
+  title,
+  category,
+  location,
+  image,
+  designer,
+  tagline,
+  index = 0,
+  size,
+  completionYear
+}: ProjectCardProps) => {
   return (
     <Link 
       to={`/portfolio/${id}`}
@@ -18,7 +32,7 @@ const ProjectCard = ({ id, title, category, location, mainImage, area, year }: P
     >
       <div className="relative h-64 overflow-hidden">
         <img 
-          src={mainImage} 
+          src={image} 
           alt={title}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
         />
@@ -36,9 +50,9 @@ const ProjectCard = ({ id, title, category, location, mainImage, area, year }: P
           <span className="text-sm text-roseGold font-medium bg-roseGold/10 px-3 py-1 rounded-full">
             {category}
           </span>
-          {year && (
+          {completionYear && (
             <span className="text-xs text-darkGray/60">
-              {year}
+              {completionYear}
             </span>
           )}
         </div>
@@ -54,9 +68,9 @@ const ProjectCard = ({ id, title, category, location, mainImage, area, year }: P
             </svg>
             {location}
           </div>
-          {area && (
+          {size && (
             <span className="text-xs">
-              {area}
+              {size}
             </span>
           )}
         </div>

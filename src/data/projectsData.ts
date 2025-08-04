@@ -1,94 +1,121 @@
-// Project data for the interior design portfolio
-const projectsData = [
+export interface Project {
+  id: string;
+  title: string;
+  category: "Residential" | "Commercial" | "Hospitality";
+  location: string;
+  size: string;
+  completionYear: string;
+  description: string;
+  features: string[];
+  images: string[];
+  isFeatured?: boolean;
+  designer?: string;
+  tagline?: string;
+  style?: string;
+  challenges?: string;
+  solutions?: string;
+  materials?: string[];
+  testimonial?: {
+    content: string;
+    author: string;
+  };
+  websiteUrl?: string;
+  area?: string;
+  completionDate?: string;
+  budget?: string;
+  client?: string;
+}
+
+const projectsData: Project[] = [
   {
-    id: 1,
-    title: "Luxury Residential Villa",
-    category: "Residential",
-    location: "Mumbai, Maharashtra",
-    description: "A stunning 4-bedroom villa with contemporary design elements and luxury finishes.",
-    images: ["/assets/project-bedroom.jpg"],
-    mainImage: "/assets/project-bedroom.jpg",
-    area: "3,500 sq ft",
-    year: "2023",
+    id: "7-treats-hotel",
+    title: "7 Treats Hotel & Restaurant",
+    category: "Hospitality",
+    location: "Pune",
+    size: "8,000 sq ft",
+    completionYear: "2025",
+    description: "7 Treats Hotel & Restaurant is a contemporary hospitality project that seamlessly blends modern design with warm, inviting atmospheres. The space features distinctive green wall branding, innovative rope lighting installations, geometric mirror patterns, and a sophisticated bar area with premium bottle displays.",
+    features: [
+      "Signature green moss wall with illuminated branding",
+      "Innovative rope chandelier lighting installation",
+      "Premium bar area with extensive bottle display shelving",
+      "Multi-level dining areas with staircase access",
+      "Suspended umbrella ceiling art installation",
+      "Geometric mirror pattern entrance doors",
+      "Luxurious booth seating with tufted leather upholstery",
+      "Custom wooden slat partitions for privacy"
+    ],
+    images: ["/assets/hero-living-room.jpg"],
     isFeatured: true,
-    client: "Private Residence",
-    services: ["Space Planning", "Interior Design", "Furniture Selection"],
-    budget: "₹45 Lakhs"
-  },
-  {
-    id: 2,
-    title: "Corporate Office Headquarters",
-    category: "Commercial",
-    location: "Delhi, India",
-    description: "Modern corporate office space designed for productivity and employee wellbeing.",
-    images: ["/assets/project-office.jpg"],
-    mainImage: "/assets/project-office.jpg",
-    area: "15,000 sq ft",
-    year: "2023",
-    isFeatured: true,
-    client: "Tech Corporation",
-    services: ["Office Planning", "Ergonomic Design", "Lighting Solutions"],
+    designer: "Balaji Design Studio",
+    tagline: "Contemporary hospitality design",
     budget: "₹1.2 Crores"
   },
   {
-    id: 3,
+    id: "luxury-villa-mumbai",
+    title: "Luxury Residential Villa",
+    category: "Residential",
+    location: "Mumbai",
+    size: "3,500 sq ft",
+    completionYear: "2023",
+    description: "A stunning 4-bedroom villa with contemporary design elements and luxury finishes that perfectly balance aesthetics with practicality.",
+    features: [
+      "Open plan living spaces",
+      "Premium marble flooring",
+      "Designer lighting installations",
+      "Custom-built wardrobes",
+      "Modern kitchen with island",
+      "Master suite with walk-in closet"
+    ],
+    images: ["/assets/project-bedroom.jpg"],
+    isFeatured: true,
+    designer: "Balaji Design Studio",
+    tagline: "Sophisticated luxury living",
+    budget: "₹45 Lakhs"
+  },
+  {
+    id: "corporate-office-delhi",
+    title: "Corporate Office Headquarters",
+    category: "Commercial",
+    location: "Delhi",
+    size: "15,000 sq ft",
+    completionYear: "2023",
+    description: "Modern corporate office space designed for productivity and employee wellbeing with ergonomic design and innovative lighting solutions.",
+    features: [
+      "Open workspace design",
+      "Executive conference rooms",
+      "Collaborative work zones",
+      "Ergonomic furniture",
+      "Smart lighting systems",
+      "Breakout areas and café"
+    ],
+    images: ["/assets/project-office.jpg"],
+    isFeatured: true,
+    designer: "Balaji Design Studio",
+    tagline: "Future of workspace design",
+    budget: "₹1.2 Crores"
+  },
+  {
+    id: "boutique-hotel-goa",
     title: "Boutique Hotel Design",
     category: "Hospitality",
-    location: "Goa, India",
-    description: "Elegant boutique hotel with coastal influences and modern amenities.",
-    images: ["/assets/hero-living-room.jpg"],
-    mainImage: "/assets/hero-living-room.jpg",
-    area: "8,000 sq ft",
-    year: "2022",
-    isFeatured: false,
-    client: "Hospitality Group",
-    services: ["Hospitality Design", "Guest Experience", "Branding Integration"],
-    budget: "₹80 Lakhs"
-  },
-  {
-    id: 4,
-    title: "Modern Family Home",
-    category: "Residential",
-    location: "Bangalore, Karnataka",
-    description: "Contemporary family home with open-plan living and sustainable materials.",
+    location: "Goa",
+    size: "8,000 sq ft",
+    completionYear: "2022",
+    description: "Elegant boutique hotel with coastal influences and modern amenities, creating memorable guest experiences.",
+    features: [
+      "Coastal design elements",
+      "Luxury guest suites",
+      "Infinity pool area",
+      "Spa and wellness center",
+      "Beachfront restaurant",
+      "Local art integration"
+    ],
     images: ["/assets/about-team.jpg"],
-    mainImage: "/assets/about-team.jpg",
-    area: "2,800 sq ft",
-    year: "2023",
-    isFeatured: true,
-    client: "Young Family",
-    services: ["Sustainable Design", "Family-Friendly Spaces", "Smart Home Integration"],
-    budget: "₹35 Lakhs"
-  },
-  {
-    id: 5,
-    title: "Retail Showroom",
-    category: "Commercial",
-    location: "Pune, Maharashtra",
-    description: "High-end retail showroom with dramatic lighting and display features.",
-    images: ["/assets/project-office.jpg"],
-    mainImage: "/assets/project-office.jpg",
-    area: "5,000 sq ft",
-    year: "2022",
     isFeatured: false,
-    client: "Luxury Brand",
-    services: ["Retail Design", "Brand Experience", "Display Solutions"],
-    budget: "₹60 Lakhs"
-  },
-  {
-    id: 6,
-    title: "Penthouse Apartment",
-    category: "Residential",
-    location: "Chennai, Tamil Nadu",
-    description: "Sophisticated penthouse with panoramic city views and premium finishes.",
-    images: ["/assets/hero-living-room.jpg"],
-    mainImage: "/assets/hero-living-room.jpg",
-    area: "4,200 sq ft",
-    year: "2023",
-    isFeatured: false,
-    client: "Executive Professional",
-    services: ["Luxury Design", "Custom Furniture", "Art Curation"],
-    budget: "₹75 Lakhs"
+    designer: "Balaji Design Studio",
+    tagline: "Coastal luxury hospitality",
+    budget: "₹80 Lakhs"
   }
 ];
 

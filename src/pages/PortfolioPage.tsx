@@ -13,16 +13,19 @@ const PortfolioPage = () => {
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projectsData.map((project) => (
+          {projectsData.map((project, index) => (
             <ProjectCard
               key={project.id}
               id={project.id}
               title={project.title}
               category={project.category}
               location={project.location}
-              mainImage={project.mainImage}
-              area={project.area}
-              year={project.year}
+              image={project.images[0]}
+              size={project.size}
+              completionYear={project.completionYear}
+              designer={project.designer}
+              tagline={project.tagline}
+              index={index}
             />
           ))}
         </div>

@@ -1,63 +1,50 @@
 import { ReactNode } from "react";
+import CityScrollAnimation from "./CityScrollAnimation";
 
 interface HeroSectionProps {
+  backgroundImage: string;
   children: ReactNode;
-  backgroundImage?: string;
+  overlay?: boolean;
+  overlayOpacity?: string;
   showCityScroll?: boolean;
   credibilityStatement?: string;
-  className?: string;
 }
 
-const HeroSection = ({ 
-  children, 
-  backgroundImage, 
-  showCityScroll = false, 
-  credibilityStatement,
-  className = ""
+const HeroSection = ({
+  backgroundImage,
+  children,
+  overlay = true,
+  overlayOpacity = "bg-black/30",
+  showCityScroll = false,
+  credibilityStatement = "600+ Projects Across India's Leading Cities"
 }: HeroSectionProps) => {
-  const cities = [
-    "Mumbai", "Delhi", "Bangalore", "Chennai", "Pune", "Hyderabad", 
-    "Kolkata", "Ahmedabad", "Surat", "Jaipur", "Lucknow", "Kanpur"
-  ];
-
   return (
-    <section 
-      className={`relative min-h-screen flex flex-col justify-center ${className}`}
-      style={{ 
-        backgroundImage: backgroundImage ? `url(${backgroundImage})` : undefined,
+    <section
+      className="relative h-screen flex flex-col items-center justify-center"
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
       }}
     >
-      {backgroundImage && <div className="absolute inset-0 bg-black/40"></div>}
-      
-      <div className="relative z-10 flex-1 flex items-center">
+      {overlay && (
+        <div className={`absolute inset-0 ${overlayOpacity}`}></div>
+      )}
+
+      <div className="container mx-auto px-4 py-24 relative z-10 flex-grow flex items-center justify-center">
         {children}
       </div>
 
-      {/* Credibility Statement */}
-      {credibilityStatement && (
-        <div className="relative z-10 text-center pb-8">
-          <p className="text-white/90 text-lg font-medium bg-black/20 backdrop-blur-sm inline-block px-6 py-3 rounded-lg border border-white/20">
-            {credibilityStatement}
-          </p>
-        </div>
-      )}
-
-      {/* City Scroll */}
       {showCityScroll && (
-        <div className="relative z-10 bg-black/30 backdrop-blur-sm border-t border-white/20 py-4 overflow-hidden">
-          <div className="animate-scroll flex whitespace-nowrap">
-            {[...cities, ...cities].map((city, index) => (
-              <span 
-                key={index}
-                className="inline-block text-white/80 text-sm font-medium mx-8 hover:text-roseGold transition-colors"
-              >
-                {city}
-              </span>
-            ))}
-          </div>
+        <div className="w-full relative z-10 mt-auto">
+          {credibilityStatement && (
+            <div className="text-center py-6 bg-darkGray/70 px-4 mb-0">
+              <p className="text-white font-playfair text-lg md:text-2xl max-w-full overflow-hidden text-ellipsis whitespace-normal">
+                {credibilityStatement}
+              </p>
+            </div>
+          )}
+          <CityScrollAnimation speed="medium" />
         </div>
       )}
     </section>
