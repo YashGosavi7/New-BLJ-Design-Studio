@@ -216,6 +216,33 @@ const projectsData: Project[] = [
     designer: "Balaji Design Studio",
     tagline: "Luxury retail experience with sophisticated elegance",
     budget: "₹45,00,000"
+  },
+  {
+    id: "golden-leaf-banquet-hall",
+    title: "Golden Leaf Banquet Hall",
+    category: "Hospitality",
+    location: "Mumbai, India",
+    size: "12,000 sq ft",
+    completionYear: "2024",
+    description: "A magnificent banquet hall featuring classical Roman-inspired architecture with ornate columns, sculptural elements, and luxurious water features. The design creates a grand and opulent atmosphere perfect for prestigious events and celebrations.",
+    features: [
+      "Classical Roman-inspired architecture",
+      "Ornate Corinthian columns and capitals",
+      "Sculptural lion and statue installations",
+      "Decorative swan water features",
+      "Premium marble and stone finishes",
+      "Grand entrance with arched doorways",
+      "Elegant outdoor courtyards",
+      "Sophisticated lighting design"
+    ],
+    images: [
+      "/lovable-uploads/f816dacc-d4a7-442d-a40f-9a19b793bf20.png",
+      "/lovable-uploads/50c7c58a-9db2-421d-8c09-ca3f343fd126.png"
+    ],
+    isFeatured: true,
+    designer: "Balaji Design Studio",
+    tagline: "Classical grandeur meets modern luxury",
+    budget: "₹2.5 Crores"
   }
 ];
 
