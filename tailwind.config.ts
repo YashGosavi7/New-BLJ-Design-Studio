@@ -61,7 +61,17 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Custom colors for interior design theme
+				warmWhite: "#F8F8F8",
+				lightGray: "#E0E0E0",
+				darkGray: "#333333",
+				roseGold: "#C9A86A",
+				darkBrown: "#663300",
+			},
+			fontFamily: {
+				'playfair': ['Playfair Display', 'serif'],
+				'lato': ['Lato', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
