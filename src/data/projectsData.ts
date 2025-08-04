@@ -454,6 +454,40 @@ const projectsData: Project[] = [
     designer: "Balaji Design Studio",
     tagline: "Luxury living with traditional soul and modern sophistication",
     budget: "₹52 Lakhs"
+  },
+  {
+    id: "mr-pathan-residence",
+    title: "Mr. Pathan Residence",
+    category: "Residential",
+    location: "Mumbai, Maharashtra",
+    description: "A contemporary residential project featuring sophisticated interiors with a perfect blend of modern aesthetics and functional design. The home showcases elegant wooden accents, innovative storage solutions, and thoughtfully designed living spaces that reflect the client's lifestyle and preferences.",
+    features: [
+      "Contemporary entrance design with decorative wooden elements",
+      "Innovative terrace garden with vertical plant display",
+      "Open-plan living and dining areas with premium finishes",
+      "Modern kitchen with colorful backsplash tiles",
+      "Luxurious master bedroom with ambient lighting",
+      "Custom-built wardrobes with geometric patterns",
+      "Integrated home automation systems",
+      "Energy-efficient LED lighting throughout"
+    ],
+    size: "2,800 sq ft",
+    completionYear: "2024",
+    budget: "₹45 Lakhs",
+    images: [
+      "/lovable-uploads/647bdd1f-3edd-4381-a92d-54d5e2e9123a.png",
+      "/lovable-uploads/507c20a9-cff1-4372-b94f-7b85bd7ab41d.png",
+      "/lovable-uploads/a937b8dc-50ac-464d-a34a-ea0d1113597b.png",
+      "/lovable-uploads/46c29843-df98-4022-9848-076fbe384799.png",
+      "/lovable-uploads/2478affd-c116-4d04-8a2e-4e3f8a0285ba.png",
+      "/lovable-uploads/8be3acea-0711-4b66-a119-3c15252715b2.png",
+      "/lovable-uploads/ade70a03-02de-452b-941b-56ef16ce9f37.png",
+      "/lovable-uploads/9c296eaf-2287-4c48-8ca1-0f30077c18bf.png",
+      "/lovable-uploads/594dbc5d-7036-4f50-b471-df371d9130dd.png"
+    ],
+    isFeatured: true,
+    designer: "Balaji Design Studio",
+    tagline: "Where Contemporary Meets Comfort"
   }
 ];
 
