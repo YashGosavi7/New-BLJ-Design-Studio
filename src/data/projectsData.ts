@@ -28,6 +28,39 @@ export interface Project {
 
 const projectsData: Project[] = [
   {
+    id: "advocates-office",
+    title: "Advocate's Office",
+    category: "Commercial",
+    location: "Mumbai",
+    size: "2,500 sq ft",
+    completionYear: "2024",
+    description: "A sophisticated legal office design that combines professional elegance with modern functionality. The space features custom woodwork, justice-themed branding, ergonomic workstations, and collaborative meeting areas designed to inspire confidence and trust.",
+    features: [
+      "Custom fluted wood paneling and reception desk",
+      "Justice-themed branding and wall graphics",
+      "Modern conference room with wooden furniture",
+      "Ergonomic workstations with dual monitor setups",
+      "Built-in blue legal library with organized filing system",
+      "Professional waiting areas with legal artwork",
+      "Glass partition meeting rooms for privacy",
+      "Warm LED lighting throughout the space"
+    ],
+    images: [
+      "/lovable-uploads/c7008476-95b9-415a-93ad-a925deb4eaf4.png",
+      "/lovable-uploads/2526b36d-d246-4236-b54d-6adb403565d8.png",
+      "/lovable-uploads/b938685a-a65d-4c34-9aa6-b0cfca682c38.png",
+      "/lovable-uploads/17036511-5f5e-4999-8045-2ac47da1fcac.png",
+      "/lovable-uploads/8654b605-137d-4272-a30f-be202489103f.png",
+      "/lovable-uploads/9e230ae6-5102-4a39-be0d-513aa59f05f3.png",
+      "/lovable-uploads/1dca7dd0-1433-4c67-8162-e63f72dc5b91.png",
+      "/lovable-uploads/3c4e256c-2b94-4b38-b2e3-7c505b6b95b4.png"
+    ],
+    isFeatured: true,
+    designer: "Balaji Design Studio",
+    tagline: "Professional legal workspace design",
+    budget: "₹35 Lakhs"
+  },
+  {
     id: "7-treats-hotel",
     title: "7 Treats Hotel & Restaurant",
     category: "Hospitality",
