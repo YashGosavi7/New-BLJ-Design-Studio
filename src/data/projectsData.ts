@@ -280,7 +280,17 @@ const projectsData: Project[] = [
       "/lovable-uploads/888f3377-e37f-4c94-87f8-ce2f4366c5e2.png",
       "/lovable-uploads/87bba3af-0e68-4d2a-abcb-4988894e6a29.png",
       "/lovable-uploads/fd00566e-6eff-48e5-aae9-817c95d13265.png",
-      "/lovable-uploads/70ac0439-74a2-4ced-bde2-b3d3546a8b94.png"
+      "/lovable-uploads/70ac0439-74a2-4ced-bde2-b3d3546a8b94.png",
+      "/lovable-uploads/61b47d8d-6775-47d8-86c7-7c2d2d271777.png",
+      "/lovable-uploads/0d797a53-3b9d-4d9e-ae19-ec78a6f75f07.png",
+      "/lovable-uploads/072a6c68-6143-4b67-95f8-aa2a6a01445a.png",
+      "/lovable-uploads/b8e5f610-75d2-46f1-9af2-264cfb8c8bc3.png",
+      "/lovable-uploads/ba992646-90b9-4fcf-89ca-581c88635c21.png",
+      "/lovable-uploads/aee4b25d-ab0b-4c99-ac9e-359e815068e7.png",
+      "/lovable-uploads/8a2339ce-79e7-49a4-a6d8-1f93936627d1.png",
+      "/lovable-uploads/1368bc55-831e-45e8-a2b5-dd50e0ce9158.png",
+      "/lovable-uploads/e11d298f-0d5b-4f49-aa03-40b183bc9af6.png",
+      "/lovable-uploads/d4adbd8f-06e1-4dd4-8d66-6906b9d84233.png"
     ],
     isFeatured: true,
     designer: "Balaji Design Studio",
