@@ -1,3 +1,5 @@
+import aboutTeam from "../assets/about-team.jpg";
+
 const AboutPage = () => {
   return (
     <div className="min-h-screen pt-20">
@@ -27,7 +29,11 @@ const AboutPage = () => {
                 the boundaries of design excellence.
               </p>
             </div>
-            <div className="h-96 bg-gradient-to-br from-roseGold/20 to-darkGray/10 rounded-lg"></div>
+            <img 
+              src={aboutTeam} 
+              alt="Balaji Design Studio Team" 
+              className="h-96 w-full object-cover rounded-lg"
+            />
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">

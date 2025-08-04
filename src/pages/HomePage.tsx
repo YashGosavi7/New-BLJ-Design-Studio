@@ -1,16 +1,23 @@
 import { Link } from "react-router-dom";
+import heroImage from "../assets/hero-living-room.jpg";
+import projectBedroom from "../assets/project-bedroom.jpg";
+import projectOffice from "../assets/project-office.jpg";
+import aboutTeam from "../assets/about-team.jpg";
 
 const HomePage = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center bg-gradient-to-br from-lightGray to-warmWhite">
-        <div className="absolute inset-0 bg-black/20"></div>
+      <section 
+        className="relative h-screen flex items-center justify-center bg-cover bg-center"
+        style={{ backgroundImage: `url(${heroImage})` }}
+      >
+        <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
-          <h1 className="text-4xl md:text-6xl text-darkGray font-playfair mb-6 leading-tight">
+          <h1 className="text-4xl md:text-6xl text-white font-playfair mb-6 leading-tight text-shadow">
             Balaji Design Studio
           </h1>
-          <p className="text-xl md:text-2xl text-darkGray/80 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto text-shadow">
             <strong>creative creation by creative people</strong>
           </p>
           <Link
@@ -35,20 +42,29 @@ const HomePage = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {/* Placeholder for featured projects */}
+            {/* Project 1 - Bedroom */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover-lift">
-              <div className="h-64 bg-gradient-to-br from-roseGold/20 to-darkGray/10"></div>
+              <img 
+                src={projectBedroom} 
+                alt="Modern Bedroom Design" 
+                className="h-64 w-full object-cover"
+              />
               <div className="p-6">
-                <h3 className="text-xl font-playfair font-semibold mb-2">Sample Project 1</h3>
+                <h3 className="text-xl font-playfair font-semibold mb-2">Modern Bedroom Suite</h3>
                 <p className="text-darkGray/70 mb-2">Residential</p>
                 <p className="text-sm text-darkGray/60">Mumbai, Maharashtra</p>
               </div>
             </div>
             
+            {/* Project 2 - Office */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover-lift">
-              <div className="h-64 bg-gradient-to-br from-roseGold/20 to-darkGray/10"></div>
+              <img 
+                src={projectOffice} 
+                alt="Commercial Office Design" 
+                className="h-64 w-full object-cover"
+              />
               <div className="p-6">
-                <h3 className="text-xl font-playfair font-semibold mb-2">Sample Project 2</h3>
+                <h3 className="text-xl font-playfair font-semibold mb-2">Executive Office Space</h3>
                 <p className="text-darkGray/70 mb-2">Commercial</p>
                 <p className="text-sm text-darkGray/60">Delhi, India</p>
               </div>
@@ -91,7 +107,11 @@ const HomePage = () => {
                 Learn More About Us
               </Link>
             </div>
-            <div className="bg-gradient-to-br from-roseGold/20 to-darkGray/10 rounded-lg h-96"></div>
+            <img 
+              src={aboutTeam} 
+              alt="Balaji Design Studio Team" 
+              className="h-96 w-full object-cover rounded-lg"
+            />
           </div>
         </div>
       </section>
