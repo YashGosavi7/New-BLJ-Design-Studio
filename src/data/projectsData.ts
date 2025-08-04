@@ -373,7 +373,15 @@ const projectsData: Project[] = [
       "/lovable-uploads/e688aae1-24bd-42ee-862b-4f4258b091bb.png",
       "/lovable-uploads/2be8b4a8-f7bc-4b3b-ad7e-d919735548f5.png",
       "/lovable-uploads/c689e2eb-dea6-4a94-9df3-82ea9865dae7.png",
-      "/lovable-uploads/35de91be-f4d5-4b76-abb1-e76167d6fd82.png"
+      "/lovable-uploads/35de91be-f4d5-4b76-abb1-e76167d6fd82.png",
+      "/lovable-uploads/8e9a3812-47fe-4a64-9672-21ab71cb5166.png",
+      "/lovable-uploads/709f9d80-513f-4e11-9b40-0eaa5126b566.png",
+      "/lovable-uploads/a1fb7ca6-3d7c-48b5-b274-b0bfb2909445.png",
+      "/lovable-uploads/dfb8a0e1-5af0-4c9d-9e38-f175ff16b596.png",
+      "/lovable-uploads/94c55d76-79aa-47de-9df3-e9f76ce931c1.png",
+      "/lovable-uploads/f96bd4d4-0acb-4cf6-950e-6d9e03c0938b.png",
+      "/lovable-uploads/044514e2-6b30-48e5-a383-73f8282a5440.png",
+      "/lovable-uploads/543a4d55-b5f6-4bf9-ad7c-3eacf59993e0.png"
     ],
     size: "3,200 sq ft",
     completionYear: "2024",
