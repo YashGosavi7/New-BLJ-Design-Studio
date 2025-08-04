@@ -28,6 +28,42 @@ export interface Project {
 
 const projectsData: Project[] = [
   {
+    id: "shivam-kamthe-residence",
+    title: "Shivam Kamthe",
+    category: "Residential",
+    location: "Pune",
+    size: "3,200 sq ft",
+    completionYear: "2024",
+    description: "A stunning contemporary residential project featuring luxurious interiors with a perfect blend of modern aesthetics and warm wood tones. The design showcases sophisticated living spaces, elegant bedrooms, and functional work areas with premium finishes and thoughtful lighting design.",
+    features: [
+      "Modern TV unit with black marble accent wall",
+      "Integrated work stations with custom wood paneling",
+      "Luxurious hallway with marble walls and modern lighting",
+      "Master bedroom with geometric wood headboard design",
+      "Spacious walk-in closet with built-in wardrobes",
+      "Contemporary living areas with wood slat feature walls",
+      "Premium lighting with chandelier and accent fixtures",
+      "Custom furniture with yellow accent cushions",
+      "Floating bed design with ambient lighting",
+      "Seamless indoor design with modern furnishings"
+    ],
+    images: [
+      "/lovable-uploads/a504f7fa-534e-488f-b1fe-c66ce136ea3f.png",
+      "/lovable-uploads/0f062b8d-d618-4df0-b6dc-2c6520488546.png",
+      "/lovable-uploads/613621ba-6945-4d21-8d99-260670303f42.png",
+      "/lovable-uploads/0b324120-62fa-4e0e-88d8-81a64a047c69.png",
+      "/lovable-uploads/d58c7fcc-2b3f-4c12-866e-00827cfdb9ee.png",
+      "/lovable-uploads/2775dc98-86c9-4796-b232-d1a0d28fce04.png",
+      "/lovable-uploads/147ffc7d-c7be-4cca-8559-d009312ed317.png",
+      "/lovable-uploads/3f9c99ad-2f56-4a1c-8cbc-a753e03b1c16.png",
+      "/lovable-uploads/ad928b6f-d69e-43f7-9344-aa96903073fc.png"
+    ],
+    isFeatured: true,
+    designer: "Balaji Design Studio",
+    tagline: "Contemporary luxury living",
+    budget: "₹48 Lakhs"
+  },
+  {
     id: "advocates-office",
     title: "Advocate's Office",
     category: "Commercial",
