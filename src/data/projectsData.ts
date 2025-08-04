@@ -243,6 +243,40 @@ const projectsData: Project[] = [
     designer: "Balaji Design Studio",
     tagline: "Classical grandeur meets modern luxury",
     budget: "₹2.5 Crores"
+  },
+  {
+    id: "nana-office",
+    title: "Nana Office",
+    category: "Commercial",
+    location: "Mumbai, India",
+    size: "3,500 sq ft",
+    completionYear: "2024",
+    description: "A modern commercial office space designed for Shree Datta Developers featuring contemporary interiors with glass partitions, professional branding, and comfortable client meeting areas. The design emphasizes transparency, professionalism, and modern workplace aesthetics.",
+    features: [
+      "Glass entrance doors with city skyline backdrop",
+      "Professional reception area with branded backdrop",
+      "Modern waiting lounge with vibrant blue seating",
+      "Premium marble flooring throughout",
+      "Contemporary lighting with circular fixtures",
+      "Climate-controlled environment",
+      "Professional meeting spaces",
+      "Corporate branding integration"
+    ],
+    images: [
+      "/lovable-uploads/da34718b-1dd2-467c-9383-52efb9a4556a.png",
+      "/lovable-uploads/97252ea5-fbc4-43ad-aa71-e190b049e8a7.png",
+      "/lovable-uploads/bd2d5d18-df08-45b6-bb0a-a6d31d6cf2f8.png",
+      "/lovable-uploads/6d1ae78b-a779-496d-a345-31260b64b72b.png",
+      "/lovable-uploads/50584fa5-3e83-485e-9439-959018c24930.png",
+      "/lovable-uploads/42151f33-96fa-494a-baa4-186001c5d881.png",
+      "/lovable-uploads/583d84fc-010f-46c6-8b21-fa3a560bed2d.png",
+      "/lovable-uploads/315b0ded-aeb7-4704-aab7-0df0770e0207.png",
+      "/lovable-uploads/c883ee17-c7e0-44ff-97af-e0a3dda37053.png"
+    ],
+    isFeatured: true,
+    designer: "Balaji Design Studio",
+    tagline: "Professional workspace with modern elegance",
+    budget: "₹28 Lakhs"
   }
 ];
 
