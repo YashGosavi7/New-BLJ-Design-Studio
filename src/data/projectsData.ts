@@ -347,6 +347,40 @@ const projectsData: Project[] = [
     designer: "Balaji Design Studio",
     tagline: "Contemporary elegance with warm wood accents",
     budget: "₹42 Lakhs"
+  },
+  {
+    id: "samir-ghule-residence",
+    title: "Mr. Samir Ghule Residence",
+    category: "Residential",
+    location: "Mumbai, Maharashtra",
+    description: "A sophisticated residential project featuring contemporary design with traditional elements. The home showcases elegant entrance areas, spacious living rooms with curved furniture, and a dedicated prayer room that seamlessly blends modern aesthetics with spiritual elements.",
+    features: [
+      "Grand entrance with custom nameplate design",
+      "Contemporary living room with curved sofas",
+      "Elegant ceiling design with cove lighting",
+      "Fluted wood paneling throughout",
+      "Marble flooring with modern patterns",
+      "Traditional prayer room with modern touches",
+      "Premium lighting fixtures",
+      "Open-plan living concept"
+    ],
+    images: [
+      "/lovable-uploads/ecca3f24-ef74-47f9-afb8-d20b0dcfd6c1.png",
+      "/lovable-uploads/1586974e-546b-48ef-92e1-3d2ec7a97392.png",
+      "/lovable-uploads/7563e236-4ec5-440b-92a4-2a903c3b1b89.png",
+      "/lovable-uploads/bf4ee8ab-c2b4-45eb-bd97-4c5045ebb3e7.png",
+      "/lovable-uploads/bd00f75b-3026-452e-bcd8-885bef3ac95c.png",
+      "/lovable-uploads/e688aae1-24bd-42ee-862b-4f4258b091bb.png",
+      "/lovable-uploads/2be8b4a8-f7bc-4b3b-ad7e-d919735548f5.png",
+      "/lovable-uploads/c689e2eb-dea6-4a94-9df3-82ea9865dae7.png",
+      "/lovable-uploads/35de91be-f4d5-4b76-abb1-e76167d6fd82.png"
+    ],
+    size: "3,200 sq ft",
+    completionYear: "2024",
+    isFeatured: true,
+    designer: "Balaji Design Studio",
+    tagline: "Contemporary Elegance with Traditional Soul",
+    budget: "₹45,00,000"
   }
 ];
 
