@@ -190,6 +190,32 @@ const projectsData: Project[] = [
     designer: "Balaji Design Studio",
     tagline: "Coastal luxury hospitality",
     budget: "₹80 Lakhs"
+  },
+  {
+    id: "roop-jewelers",
+    title: "Roop Jewelers",
+    category: "Commercial",
+    location: "Mumbai, India",
+    size: "1,200 sq ft",
+    completionYear: "2024",
+    description: "A luxury jewelry store designed to showcase exquisite collections in an elegant and sophisticated environment. The design features clean lines, premium materials, and strategic lighting to enhance the jewelry displays.",
+    features: [
+      "Premium display cases with integrated lighting",
+      "Modern reception and consultation areas",
+      "Strategic ambient and accent lighting",
+      "Luxurious marble and wood finishes",
+      "Climate-controlled environment",
+      "Security-integrated design elements"
+    ],
+    images: [
+      "/lovable-uploads/27e6d26c-b21e-483e-85ef-def00aa16db8.png",
+      "/lovable-uploads/21b32361-1a1c-4ba4-b3b6-e1d71a2907e7.png",
+      "/lovable-uploads/e429e799-7e8e-4a17-98cf-aae30a5e7299.png"
+    ],
+    isFeatured: true,
+    designer: "Balaji Design Studio",
+    tagline: "Luxury retail experience with sophisticated elegance",
+    budget: "₹45,00,000"
   }
 ];
 
