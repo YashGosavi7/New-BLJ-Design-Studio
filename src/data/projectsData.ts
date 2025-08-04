@@ -397,6 +397,41 @@ const projectsData: Project[] = [
     designer: "Balaji Design Studio",
     tagline: "Contemporary Elegance with Traditional Soul",
     budget: "₹45,00,000"
+  },
+  {
+    id: "ravi-kale-residence",
+    title: "Mr. Ravi Kale Residence",
+    category: "Residential",
+    location: "Mumbai, Maharashtra",
+    size: "3,500 sq ft",
+    completionYear: "2024",
+    description: "An exquisite residential project that masterfully combines contemporary luxury with traditional Indian elements. The design features ornate wooden entrance doors, sophisticated living spaces with modern fireplaces, elegant ceiling treatments with cove lighting, and seamlessly integrated spiritual elements including a dedicated prayer area.",
+    features: [
+      "Ornate wooden entrance doors with traditional craftsmanship",
+      "Contemporary living spaces with integrated fireplace and TV unit",
+      "Sophisticated ceiling design with LED cove lighting",
+      "Luxury seating arrangements with tufted leather furniture",
+      "Modern hanging swing seating with rope details",
+      "Traditional spiritual artwork and prayer elements",
+      "Premium marble flooring with elegant patterns",
+      "Custom built-in storage and display units",
+      "Seamless integration of traditional and modern elements",
+      "Professional lighting design throughout"
+    ],
+    images: [
+      "/lovable-uploads/ad0da800-1e0d-479a-8a55-cf18e420528b.png",
+      "/lovable-uploads/f787a0b6-b17a-4317-9e5d-617534b08afe.png",
+      "/lovable-uploads/de60a0a4-d77c-4758-acef-770086e40108.png",
+      "/lovable-uploads/5454485b-39b5-419d-af97-2489c5a715c8.png",
+      "/lovable-uploads/a99b3644-9349-4849-8f69-494e5d227599.png",
+      "/lovable-uploads/53741105-6814-4bb0-b686-55bb5c5d3b68.png",
+      "/lovable-uploads/2f01f74b-c29d-4f3a-a147-be2b77eeb753.png",
+      "/lovable-uploads/dc1ae63e-e7f2-4209-9da3-739ed34e0bc6.png"
+    ],
+    isFeatured: true,
+    designer: "Balaji Design Studio",
+    tagline: "Luxury living with traditional soul and modern sophistication",
+    budget: "₹52 Lakhs"
   }
 ];
 
