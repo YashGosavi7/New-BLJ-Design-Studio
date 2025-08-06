@@ -699,6 +699,37 @@ const projectsData: Project[] = [
     designer: "Balaji Design Studio",
     tagline: "Contemporary family living with personalized elegance",
     budget: "₹42 Lakhs"
+  },
+  {
+    id: "the-lodge",
+    title: "The Lodge",
+    category: "Hospitality",
+    location: "Premium Location",
+    description: "A luxury lodge featuring sophisticated interiors with warm wood tones, marble finishes, and contemporary elegance. The design seamlessly blends comfort with opulence, creating an inviting atmosphere for guests.",
+    features: [
+      "Luxury bedroom suites with custom headboards",
+      "Premium marble bathrooms with glass partitions",
+      "Warm wood finishes throughout",
+      "Contemporary lighting design",
+      "High-end fixtures and fittings",
+      "Sophisticated color palette",
+      "Custom millwork and cabinetry",
+      "Modern amenities integration"
+    ],
+    images: [
+      "/lovable-uploads/9217810f-74d1-4cbc-8507-5a2e2abc252b.png",
+      "/lovable-uploads/844b0493-bd97-4ea0-9073-330bd7d3affe.png",
+      "/lovable-uploads/3075a307-5844-4da6-92cb-8eef3dee232a.png",
+      "/lovable-uploads/2e386d50-935f-434b-9886-5462426cab9f.png",
+      "/lovable-uploads/85c35283-3ead-4b1a-a015-733af4904429.png",
+      "/lovable-uploads/83bdf3c7-6a22-46bf-8469-7b929ab877e1.png"
+    ],
+    isFeatured: true,
+    designer: "Nirmitee Interior",
+    tagline: "Where luxury meets comfort",
+    budget: "₹75 Lakhs",
+    completionYear: "2024",
+    size: "4,500 sq ft"
   }
 ];
 
