@@ -546,6 +546,42 @@ const projectsData: Project[] = [
     designer: "Balaji Design Studio",
     tagline: "Corporate excellence with traditional values",
     budget: "₹55 Lakhs"
+  },
+  {
+    id: "mr-gaikwad-residence",
+    title: "Mr. Gaikwad Residence",
+    category: "Residential",
+    location: "Mumbai, India",
+    size: "3,800 sq ft",
+    completionYear: "2024",
+    description: "An elegant residential project that seamlessly blends traditional Indian architectural elements with contemporary design. The residence features a stunning entrance with decorative grillwork, luxurious interiors with geometric floor patterns, ornate ceiling treatments, and thoughtfully designed living spaces that honor cultural heritage while embracing modern comfort.",
+    features: [
+      "Traditional entrance with decorative geometric grillwork",
+      "Elegant steps with marble and stone finish",
+      "Custom doorway with vertical wood slat design",
+      "Ornate ceiling with traditional geometric patterns",
+      "Luxury living room with modern curved furniture",
+      "Geometric checkerboard marble floor patterns",
+      "Traditional wall niches with lighting",
+      "Contemporary seating with brown and beige upholstery",
+      "Premium wood paneling and fluted details",
+      "Ambient lighting with traditional chandeliers"
+    ],
+    images: [
+      "/lovable-uploads/6e135f0f-6686-4eff-8fb4-4d48dcf7ab9f.png",
+      "/lovable-uploads/c8d82cf3-973d-492b-aebf-ce37e243e757.png",
+      "/lovable-uploads/082423c8-a7db-462a-a5e9-13a51af61ddb.png",
+      "/lovable-uploads/28b3e865-c6b0-4f70-92f6-30e2ff3fdbbf.png",
+      "/lovable-uploads/a3c281bc-5707-4412-ad72-433de3081af0.png",
+      "/lovable-uploads/1e9f103c-27d8-4f9f-b9e1-17a983f763e4.png",
+      "/lovable-uploads/3c8206dd-102d-4bb8-ad97-bab7d3c1fbe5.png",
+      "/lovable-uploads/36b24607-5968-4366-a093-60ed51042bb9.png",
+      "/lovable-uploads/b199ff3c-4d68-48f9-adef-1b6c580d613a.png"
+    ],
+    isFeatured: true,
+    designer: "Balaji Design Studio",
+    tagline: "Traditional elegance meets contemporary luxury",
+    budget: "₹52 Lakhs"
   }
 ];
 
