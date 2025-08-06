@@ -794,6 +794,41 @@ const projectsData: Project[] = [
     budget: "₹18 Lakhs",
     completionYear: "2024",
     size: "350 sq ft"
+  },
+  {
+    id: "datta-ghule",
+    title: "Datta Ghule Residence",
+    category: "Residential",
+    location: "Mumbai, Maharashtra",
+    description: "A sophisticated modern residence featuring contemporary design elements with warm wood tones, neutral palettes, and luxurious finishes. This multi-level home showcases elegant living spaces with statement lighting, floating staircases, and seamless integration of indoor greenery. The design emphasizes clean lines, premium materials, and thoughtful space planning.",
+    features: [
+      "Contemporary living room with neutral tones",
+      "Statement lighting with crystal chandeliers",
+      "Floating staircase with glass elevator",
+      "Modern kitchen with handleless cabinetry",
+      "Indoor garden with glass enclosure",
+      "Premium marble flooring throughout",
+      "Custom wood paneling and storage solutions",
+      "Open plan dining and kitchen area",
+      "Integrated entertainment wall unit"
+    ],
+    images: [
+      "/lovable-uploads/1e446aff-1bdb-4ddb-8e5a-c3238f1cb45e.png",
+      "/lovable-uploads/e9ac0a8d-b0e7-4b1d-b9ce-1988be8ccfb1.png",
+      "/lovable-uploads/146b4cd0-abdb-4a10-ab93-99d61e1ad428.png",
+      "/lovable-uploads/b4c94970-61f7-4fa7-808a-7bf6d34bd5f9.png",
+      "/lovable-uploads/d5cfa877-881c-4c7f-bccc-f2014babe74c.png",
+      "/lovable-uploads/03193c6a-19f0-40b5-a4c7-e3d1500a2d42.png",
+      "/lovable-uploads/52312619-3f89-4928-b277-1197320ce6d9.png",
+      "/lovable-uploads/1eee4efd-2387-492a-b187-e2a658d07a0b.png",
+      "/lovable-uploads/332b412e-55bb-4859-8538-cafc5326d77c.png"
+    ],
+    isFeatured: true,
+    designer: "Balaji Design Studio",
+    tagline: "Modern luxury living redefined",
+    budget: "₹85 Lakhs",
+    completionYear: "2024",
+    size: "3,800 sq ft"
   }
 ];
 
