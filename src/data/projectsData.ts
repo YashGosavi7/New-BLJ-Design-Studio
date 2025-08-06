@@ -554,7 +554,7 @@ const projectsData: Project[] = [
     location: "Mumbai, India",
     size: "3,800 sq ft",
     completionYear: "2024",
-    description: "An elegant residential project that seamlessly blends traditional Indian architectural elements with contemporary design. The residence features a stunning entrance with decorative grillwork, luxurious interiors with geometric floor patterns, ornate ceiling treatments, and thoughtfully designed living spaces that honor cultural heritage while embracing modern comfort.",
+    description: "An elegant residential project that seamlessly blends traditional Indian architectural elements with contemporary design. The residence features a stunning entrance, luxurious living spaces with modern curved furniture, elegant dining areas with cane-back chairs, a fully integrated kitchen, decorative floral relief wall art, a dedicated prayer room with traditional Indian architectural elements, and a serene central courtyard with water features and natural lighting.",
     features: [
       "Traditional entrance with decorative geometric grillwork",
       "Elegant steps with marble and stone finish",
@@ -565,7 +565,16 @@ const projectsData: Project[] = [
       "Traditional wall niches with lighting",
       "Contemporary seating with brown and beige upholstery",
       "Premium wood paneling and fluted details",
-      "Ambient lighting with traditional chandeliers"
+      "Ambient lighting with traditional chandeliers",
+      "Elegant dining area with cane-back chairs",
+      "Integrated kitchen with cane cabinet doors",
+      "Decorative floral relief wall panels",
+      "Traditional prayer room with ornate arch design",
+      "Sanskrit calligraphy and lotus motifs",
+      "Central courtyard with water feature",
+      "Buddha statue with bonsai landscaping",
+      "Natural skylight with exposed beam ceiling",
+      "Multi-level water fountain design"
     ],
     images: [
       "/lovable-uploads/6e135f0f-6686-4eff-8fb4-4d48dcf7ab9f.png",
@@ -576,7 +585,16 @@ const projectsData: Project[] = [
       "/lovable-uploads/1e9f103c-27d8-4f9f-b9e1-17a983f763e4.png",
       "/lovable-uploads/3c8206dd-102d-4bb8-ad97-bab7d3c1fbe5.png",
       "/lovable-uploads/36b24607-5968-4366-a093-60ed51042bb9.png",
-      "/lovable-uploads/b199ff3c-4d68-48f9-adef-1b6c580d613a.png"
+      "/lovable-uploads/b199ff3c-4d68-48f9-adef-1b6c580d613a.png",
+      "/lovable-uploads/7204ae7c-dceb-4259-88d3-828f9fdd66cd.png",
+      "/lovable-uploads/b015a4cb-2219-4a61-84a8-c5234e8eef01.png",
+      "/lovable-uploads/fc29ea0b-8640-4db0-ad4e-1f781a3c421e.png",
+      "/lovable-uploads/1aa98052-064b-4668-bcc3-1513ab107ea4.png",
+      "/lovable-uploads/5e9a5473-809c-4e39-a9fa-6cf441307a76.png",
+      "/lovable-uploads/cdf55f92-167f-4756-8f7c-146432dc8cd6.png",
+      "/lovable-uploads/6148af31-b069-4821-996d-df560f283a7a.png",
+      "/lovable-uploads/66e0ec0c-6215-40fc-a846-d428b825b63d.png",
+      "/lovable-uploads/d195a71d-b072-4d63-a4bd-d716b248e1db.png"
     ],
     isFeatured: true,
     designer: "Balaji Design Studio",
