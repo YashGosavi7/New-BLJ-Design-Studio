@@ -15,6 +15,11 @@ const AboutPage = () => {
 
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+            <img 
+              src="/lovable-uploads/6fa1e20b-cc3d-48c4-8aab-d956fb4cb1e1.png" 
+              alt="Balaji Design Studio - Dalpat Suthar" 
+              className="h-96 w-full object-cover rounded-lg"
+            />
             <div>
               <h2 className="text-3xl font-playfair text-darkGray mb-6">Our Story</h2>
               <p className="text-lg text-darkGray/80 mb-6 leading-relaxed">
@@ -27,11 +32,6 @@ const AboutPage = () => {
                 From Mumbai to Delhi, Bangalore to Chennai, our designs reflect the diverse influences and unique character of each region, while maintaining our signature warmth and attention to detail.
               </p>
             </div>
-            <img 
-              src="/lovable-uploads/6fa1e20b-cc3d-48c4-8aab-d956fb4cb1e1.png" 
-              alt="Balaji Design Studio - Dalpat Suthar" 
-              className="h-96 w-full object-cover rounded-lg"
-            />
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">

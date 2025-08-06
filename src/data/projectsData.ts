@@ -28,6 +28,39 @@ export interface Project {
 
 const projectsData: Project[] = [
   {
+    id: "mr-deepak-residence",
+    title: "Mr. Deepak Residence",
+    category: "Residential",
+    location: "Mumbai",
+    size: "3,500 sq ft",
+    completionYear: "2024",
+    description: "A beautiful residential project showcasing modern design with traditional elements, featuring elegant prayer rooms and contemporary living spaces with sophisticated wood paneling and premium finishes.",
+    features: [
+      "Custom wooden prayer room doors with geometric patterns",
+      "Modern prayer area with floating console and glass display",
+      "Contemporary living spaces with wooden ceiling features",
+      "Open-plan living and dining areas",
+      "Premium marble flooring throughout",
+      "Sophisticated lighting design with chandeliers",
+      "Built-in entertainment units with fluted wood panels",
+      "Elegant window treatments and city views"
+    ],
+    images: [
+      "/lovable-uploads/37a14631-3655-4507-af74-b86dc3a54e84.png",
+      "/lovable-uploads/917b3f91-16bf-4f76-afe7-99743165a071.png",
+      "/lovable-uploads/4e9d0213-425a-4902-894c-2b4288b6050e.png",
+      "/lovable-uploads/fcc8c7d2-7335-4e37-85c0-89c6389cf9f6.png",
+      "/lovable-uploads/49ddd48c-3357-4d55-822d-47118c321d89.png",
+      "/lovable-uploads/8758dade-4cb8-4287-adef-a370ada84632.png",
+      "/lovable-uploads/be6bf250-b567-43d8-a4d1-32a1f20b5077.png",
+      "/lovable-uploads/58ec6dd3-ae02-4258-96b6-e8698db34e79.png"
+    ],
+    isFeatured: true,
+    designer: "Balaji Design Studio",
+    tagline: "Modern elegance with traditional spirituality",
+    budget: "₹52 Lakhs"
+  },
+  {
     id: "shivam-kamthe-residence",
     title: "Shivam Kamthe",
     category: "Residential",
