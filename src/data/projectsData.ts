@@ -730,6 +730,38 @@ const projectsData: Project[] = [
     budget: "₹75 Lakhs",
     completionYear: "2024",
     size: "4,500 sq ft"
+  },
+  {
+    id: "ice-cream-shop",
+    title: "Ice Cream Shop",
+    category: "Commercial",
+    location: "City Center",
+    description: "A vibrant and playful ice cream shop featuring colorful cube pendant lights, chevron pattern accents, and a modern design that creates a fun and welcoming atmosphere for customers of all ages.",
+    features: [
+      "Colorful cube pendant lighting installation",
+      "Modern chevron pattern counter design",
+      "Glass display cases for ice cream presentation",
+      "Vibrant wall graphics and branding",
+      "Contemporary seating areas",
+      "Self-service ordering system",
+      "Bright and cheerful color scheme",
+      "Customer-friendly layout design"
+    ],
+    images: [
+      "/lovable-uploads/1133e7c8-1ff1-4b80-88ee-66149772e8d0.png",
+      "/lovable-uploads/ccaffc08-ac58-4da4-a84b-2c4f1c3e6a45.png",
+      "/lovable-uploads/4d0c506d-0d80-4486-b1ac-490229532c50.png",
+      "/lovable-uploads/41e35886-0591-432f-9bdc-3e0ebf19bb07.png",
+      "/lovable-uploads/5411c8f9-7723-4e5f-bf91-56f005f56aac.png",
+      "/lovable-uploads/e11e77e4-34a8-4f68-b246-1b0fea38d124.png",
+      "/lovable-uploads/4795aa2b-e958-4b16-8b2f-67506c6a377f.png"
+    ],
+    isFeatured: true,
+    designer: "Balaji Design Studio",
+    tagline: "Where fun meets flavor",
+    budget: "₹25 Lakhs",
+    completionYear: "2024",
+    size: "1,200 sq ft"
   }
 ];
 
