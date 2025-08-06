@@ -72,7 +72,8 @@ const projectsData: Project[] = [
       "/lovable-uploads/41761ede-031b-4a98-8e91-18262366e7b9.png",
       "/lovable-uploads/2a104e10-5bb4-4d1f-ab15-b734f085e3d1.png",
       "/lovable-uploads/3e20256a-962b-459e-bdcb-17b78251382f.png",
-      "/lovable-uploads/a3e1b071-b6b3-464b-8977-f04b9c021351.png"
+      "/lovable-uploads/a3e1b071-b6b3-464b-8977-f04b9c021351.png",
+      "/lovable-uploads/c6fd0cfc-abd4-4401-8c3b-75166e2d4eb5.png"
     ],
     isFeatured: true,
     designer: "Balaji Design Studio",
@@ -656,6 +657,39 @@ const projectsData: Project[] = [
     designer: "Balaji Design Studio",
     tagline: "Traditional elegance meets contemporary luxury",
     budget: "₹52 Lakhs"
+  },
+  {
+    id: "mr-dapke-residence",
+    title: "Mr. Dapke Residence",
+    category: "Residential",
+    location: "India",
+    size: "2,800 sq ft",
+    completionYear: "2023",
+    description: "A sophisticated residential interior design featuring contemporary living spaces with elegant color palettes, premium finishes, and personalized family branding elements.",
+    features: [
+      "Custom entrance design with family nameplate",
+      "Contemporary living room with premium furniture",
+      "Elegant TV wall unit with marble accent",
+      "Classic artwork and sophisticated lighting",
+      "Modern kitchen with hexagonal tile backsplash",
+      "Open-plan layout with seamless flow",
+      "Luxury finishes throughout the residence",
+      "Personalized design elements for family identity"
+    ],
+    images: [
+      "/lovable-uploads/e4c440d6-f5ca-44d9-975c-3af987a61ff8.png",
+      "/lovable-uploads/07966e6e-d8f6-4a33-ac06-f4202ebf1daf.png",
+      "/lovable-uploads/208a30b7-4557-4021-9288-548cb936d188.png",
+      "/lovable-uploads/d4f3e1ba-ba7f-428f-847e-b8d4d0a7d07b.png",
+      "/lovable-uploads/d19608db-8bb0-45bc-8b14-f48cfaf17ce7.png",
+      "/lovable-uploads/b15f3d37-200a-4d1f-bf59-37e1f08ac4a9.png",
+      "/lovable-uploads/efc76f5b-e8af-4c9e-b075-55f8ce6f28b4.png",
+      "/lovable-uploads/fe565ec5-8772-4388-a3a9-cf35f7f125da.png"
+    ],
+    isFeatured: true,
+    designer: "Balaji Design Studio",
+    tagline: "Contemporary family living with personalized elegance",
+    budget: "₹42 Lakhs"
   }
 ];
 
