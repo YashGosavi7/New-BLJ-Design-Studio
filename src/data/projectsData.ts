@@ -830,7 +830,11 @@ const projectsData: Project[] = [
       "/lovable-uploads/752dbe14-6817-4a98-bb42-73df42b9cc11.png",
       "/lovable-uploads/e250a891-bc6f-4721-989b-287367737bca.png",
       "/lovable-uploads/5efe0067-087d-448f-9f54-ed9eca991f4c.png",
-      "/lovable-uploads/13c103ca-a34b-489b-a9f6-1538b7887b0b.png"
+      "/lovable-uploads/13c103ca-a34b-489b-a9f6-1538b7887b0b.png",
+      "/lovable-uploads/580bbd35-1451-4555-9cea-0bc6f455f6a4.png",
+      "/lovable-uploads/7bd78ab8-7178-4c41-b3a2-ae4a70e68e05.png",
+      "/lovable-uploads/60eea1f1-d51a-4064-b8b8-74dd56520be0.png",
+      "/lovable-uploads/29f4a1e5-931c-4c5d-b34b-0f3b455e654a.png"
     ],
     isFeatured: true,
     designer: "Balaji Design Studio",
@@ -838,6 +842,37 @@ const projectsData: Project[] = [
     budget: "₹85 Lakhs",
     completionYear: "2024",
     size: "3,800 sq ft"
+  },
+  {
+    id: "bapu-sample-flat",
+    title: "Bapu Sample Flat",
+    category: "Residential",
+    location: "Mumbai, Maharashtra",
+    description: "A contemporary residential flat showcasing modern design elements with sophisticated interior architecture. Features elegant entrance lobbies, stylish living spaces with circular wall features, premium wood finishes, and thoughtful space planning. The design emphasizes clean lines, neutral color palettes, and sophisticated lighting solutions.",
+    features: [
+      "Contemporary living room with circular wall feature",
+      "Premium entrance lobby design",
+      "Elegant hallway with artwork displays",
+      "Modern apartment corridors",
+      "Sophisticated lighting throughout",
+      "Premium wood and marble finishes",
+      "Open plan living spaces",
+      "Custom storage solutions"
+    ],
+    images: [
+      "/lovable-uploads/dc17567a-8c87-43d6-8e6e-01f4f272da25.png",
+      "/lovable-uploads/a1142cda-2066-4afd-875b-4d034695e685.png",
+      "/lovable-uploads/32e97296-41e4-4e78-abdc-60c7750894d4.png",
+      "/lovable-uploads/96a73892-dbe7-4aab-b1c1-3ae43092177d.png",
+      "/lovable-uploads/41c2ec9e-f4bb-49ac-9fe5-22fed2a79446.png",
+      "/lovable-uploads/18fb937c-e138-42a2-a6bf-8008981084f4.png"
+    ],
+    isFeatured: false,
+    designer: "Balaji Design Studio",
+    tagline: "Contemporary urban living",
+    budget: "₹45 Lakhs",
+    completionYear: "2024",
+    size: "1,200 sq ft"
   }
 ];
 
