@@ -71,39 +71,6 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* About Section */}
-      <section className="section-padding bg-warmWhite">
-        <div className="container mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-playfair text-darkGray mb-6">
-                About Our Studio
-              </h2>
-              <p className="text-lg text-darkGray/80 mb-6 leading-relaxed">
-                With over 600+ successful projects across India's leading cities, 
-                Balaji Design Studio has established itself as a premier interior 
-                design firm dedicated to creating spaces that inspire and delight.
-              </p>
-              <p className="text-lg text-darkGray/80 mb-8 leading-relaxed">
-                Our team of creative professionals brings together years of experience 
-                in residential, commercial, and hospitality design to deliver 
-                exceptional results that exceed expectations.
-              </p>
-              <Link
-                to="/about"
-                className="bg-roseGold text-white px-6 py-3 rounded-lg hover:bg-roseGold/90 transition-colors inline-block"
-              >
-                Learn More About Us
-              </Link>
-            </div>
-            <img 
-              src={aboutTeam} 
-              alt="Balaji Design Studio Team" 
-              className="h-96 w-full object-cover rounded-lg"
-            />
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
