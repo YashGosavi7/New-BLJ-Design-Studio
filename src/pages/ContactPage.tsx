@@ -1,26 +1,78 @@
 import { useState } from "react";
-import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, Loader2 } from "lucide-react";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { contactFormSchema, type ContactFormData } from "@/lib/contactValidation";
+import { useToast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
 
 const ContactPage = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    subject: "",
-    message: ""
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [lastSubmissionTime, setLastSubmissionTime] = useState<number>(0);
+  const { toast } = useToast();
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm<ContactFormData>({
+    resolver: zodResolver(contactFormSchema),
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
+  const onSubmit = async (data: ContactFormData) => {
+    // Client-side rate limiting (1 submission per 30 seconds)
+    const now = Date.now();
+    if (now - lastSubmissionTime < 30000) {
+      toast({
+        title: "Please wait",
+        description: "You can only submit once every 30 seconds.",
+        variant: "destructive",
+      });
+      return;
+    }
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted:", formData);
+    setIsSubmitting(true);
+
+    try {
+      const { data: result, error } = await supabase.functions.invoke('submit-contact', {
+        body: data,
+      });
+
+      if (error) {
+        throw error;
+      }
+
+      if (result.success) {
+        toast({
+          title: "Message sent successfully!",
+          description: result.message,
+          variant: "default",
+        });
+        reset();
+        setLastSubmissionTime(now);
+      } else {
+        throw new Error(result.error || 'Failed to send message');
+      }
+    } catch (error: any) {
+      console.error('Contact form error:', error);
+      
+      let errorMessage = "Failed to send message. Please try again.";
+      
+      if (error.message?.includes('rate limit')) {
+        errorMessage = "Too many submissions. Please try again later.";
+      } else if (error.message?.includes('validation')) {
+        errorMessage = "Please check your input and try again.";
+      }
+      
+      toast({
+        title: "Error",
+        description: errorMessage,
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -87,7 +139,7 @@ const ContactPage = () => {
           <div className="bg-white rounded-lg shadow-lg p-8">
             <h2 className="text-2xl font-playfair text-darkGray mb-6">Send us a Message</h2>
             
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-darkGray mb-2">
                   Full Name *
@@ -95,12 +147,14 @@ const ContactPage = () => {
                 <input
                   type="text"
                   id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 border border-lightGray rounded-lg focus:ring-2 focus:ring-roseGold focus:border-transparent"
+                  {...register("name")}
+                  className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-roseGold focus:border-transparent ${
+                    errors.name ? 'border-red-500' : 'border-lightGray'
+                  }`}
                 />
+                {errors.name && (
+                  <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>
+                )}
               </div>
 
               <div>
@@ -110,12 +164,14 @@ const ContactPage = () => {
                 <input
                   type="email"
                   id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 border border-lightGray rounded-lg focus:ring-2 focus:ring-roseGold focus:border-transparent"
+                  {...register("email")}
+                  className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-roseGold focus:border-transparent ${
+                    errors.email ? 'border-red-500' : 'border-lightGray'
+                  }`}
                 />
+                {errors.email && (
+                  <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>
+                )}
               </div>
 
               <div>
@@ -125,11 +181,14 @@ const ContactPage = () => {
                 <input
                   type="tel"
                   id="phone"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 border border-lightGray rounded-lg focus:ring-2 focus:ring-roseGold focus:border-transparent"
+                  {...register("phone")}
+                  className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-roseGold focus:border-transparent ${
+                    errors.phone ? 'border-red-500' : 'border-lightGray'
+                  }`}
                 />
+                {errors.phone && (
+                  <p className="text-red-500 text-sm mt-1">{errors.phone.message}</p>
+                )}
               </div>
 
               <div>
@@ -138,10 +197,10 @@ const ContactPage = () => {
                 </label>
                 <select
                   id="subject"
-                  name="subject"
-                  value={formData.subject}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 border border-lightGray rounded-lg focus:ring-2 focus:ring-roseGold focus:border-transparent"
+                  {...register("subject")}
+                  className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-roseGold focus:border-transparent ${
+                    errors.subject ? 'border-red-500' : 'border-lightGray'
+                  }`}
                 >
                   <option value="">Select a project type</option>
                   <option value="residential">Residential Design</option>
@@ -150,6 +209,9 @@ const ContactPage = () => {
                   <option value="consultation">Design Consultation</option>
                   <option value="other">Other</option>
                 </select>
+                {errors.subject && (
+                  <p className="text-red-500 text-sm mt-1">{errors.subject.message}</p>
+                )}
               </div>
 
               <div>
@@ -158,21 +220,31 @@ const ContactPage = () => {
                 </label>
                 <textarea
                   id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
+                  {...register("message")}
                   rows={5}
-                  className="w-full px-4 py-3 border border-lightGray rounded-lg focus:ring-2 focus:ring-roseGold focus:border-transparent"
+                  className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-roseGold focus:border-transparent ${
+                    errors.message ? 'border-red-500' : 'border-lightGray'
+                  }`}
                   placeholder="Tell us about your project, timeline, and any specific requirements..."
                 ></textarea>
+                {errors.message && (
+                  <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>
+                )}
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-roseGold text-white py-3 px-6 rounded-lg hover:bg-roseGold/90 transition-colors font-medium"
+                disabled={isSubmitting}
+                className="w-full bg-roseGold text-white py-3 px-6 rounded-lg hover:bg-roseGold/90 transition-colors font-medium disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
               >
-                Send Message
+                {isSubmitting ? (
+                  <>
+                    <Loader2 className="animate-spin mr-2" size={16} />
+                    Sending...
+                  </>
+                ) : (
+                  "Send Message"
+                )}
               </button>
             </form>
           </div>
