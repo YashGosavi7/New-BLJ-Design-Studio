@@ -1,8 +1,24 @@
+import { useState, useMemo } from "react";
 import ProjectCard from "../components/ProjectCard";
 import SectionTitle from "../components/SectionTitle";
+import PortfolioFilter from "../components/PortfolioFilter";
 import projectsData from "../data/projectsData";
 
 const PortfolioPage = () => {
+  const [activeCategory, setActiveCategory] = useState("All");
+
+  const categories = useMemo(() => {
+    const cats = ["All", ...new Set(projectsData.map(project => project.category))];
+    return cats;
+  }, []);
+
+  const filteredProjects = useMemo(() => {
+    if (activeCategory === "All") {
+      return projectsData;
+    }
+    return projectsData.filter(project => project.category === activeCategory);
+  }, [activeCategory]);
+
   return (
     <div className="min-h-screen pt-20">
       <div className="container mx-auto px-4 py-12">
@@ -12,8 +28,14 @@ const PortfolioPage = () => {
           center
         />
 
+        <PortfolioFilter
+          categories={categories}
+          activeCategory={activeCategory}
+          onCategoryChange={setActiveCategory}
+        />
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projectsData.map((project, index) => (
+          {filteredProjects.map((project, index) => (
             <ProjectCard
               key={project.id}
               id={project.id}

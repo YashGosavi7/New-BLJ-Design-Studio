@@ -594,7 +594,11 @@ const projectsData: Project[] = [
       "/lovable-uploads/cdf55f92-167f-4756-8f7c-146432dc8cd6.png",
       "/lovable-uploads/6148af31-b069-4821-996d-df560f283a7a.png",
       "/lovable-uploads/66e0ec0c-6215-40fc-a846-d428b825b63d.png",
-      "/lovable-uploads/d195a71d-b072-4d63-a4bd-d716b248e1db.png"
+      "/lovable-uploads/d195a71d-b072-4d63-a4bd-d716b248e1db.png",
+      "/lovable-uploads/97b06315-830c-4a5c-b729-10c49f31d451.png",
+      "/lovable-uploads/e840962e-f3a7-426d-b5b0-8f599143c887.png",
+      "/lovable-uploads/e77ae1f7-4f4f-46b2-8e80-98dd6559e11e.png",
+      "/lovable-uploads/22b3cfbd-d7d9-403f-aeca-a5f4929dbdde.png"
     ],
     isFeatured: true,
     designer: "Balaji Design Studio",
