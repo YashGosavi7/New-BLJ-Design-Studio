@@ -762,6 +762,38 @@ const projectsData: Project[] = [
     budget: "₹25 Lakhs",
     completionYear: "2024",
     size: "1,200 sq ft"
+  },
+  {
+    id: "hotel-room",
+    title: "Hotel Room",
+    category: "Hospitality",
+    location: "Grand Hotel",
+    description: "A sophisticated hotel room design featuring contemporary aesthetics with warm wood accents, neutral color palette, and functional workspace. The design creates a comfortable and luxurious stay experience with modern amenities and thoughtful space planning.",
+    features: [
+      "Contemporary bedroom design with wood accents",
+      "Integrated work desk with storage solutions",
+      "Modern lighting with ambient cove lighting",
+      "Functional wardrobe with mirror panels",
+      "Elegant wall-mounted television setup",
+      "Comfortable seating and workspace",
+      "Premium bedding and furnishings",
+      "Neutral color scheme with warm tones"
+    ],
+    images: [
+      "/lovable-uploads/eb91315b-e121-4df9-8e50-afdfc9794c39.png",
+      "/lovable-uploads/4969f390-90ee-45b7-a2ef-1b051d510304.png",
+      "/lovable-uploads/119460be-44a0-4f90-abd3-c60a932e4942.png",
+      "/lovable-uploads/5cef4c54-6c5f-496d-b457-26bda6b38b34.png",
+      "/lovable-uploads/9a320d7a-f742-4ed8-9080-2d4c79a2d888.png",
+      "/lovable-uploads/57291f47-4e6b-4a5f-84b2-f8204245f3a6.png",
+      "/lovable-uploads/7443e285-576e-4696-9d41-40158c403f28.png"
+    ],
+    isFeatured: true,
+    designer: "Balaji Design Studio",
+    tagline: "Contemporary luxury meets comfort",
+    budget: "₹18 Lakhs",
+    completionYear: "2024",
+    size: "350 sq ft"
   }
 ];
 
