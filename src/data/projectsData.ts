@@ -860,12 +860,15 @@ const projectsData: Project[] = [
       "Custom storage solutions"
     ],
     images: [
-      "/lovable-uploads/dc17567a-8c87-43d6-8e6e-01f4f272da25.png",
-      "/lovable-uploads/a1142cda-2066-4afd-875b-4d034695e685.png",
-      "/lovable-uploads/32e97296-41e4-4e78-abdc-60c7750894d4.png",
-      "/lovable-uploads/96a73892-dbe7-4aab-b1c1-3ae43092177d.png",
-      "/lovable-uploads/41c2ec9e-f4bb-49ac-9fe5-22fed2a79446.png",
-      "/lovable-uploads/18fb937c-e138-42a2-a6bf-8008981084f4.png"
+      "/lovable-uploads/dee917bd-cd5d-4f7f-ac78-eb009181e3d6.png",
+      "/lovable-uploads/85d630a4-6b78-4a37-a8e9-a5292bda9b63.png", 
+      "/lovable-uploads/7eb772f9-daf8-43bc-adaf-12e96e3b740f.png",
+      "/lovable-uploads/3b306ab3-03ed-4101-9f0d-e1ff6d1957ab.png",
+      "/lovable-uploads/a9159209-712c-4c72-b31e-c49f6dd8ad11.png",
+      "/lovable-uploads/87dc93f1-e97c-4668-ba77-662b3ec83e62.png",
+      "/lovable-uploads/595ed76d-af54-4c53-a4e3-48adeaf8fdc6.png",
+      "/lovable-uploads/98431c92-0f6b-4e94-982d-a4ebcff5d806.png",
+      "/lovable-uploads/9bc02883-6c54-40dd-bfae-9624495805fe.png"
     ],
     isFeatured: false,
     designer: "Balaji Design Studio",

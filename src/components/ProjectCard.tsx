@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
-import OptimizedImage from "./OptimizedImage";
+import PerformanceOptimizedImage from "./PerformanceOptimizedImage";
+import { trackPerformance } from "@/hooks/usePerformanceMonitor";
+import { cn } from "@/lib/utils";
 
 interface ProjectCardProps {
   id: string;
@@ -32,12 +34,14 @@ const ProjectCard = ({
       className="group block bg-white rounded-lg shadow-lg overflow-hidden hover-lift transition-all duration-300"
     >
       <div className="relative h-64 overflow-hidden">
-        <OptimizedImage
+        <PerformanceOptimizedImage
           src={image}
-          alt={title}
+          alt={`${title} - ${category} project in ${location}`}
           className="group-hover:scale-105 transition-transform duration-300"
           loading={index < 6 ? "eager" : "lazy"}
           priority={index < 3}
+          quality="high"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <div className="absolute bottom-4 left-4 text-white">

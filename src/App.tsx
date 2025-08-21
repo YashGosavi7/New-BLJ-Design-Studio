@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Layout from "./components/Layout";
 import WhatsAppButton from "./components/WhatsAppButton";
+import PerformanceMonitor from "./components/PerformanceMonitor";
 import HomePage from "./pages/HomePage";
 import PortfolioPage from "./pages/PortfolioPage";
 import ProjectPage from "./pages/ProjectPage";
@@ -15,6 +16,7 @@ import ServicesPage from "./pages/ServicesPage";
 import ContactPage from "./pages/ContactPage";
 import ImageUploadPage from "./pages/ImageUploadPage";
 import NotFound from "./pages/NotFound";
+import { trackPerformance } from "@/hooks/usePerformanceMonitor";
 
 // Create a single QueryClient instance outside the component
 const queryClient = new QueryClient({
@@ -27,6 +29,11 @@ const queryClient = new QueryClient({
 });
 
 const App: React.FC = () => {
+  // Track initial app performance
+  React.useEffect(() => {
+    trackPerformance('app-start');
+  }, []);
+
   return (
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
@@ -44,6 +51,7 @@ const App: React.FC = () => {
             </Route>
           </Routes>
           <WhatsAppButton />
+          <PerformanceMonitor />
           <Toaster />
           <SonnerToaster />
         </TooltipProvider>
