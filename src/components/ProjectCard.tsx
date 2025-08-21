@@ -14,30 +14,30 @@ interface ProjectCardProps {
   completionYear?: string;
 }
 
-const ProjectCard = ({ 
-  id, 
-  title, 
-  category, 
-  location, 
-  image, 
-  designer, 
-  tagline, 
-  index = 0, 
-  size, 
-  completionYear 
+const ProjectCard = ({
+  id,
+  title,
+  category,
+  location,
+  image,
+  designer,
+  tagline,
+  index = 0,
+  size,
+  completionYear
 }: ProjectCardProps) => {
   return (
     <Link 
-      to={`/portfolio/${id}`} 
-      className="group block relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+      to={`/portfolio/${id}`}
+      className="group block bg-white rounded-lg shadow-lg overflow-hidden hover-lift transition-all duration-300"
     >
       <div className="relative h-64 overflow-hidden">
         <OptimizedImage
           src={image}
-          alt={`${title} - ${category} project in ${location}`}
-          className="w-full h-full"
-          loading={index < 3 ? 'eager' : 'lazy'}
-          priority={index < 2}
+          alt={title}
+          className="group-hover:scale-105 transition-transform duration-300"
+          loading={index < 6 ? "eager" : "lazy"}
+          priority={index < 3}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <div className="absolute bottom-4 left-4 text-white">

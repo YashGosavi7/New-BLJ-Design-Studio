@@ -14,61 +14,13 @@ export type Database = {
   }
   public: {
     Tables: {
-      contact_submissions: {
-        Row: {
-          created_at: string
-          email: string
-          id: string
-          ip_address: unknown | null
-          message: string
-          name: string
-          phone: string | null
-          processed: boolean | null
-          spam_score: number | null
-          subject: string | null
-          user_agent: string | null
-        }
-        Insert: {
-          created_at?: string
-          email: string
-          id?: string
-          ip_address?: unknown | null
-          message: string
-          name: string
-          phone?: string | null
-          processed?: boolean | null
-          spam_score?: number | null
-          subject?: string | null
-          user_agent?: string | null
-        }
-        Update: {
-          created_at?: string
-          email?: string
-          id?: string
-          ip_address?: unknown | null
-          message?: string
-          name?: string
-          phone?: string | null
-          processed?: boolean | null
-          spam_score?: number | null
-          subject?: string | null
-          user_agent?: string | null
-        }
-        Relationships: []
-      }
+      [_ in never]: never
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      check_contact_rate_limit: {
-        Args: { client_ip: unknown; client_email: string }
-        Returns: boolean
-      }
-      cleanup_old_contact_submissions: {
-        Args: Record<PropertyKey, never>
-        Returns: undefined
-      }
+      [_ in never]: never
     }
     Enums: {
       [_ in never]: never
