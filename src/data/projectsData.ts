@@ -546,6 +546,42 @@ const projectsData: Project[] = [
     designer: "Balaji Design Studio",
     tagline: "Corporate excellence with traditional values",
     budget: "₹55 Lakhs"
+  },
+  {
+    id: "arjun-infra-office",
+    title: "Arjun Infra Corporate Office",
+    category: "Commercial",
+    location: "Mumbai, Maharashtra",
+    size: "5,000 sq ft",
+    completionYear: "2024",
+    description: "A cutting-edge corporate office design for Arjun Infra featuring contemporary aesthetics with motivational branding elements. The space showcases glass-partitioned work areas, modern reception design, collaborative workspaces, and inspirational graphics that reflect the company's innovative spirit and professional excellence.",
+    features: [
+      "Modern entrance with illuminated Arjun Infra branding",
+      "Sleek reception area with curved design elements",
+      "Glass-partitioned office spaces for transparency and collaboration",
+      "Motivational wall graphics and inspirational quotes",
+      "Dual-monitor workstations with ergonomic furniture",
+      "Contemporary conference rooms with city skyline artwork",
+      "Professional lighting with geometric ceiling treatments",
+      "Orange accent colors for brand consistency",
+      "Open-plan workspace design for enhanced productivity",
+      "Premium flooring with modern aesthetic appeal"
+    ],
+    images: [
+      "/lovable-uploads/c541446c-35c0-4ab6-a4f7-f78cd66c78cd.png",
+      "/lovable-uploads/ce2a8b34-10a9-4521-b1e7-f3641bf0d285.png",
+      "/lovable-uploads/5d44c074-4fdb-4821-baab-8a3d00ca9727.png",
+      "/lovable-uploads/8e460a88-7a82-43a7-954e-9c365022501d.png",
+      "/lovable-uploads/e1580c4c-8018-4220-a466-cfdec5188409.png",
+      "/lovable-uploads/f3c7605d-6dc7-4643-8c07-8db02ed529c3.png",
+      "/lovable-uploads/d49751d1-3e1d-4671-9000-07c8a5d918bb.png",
+      "/lovable-uploads/74a686e2-5a70-4490-b693-1a090dfbd671.png",
+      "/lovable-uploads/f1f93f1f-9fdd-4db4-9cc4-ac71fef435a1.png"
+    ],
+    isFeatured: true,
+    designer: "Balaji Design Studio",
+    tagline: "Innovation meets inspiration in modern workspace design",
+    budget: "₹60 Lakhs"
   }
 ];
 
