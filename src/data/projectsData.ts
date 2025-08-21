@@ -882,6 +882,41 @@ const projectsData: Project[] = [
     budget: "₹85 Lakhs",
     completionYear: "2024",
     size: "3,800 sq ft"
+  },
+  {
+    id: "arjun-infra-office",
+    title: "Arjun Infra Corporate Office",
+    category: "Commercial",
+    location: "Mumbai",
+    description: "A sophisticated corporate office design for Arjun Infra, featuring contemporary interiors with glass partitions, modern workstations, and professional meeting spaces. The design emphasizes clean lines, neutral color palettes, and efficient space utilization to create a productive work environment.",
+    features: [
+      "Modern reception area with branded elements",
+      "Glass partition systems for natural light flow",
+      "Contemporary furniture and ergonomic seating",
+      "Professional meeting and conference rooms",
+      "Collaborative workstation designs",
+      "Integrated storage solutions",
+      "Premium ceiling designs with accent lighting",
+      "Corporate branding integration",
+      "Open office layout with designated zones"
+    ],
+    images: [
+      "/lovable-uploads/5517af2b-1019-4ce7-a40d-97b33738bd8e.png",
+      "/lovable-uploads/a5582e5e-7831-4f9d-b8f4-ee3a18a3db18.png",
+      "/lovable-uploads/2defd845-3b45-4df4-8091-5a0ba8ade423.png",
+      "/lovable-uploads/fa8c0165-bf73-4556-85a9-231eac712870.png",
+      "/lovable-uploads/29442263-ce30-4be7-b961-9dea5ad16f07.png",
+      "/lovable-uploads/1822852c-91ad-470c-8f4c-5d70759efc13.png",
+      "/lovable-uploads/83b31a16-1fbd-477a-a1ac-d8044f228c64.png",
+      "/lovable-uploads/915c500b-5a21-4aa0-aafc-a73ddf9ea67a.png",
+      "/lovable-uploads/1095c50c-0fa3-41d2-b242-fc9518247cee.png"
+    ],
+    isFeatured: true,
+    designer: "Balaji Design Studio",
+    tagline: "Contemporary Corporate Excellence",
+    budget: "₹25-30 Lakhs",
+    completionYear: "2024",
+    size: "3,500 sq ft"
   }
 ];
 
