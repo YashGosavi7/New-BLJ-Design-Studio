@@ -9,9 +9,9 @@ import projectsData from "../data/projectsData";
 const HomePage = () => {
   const featuredProjects = projectsData.filter(project => project.isFeatured);
   
-  // Debug: Log featured projects
-  console.log('Featured Projects:', featuredProjects.map(p => p.title));
-  console.log('Total featured count:', featuredProjects.length);
+  // Force console log to check if component is loading
+  console.log('HomePage loaded - Featured projects:', featuredProjects.length);
+  console.log('Projects:', featuredProjects.map(p => ({ title: p.title, id: p.id })));
 
   return (
     <div className="min-h-screen">
