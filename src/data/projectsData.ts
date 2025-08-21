@@ -115,7 +115,7 @@ const projectsData: Project[] = [
       "/lovable-uploads/a3e1b071-b6b3-464b-8977-f04b9c021351.png",
       "/lovable-uploads/c6fd0cfc-abd4-4401-8c3b-75166e2d4eb5.png"
     ],
-    isFeatured: true,
+    isFeatured: false,
     designer: "Balaji Design Studio",
     tagline: "Modern elegance with traditional spirituality",
     budget: "₹52 Lakhs"
@@ -189,7 +189,7 @@ const projectsData: Project[] = [
       "/lovable-uploads/1dca7dd0-1433-4c67-8162-e63f72dc5b91.png",
       "/lovable-uploads/3c4e256c-2b94-4b38-b2e3-7c505b6b95b4.png"
     ],
-    isFeatured: true,
+    isFeatured: false,
     designer: "Balaji Design Studio",
     tagline: "Professional legal workspace design",
     budget: "₹35 Lakhs"
@@ -213,7 +213,7 @@ const projectsData: Project[] = [
       "Custom wooden slat partitions for privacy"
     ],
     images: ["/assets/hero-living-room.jpg"],
-    isFeatured: true,
+    isFeatured: false,
     designer: "Balaji Design Studio",
     tagline: "Contemporary hospitality design",
     budget: "₹1.2 Crores"
@@ -235,7 +235,7 @@ const projectsData: Project[] = [
       "Master suite with walk-in closet"
     ],
     images: ["/assets/project-bedroom.jpg"],
-    isFeatured: true,
+    isFeatured: false,
     designer: "Balaji Design Studio",
     tagline: "Sophisticated luxury living",
     budget: "₹45 Lakhs"
@@ -257,7 +257,7 @@ const projectsData: Project[] = [
       "Breakout areas and café"
     ],
     images: ["/assets/project-office.jpg"],
-    isFeatured: true,
+    isFeatured: false,
     designer: "Balaji Design Studio",
     tagline: "Future of workspace design",
     budget: "₹1.2 Crores"
@@ -332,7 +332,7 @@ const projectsData: Project[] = [
       "/lovable-uploads/f816dacc-d4a7-442d-a40f-9a19b793bf20.png",
       "/lovable-uploads/50c7c58a-9db2-421d-8c09-ca3f343fd126.png"
     ],
-    isFeatured: true,
+    isFeatured: false,
     designer: "Balaji Design Studio",
     tagline: "Classical grandeur meets modern luxury",
     budget: "₹2.5 Crores"
@@ -387,7 +387,7 @@ const projectsData: Project[] = [
       "/lovable-uploads/d36baf9d-ff0b-44ab-9e91-c9d6395f7356.png",
       "/lovable-uploads/bebb1401-f971-4525-8413-29eb85c5dcde.png"
     ],
-    isFeatured: true,
+    isFeatured: false,
     designer: "Balaji Design Studio",
     tagline: "Professional workspace with modern elegance",
     budget: "₹28 Lakhs"
@@ -436,7 +436,7 @@ const projectsData: Project[] = [
       "/lovable-uploads/9593be86-36cd-4693-9453-958671f4fe94.png",
       "/lovable-uploads/25e8147d-ef0b-40cd-9586-8e0f0db12e82.png"
     ],
-    isFeatured: true,
+    isFeatured: false,
     designer: "Balaji Design Studio",
     tagline: "Contemporary elegance with warm wood accents",
     budget: "₹42 Lakhs"
@@ -486,7 +486,7 @@ const projectsData: Project[] = [
     ],
     size: "3,200 sq ft",
     completionYear: "2024",
-    isFeatured: true,
+    isFeatured: false,
     designer: "Balaji Design Studio",
     tagline: "Contemporary Elegance with Traditional Soul",
     budget: "₹45,00,000"
@@ -543,7 +543,7 @@ const projectsData: Project[] = [
       "/lovable-uploads/14e8cd81-5c99-433f-ad21-6b55c2143fa7.png",
       "/lovable-uploads/35b73d40-c0e1-4d2c-8446-29b34f03699f.png"
     ],
-    isFeatured: true,
+    isFeatured: false,
     designer: "Balaji Design Studio",
     tagline: "Luxury living with traditional soul and modern sophistication",
     budget: "₹52 Lakhs"
@@ -582,7 +582,7 @@ const projectsData: Project[] = [
       "/lovable-uploads/79effd33-f7d2-495c-8da9-8f3288c8b3d6.png",
       "/lovable-uploads/cb4203dd-a21b-4d10-9ffc-399c47091892.png"
     ],
-    isFeatured: true,
+    isFeatured: false,
     designer: "Balaji Design Studio",
     tagline: "Where Contemporary Meets Comfort"
   },
@@ -635,7 +635,7 @@ const projectsData: Project[] = [
       "/lovable-uploads/90df6891-8260-492e-8216-9682eea42833.png",
       "/lovable-uploads/07b4ad52-30e9-4c34-a345-a91581592116.png"
     ],
-    isFeatured: true,
+    isFeatured: false,
     designer: "Balaji Design Studio",
     tagline: "Corporate excellence with traditional values",
     budget: "₹55 Lakhs"
@@ -693,7 +693,7 @@ const projectsData: Project[] = [
       "/lovable-uploads/e77ae1f7-4f4f-46b2-8e80-98dd6559e11e.png",
       "/lovable-uploads/22b3cfbd-d7d9-403f-aeca-a5f4929dbdde.png"
     ],
-    isFeatured: true,
+    isFeatured: false,
     designer: "Balaji Design Studio",
     tagline: "Traditional elegance meets contemporary luxury",
     budget: "₹52 Lakhs"
@@ -735,7 +735,7 @@ const projectsData: Project[] = [
       "/lovable-uploads/60253a22-7da5-46e2-93f3-c6f21b3df14d.png",
       "/lovable-uploads/0894533e-26c2-49a4-8456-064ce89ad91b.png"
     ],
-    isFeatured: true,
+    isFeatured: false,
     designer: "Balaji Design Studio",
     tagline: "Contemporary family living with personalized elegance",
     budget: "₹42 Lakhs"
@@ -764,7 +764,7 @@ const projectsData: Project[] = [
       "/lovable-uploads/85c35283-3ead-4b1a-a015-733af4904429.png",
       "/lovable-uploads/83bdf3c7-6a22-46bf-8469-7b929ab877e1.png"
     ],
-    isFeatured: true,
+    isFeatured: false,
     designer: "Nirmitee Interior",
     tagline: "Where luxury meets comfort",
     budget: "₹75 Lakhs",
@@ -796,7 +796,7 @@ const projectsData: Project[] = [
       "/lovable-uploads/e11e77e4-34a8-4f68-b246-1b0fea38d124.png",
       "/lovable-uploads/4795aa2b-e958-4b16-8b2f-67506c6a377f.png"
     ],
-    isFeatured: true,
+    isFeatured: false,
     designer: "Balaji Design Studio",
     tagline: "Where fun meets flavor",
     budget: "₹25 Lakhs",
@@ -828,7 +828,7 @@ const projectsData: Project[] = [
       "/lovable-uploads/57291f47-4e6b-4a5f-84b2-f8204245f3a6.png",
       "/lovable-uploads/7443e285-576e-4696-9d41-40158c403f28.png"
     ],
-    isFeatured: true,
+    isFeatured: false,
     designer: "Balaji Design Studio",
     tagline: "Contemporary luxury meets comfort",
     budget: "₹18 Lakhs",
@@ -876,7 +876,7 @@ const projectsData: Project[] = [
       "/lovable-uploads/60eea1f1-d51a-4064-b8b8-74dd56520be0.png",
       "/lovable-uploads/29f4a1e5-931c-4c5d-b34b-0f3b455e654a.png"
     ],
-    isFeatured: true,
+    isFeatured: false,
     designer: "Balaji Design Studio",
     tagline: "Modern luxury living redefined",
     budget: "₹85 Lakhs",
