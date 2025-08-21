@@ -8,6 +8,10 @@ import projectsData from "../data/projectsData";
 
 const HomePage = () => {
   const featuredProjects = projectsData.filter(project => project.isFeatured);
+  
+  // Debug: Log featured projects
+  console.log('Featured Projects:', featuredProjects.map(p => p.title));
+  console.log('Total featured count:', featuredProjects.length);
 
   return (
     <div className="min-h-screen">
