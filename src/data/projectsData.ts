@@ -212,7 +212,7 @@ const projectsData: Project[] = [
       "Luxurious booth seating with tufted leather upholstery",
       "Custom wooden slat partitions for privacy"
     ],
-    images: ["/assets/hero-living-room.jpg"],
+    images: ["/placeholder.svg"],
     isFeatured: false,
     designer: "Balaji Design Studio",
     tagline: "Contemporary hospitality design",
@@ -234,7 +234,7 @@ const projectsData: Project[] = [
       "Modern kitchen with island",
       "Master suite with walk-in closet"
     ],
-    images: ["/assets/project-bedroom.jpg"],
+    images: ["/placeholder.svg"],
     isFeatured: false,
     designer: "Balaji Design Studio",
     tagline: "Sophisticated luxury living",
@@ -256,7 +256,7 @@ const projectsData: Project[] = [
       "Smart lighting systems",
       "Breakout areas and café"
     ],
-    images: ["/assets/project-office.jpg"],
+    images: ["/placeholder.svg"],
     isFeatured: false,
     designer: "Balaji Design Studio",
     tagline: "Future of workspace design",
@@ -278,7 +278,7 @@ const projectsData: Project[] = [
       "Beachfront restaurant",
       "Local art integration"
     ],
-    images: ["/assets/about-team.jpg"],
+    images: ["/placeholder.svg"],
     isFeatured: false,
     designer: "Balaji Design Studio",
     tagline: "Coastal luxury hospitality",
