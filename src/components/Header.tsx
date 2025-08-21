@@ -33,13 +33,9 @@ const Header = ({ isScrolled }: HeaderProps) => {
           {/* Logo */}
           <Link
             to="/"
-            className="flex items-center space-x-3 hover:opacity-80 transition-opacity"
+            className="text-2xl font-playfair font-bold text-darkGray hover:text-roseGold transition-colors"
           >
-            <img
-              src="/lovable-uploads/36cef672-d8a0-49c5-bcd8-ef689a86c7f2.png"
-              alt="Balaji Design Studio"
-              className="h-12 w-auto"
-            />
+            Balaji Design Studio
           </Link>
 
           {/* Desktop Navigation */}

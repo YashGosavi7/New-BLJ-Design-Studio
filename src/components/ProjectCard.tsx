@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import OptimizedImage from "./OptimizedImage";
 
 interface ProjectCardProps {
   id: string;
@@ -32,12 +31,10 @@ const ProjectCard = ({
       className="group block bg-white rounded-lg shadow-lg overflow-hidden hover-lift transition-all duration-300"
     >
       <div className="relative h-64 overflow-hidden">
-        <OptimizedImage
-          src={image}
+        <img 
+          src={image} 
           alt={title}
-          className="group-hover:scale-105 transition-transform duration-300"
-          loading={index < 6 ? "eager" : "lazy"}
-          priority={index < 3}
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <div className="absolute bottom-4 left-4 text-white">
