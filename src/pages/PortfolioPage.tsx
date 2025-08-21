@@ -2,15 +2,10 @@ import { useState, useMemo } from "react";
 import ProjectCard from "../components/ProjectCard";
 import SectionTitle from "../components/SectionTitle";
 import PortfolioFilter from "../components/PortfolioFilter";
-import LazySection from "../components/LazySection";
 import projectsData from "../data/projectsData";
-import { usePerformanceMonitor, trackPerformance } from "@/hooks/usePerformanceMonitor";
 
 const PortfolioPage = () => {
   const [activeCategory, setActiveCategory] = useState("All");
-  
-  // Track performance metrics
-  const metrics = usePerformanceMonitor();
 
   const categories = useMemo(() => {
     const cats = ["All", ...new Set(projectsData.map(project => project.category))];
@@ -18,12 +13,10 @@ const PortfolioPage = () => {
   }, []);
 
   const filteredProjects = useMemo(() => {
-    trackPerformance('portfolio-filter-start');
-    const result = activeCategory === "All" 
-      ? projectsData 
-      : projectsData.filter(project => project.category === activeCategory);
-    trackPerformance('portfolio-filter-end');
-    return result;
+    if (activeCategory === "All") {
+      return projectsData;
+    }
+    return projectsData.filter(project => project.category === activeCategory);
   }, [activeCategory]);
 
   return (
@@ -41,7 +34,7 @@ const PortfolioPage = () => {
           onCategoryChange={setActiveCategory}
         />
 
-        <LazySection className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map((project, index) => (
             <ProjectCard
               key={project.id}
@@ -57,7 +50,7 @@ const PortfolioPage = () => {
               index={index}
             />
           ))}
-        </LazySection>
+        </div>
       </div>
     </div>
   );
