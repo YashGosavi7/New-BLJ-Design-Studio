@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Home, Building2, Hotel } from "lucide-react";
 
 interface ProjectCardProps {
   id: string;
@@ -13,6 +14,19 @@ interface ProjectCardProps {
   completionYear?: string;
 }
 
+const getCategoryIcon = (category: string) => {
+  switch (category.toLowerCase()) {
+    case 'residential':
+      return Home;
+    case 'commercial':
+      return Building2;
+    case 'hospitality':
+      return Hotel;
+    default:
+      return Home;
+  }
+};
+
 const ProjectCard = ({
   id,
   title,
@@ -25,6 +39,7 @@ const ProjectCard = ({
   size,
   completionYear
 }: ProjectCardProps) => {
+  const CategoryIcon = getCategoryIcon(category);
   return (
     <Link 
       to={`/portfolio/${id}`}
@@ -47,7 +62,8 @@ const ProjectCard = ({
       
       <div className="p-6">
         <div className="flex items-center justify-between mb-2">
-          <span className="text-sm text-roseGold font-medium bg-roseGold/10 px-3 py-1 rounded-full">
+          <span className="flex items-center gap-1.5 text-sm text-roseGold font-medium bg-roseGold/10 px-3 py-1 rounded-full">
+            <CategoryIcon size={14} />
             {category}
           </span>
           {completionYear && (
