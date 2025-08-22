@@ -645,6 +645,8 @@ const projectsData: Project[] = [
       "Smart storage solutions"
     ],
     images: [
+      "/lovable-uploads/0114d738-dd2a-45a3-aff2-97b49272de86.png",
+      "/lovable-uploads/f42fecc4-74ca-489d-844e-1bd9db335293.png",
       "/lovable-uploads/a1a573cc-2a79-4123-b45d-5213c35bdf94.png",
       "/lovable-uploads/db1211e7-0f8e-4999-a68d-1769f9d22519.png",
       "/lovable-uploads/945a3894-1539-46c8-93ea-53b046986049.png",
@@ -658,6 +660,39 @@ const projectsData: Project[] = [
     designer: "Balaji Design Studio",
     tagline: "Contemporary elegance meets functional design",
     budget: "₹45 Lakhs"
+  },
+  {
+    id: "fly-air-enjoy-club",
+    title: "Fly Air Enjoy Club",
+    category: "Hospitality",
+    location: "Maharashtra, India", 
+    size: "8,000 sq ft",
+    completionYear: "2024",
+    description: "A modern entertainment and dining complex featuring a sophisticated bar area, outdoor lounge seating, dance floor, and multiple dining zones. The design incorporates rustic wood elements with contemporary lighting and green spaces.",
+    features: [
+      "Modern bar with premium wood finishes",
+      "Outdoor terrace seating with pergola",
+      "Central dance floor with lighting effects",
+      "DJ seating area with professional setup",
+      "Multiple dining zones and hut seating",
+      "Vertical garden elements",
+      "Industrial pendant lighting",
+      "Hookah lounge areas",
+      "Open-air design with natural ventilation"
+    ],
+    images: [
+      "/lovable-uploads/2f21a593-3561-4b74-b82f-b10910db1229.png",
+      "/lovable-uploads/c772c558-68dd-411e-8d7d-b0b94c9e7bb5.png",
+      "/lovable-uploads/f064a032-0c45-4d2d-8235-49ec5d82c61f.png",
+      "/lovable-uploads/41f093ec-d8c2-4e04-a226-bf64b65ff664.png",
+      "/lovable-uploads/bb9eefa8-da14-4fad-b10a-fc65c99d5889.png",
+      "/lovable-uploads/146e13f9-1b8a-4b3a-8445-5ccefc6171c0.png",
+      "/lovable-uploads/07b11bef-278b-440e-a63e-a1e27974f75d.png"
+    ],
+    isFeatured: true,
+    designer: "Balaji Design Studio",
+    tagline: "Where entertainment meets exceptional design",
+    budget: "₹75 Lakhs"
   }
 ];
 
