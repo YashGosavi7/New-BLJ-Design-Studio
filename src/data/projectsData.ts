@@ -576,12 +576,45 @@ const projectsData: Project[] = [
       "/lovable-uploads/f3c7605d-6dc7-4643-8c07-8db02ed529c3.png",
       "/lovable-uploads/d49751d1-3e1d-4671-9000-07c8a5d918bb.png",
       "/lovable-uploads/74a686e2-5a70-4490-b693-1a090dfbd671.png",
-      "/lovable-uploads/f1f93f1f-9fdd-4db4-9cc4-ac71fef435a1.png"
+      "/lovable-uploads/f1f93f1f-9fdd-4db4-9cc4-ac71fef435a1.png",
+      "/lovable-uploads/054db8a0-5402-419e-aedb-2a6bc30d575b.png",
+      "/lovable-uploads/50372d67-8361-4552-80e0-8c8f2ea056ae.png",
+      "/lovable-uploads/0dccb63b-15bf-45c3-a136-a97ea770a6e2.png"
     ],
     isFeatured: true,
     designer: "Balaji Design Studio",
     tagline: "Innovation meets inspiration in modern workspace design",
     budget: "₹60 Lakhs"
+  }
+,
+    id: "ashish-alhat-banquet-hall",
+    title: "Ashish Alhat Banquet Hall",
+    category: "Hospitality",
+    location: "Maharashtra, India",
+    size: "12,000 sq ft",
+    completionYear: "2024",
+    description: "A grand banquet hall featuring classical detailing, crystal chandeliers, library-style shelving, and a central stage with iconic backdrop—designed for ceremonies and large gatherings.",
+    features: [
+      "Grand chandelier lighting",
+      "Classical mouldings and decorative columns",
+      "Library-themed wall shelving",
+      "Red carpet ceremonial aisle",
+      "Stage with iconic backdrop and podium",
+      "Premium marble and wood finishes",
+      "Warm ambient lighting",
+      "Comfortable lounge seating"
+    ],
+    images: [
+      "/lovable-uploads/3e6300e5-a8db-42ab-a425-a4ee7d45bdc3.png",
+      "/lovable-uploads/17a2f169-a6bf-4f62-8055-b351abba314d.png",
+      "/lovable-uploads/5c32d0f2-b2af-4632-b5f8-eae567bd8a9f.png",
+      "/lovable-uploads/73dac1f4-ea66-4870-aa40-88cc636c7018.png",
+      "/lovable-uploads/0d2001e6-cb3e-43d9-bc5a-da2544dd8a0a.png",
+      "/lovable-uploads/2201b092-fe10-4df3-afcf-04ba790b7c6c.png"
+    ],
+    isFeatured: true,
+    designer: "Balaji Design Studio",
+    tagline: "Grand classical banquet interiors"
   }
 ];
 
