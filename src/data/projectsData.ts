@@ -605,6 +605,7 @@ const projectsData: Project[] = [
       "Comfortable lounge seating"
     ],
     images: [
+      "/lovable-uploads/71b9f8c1-1384-4052-b568-f492c508f635.png",
       "/lovable-uploads/3e6300e5-a8db-42ab-a425-a4ee7d45bdc3.png",
       "/lovable-uploads/17a2f169-a6bf-4f62-8055-b351abba314d.png",
       "/lovable-uploads/5c32d0f2-b2af-4632-b5f8-eae567bd8a9f.png",
@@ -624,6 +625,39 @@ const projectsData: Project[] = [
     isFeatured: true,
     designer: "Balaji Design Studio",
     tagline: "Grand classical banquet interiors"
+  },
+  {
+    id: "atul-ambale-residence",
+    title: "Atul Ambale Residence",
+    category: "Residential",
+    location: "Maharashtra, India",
+    size: "3,500 sq ft",
+    completionYear: "2024",
+    description: "A sophisticated residential interior featuring contemporary design with warm wood tones, elegant lighting, and thoughtful space planning. The project showcases modern living spaces with traditional touches.",
+    features: [
+      "Modern entrance with personalized branding",
+      "Open-plan living and dining areas",
+      "Contemporary modular kitchen",
+      "Master bedroom with wooden paneling",
+      "Luxurious false ceiling designs",
+      "Integrated lighting solutions",
+      "Premium wood and marble finishes",
+      "Smart storage solutions"
+    ],
+    images: [
+      "/lovable-uploads/a1a573cc-2a79-4123-b45d-5213c35bdf94.png",
+      "/lovable-uploads/db1211e7-0f8e-4999-a68d-1769f9d22519.png",
+      "/lovable-uploads/945a3894-1539-46c8-93ea-53b046986049.png",
+      "/lovable-uploads/bdd88055-1fa2-4908-bd6e-9f2f1115555d.png",
+      "/lovable-uploads/130722fa-9667-4e4a-a97c-e539a7a23dba.png",
+      "/lovable-uploads/1300514f-52c9-422f-8942-ec89cdf7c3c5.png",
+      "/lovable-uploads/deb8db50-6ba2-4e64-973b-7972dbc3de6a.png",
+      "/lovable-uploads/a2bfa50d-61a4-4d31-80d6-9dc8e30c4619.png"
+    ],
+    isFeatured: true,
+    designer: "Balaji Design Studio",
+    tagline: "Contemporary elegance meets functional design",
+    budget: "₹45 Lakhs"
   }
 ];
 
