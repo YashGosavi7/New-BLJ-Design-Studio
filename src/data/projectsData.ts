@@ -585,8 +585,8 @@ const projectsData: Project[] = [
     designer: "Balaji Design Studio",
     tagline: "Innovation meets inspiration in modern workspace design",
     budget: "₹60 Lakhs"
-  }
-,
+  },
+  {
     id: "ashish-alhat-banquet-hall",
     title: "Ashish Alhat Banquet Hall",
     category: "Hospitality",
