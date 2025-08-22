@@ -696,12 +696,44 @@ const projectsData: Project[] = [
       "/lovable-uploads/f05a7d48-5904-4498-8225-21cb46c98f73.png",
       "/lovable-uploads/7a1a36df-bd02-4166-b29e-40375e763851.png",
       "/lovable-uploads/f7d0155a-5e4d-4045-98a1-1f640977ff55.png",
-      "/lovable-uploads/da11e91e-756f-4285-90e1-79ef31a600f5.png"
+      "/lovable-uploads/da11e91e-756f-4285-90e1-79ef31a600f5.png",
+      "/lovable-uploads/55a1de30-9995-491c-8306-fb8eebccda54.png",
+      "/lovable-uploads/74b5c7f5-ca8d-4f5f-a158-b19c0b745e65.png",
+      "/lovable-uploads/165f5919-74d6-4659-a24c-8c86de78d2f7.png"
     ],
     isFeatured: true,
     designer: "Balaji Design Studio",
     tagline: "Where entertainment meets exceptional design",
     budget: "₹75 Lakhs"
+  },
+  {
+    id: "hotel-knight-rider",
+    title: "Hotel Knight Rider",
+    category: "Hospitality",
+    location: "Maharashtra, India",
+    size: "10,500 sq ft",
+    completionYear: "2023",
+    description: "A vibrant restaurant and lounge experience blending industrial textures with warm wooden tones, illuminated accents, and semi-private booth seating. The design balances energetic nightlife vibes with comfortable dining areas.",
+    features: [
+      "Signature bar counter with illuminated signage",
+      "Restaurant & lounge seating with green accents",
+      "Artful wall installations and bottle displays",
+      "Outdoor forecourt with greenery and canopies",
+      "Semi-private jali-partition booths",
+      "Warm ambient and cove lighting"
+    ],
+    images: [
+      "/lovable-uploads/2bb9bef5-abd4-46b3-b5b9-ddb92f953bff.png",
+      "/lovable-uploads/a245369d-17d1-4392-8cd8-edb46c74cb6b.png",
+      "/lovable-uploads/71a322b2-2983-4a0c-b920-cd672e1bb69f.png",
+      "/lovable-uploads/655804bd-5059-45a8-a3a2-2d9456544dd7.png",
+      "/lovable-uploads/35ebc78f-5ecc-4c90-934d-2e4eb96723eb.png",
+      "/lovable-uploads/fb23776d-6bd3-486e-a5ee-827e911d6373.png"
+    ],
+    isFeatured: true,
+    designer: "Balaji Design Studio",
+    tagline: "Bold hospitality experience",
+    budget: "₹1 Crore"
   }
 ];
 
