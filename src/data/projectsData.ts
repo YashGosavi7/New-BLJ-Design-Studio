@@ -853,6 +853,45 @@ const projectsData: Project[] = [
     completionYear: "2024",
     budget: "₹18 Lakh",
     client: "Mountain Lodge Resort"
+  },
+  {
+    id: "mr-dapke-residence",
+    title: "Mr. Dapke Family Residence",
+    category: "Residential",
+    location: "Mumbai, Maharashtra",
+    description: "A contemporary family residence showcasing sophisticated modern design with warm neutral tones, premium materials, and functional elegance. The project features custom entrance solutions, open-plan living spaces, and a state-of-the-art kitchen designed for modern family living.",
+    features: [
+      "Custom wooden entrance door with personalized family nameplate",
+      "Modern console unit with decorative display shelving",
+      "Contemporary living room with marble accent walls",
+      "Premium beige leather seating with modern coffee table",
+      "Integrated entertainment unit with marble backdrop",
+      "Classical artwork collection with sophisticated framing",
+      "Cove lighting with warm LED strips throughout",
+      "Open-plan kitchen with hexagonal tile backsplash",
+      "Handleless kitchen cabinets in warm beige tones",
+      "Premium stainless steel appliances and built-in refrigerator",
+      "White quartz countertops with undermount lighting",
+      "Seamless indoor-outdoor flow with modern ceiling fans"
+    ],
+    images: [
+      "/lovable-uploads/97a2db0a-5871-42fd-8761-1800e58f3fd6.png",
+      "/lovable-uploads/62181b34-3fc7-4629-8d19-14785b8bd764.png",
+      "/lovable-uploads/cd0d07da-19b8-4eea-a381-d2ac7f2f21dc.png",
+      "/lovable-uploads/527c5837-d756-434d-a47e-f0a303ab7d63.png",
+      "/lovable-uploads/c9dd3373-d898-4de9-ae57-667ecc7c4508.png",
+      "/lovable-uploads/b9a5fb4b-99f2-4f66-95b6-27a65ad071ce.png",
+      "/lovable-uploads/69488671-e809-43c1-84b3-ba7d8a457718.png",
+      "/lovable-uploads/1844b030-d5f4-4138-b11c-d337bbdbf5c9.png",
+      "/lovable-uploads/7c45b5c3-0731-404b-a218-980f6b969b38.png"
+    ],
+    isFeatured: true,
+    designer: "Nirmitee Interior",
+    tagline: "Contemporary elegance meets family comfort",
+    size: "2,800 sq ft",
+    completionYear: "2024",
+    budget: "₹45 Lakh",
+    client: "Mr. Dapke Family"
   }
 ];
 
