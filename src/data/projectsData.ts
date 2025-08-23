@@ -961,6 +961,37 @@ const projectsData: Project[] = [
     completionYear: "2024",
     budget: "₹55 Lakh",
     client: "Mr. Gaikwad Family"
+  },
+  {
+    id: "suraj-chavat-residence",
+    title: "Mr. Suraj Chavat",
+    category: "Residential",
+    location: "Pune, Maharashtra",
+    description: "A refined master suite with luxurious bedroom interiors and a minimalist walk-in wardrobe. The design blends warm textures, marble accents, and soft ambient lighting to create a serene, high-end living experience.",
+    features: [
+      "Luxurious master bedroom with upholstered bed and layered bedding",
+      "Backlit marble accent wall with elegant grooves",
+      "Cove ceiling with recessed and strip lighting",
+      "Wall-mounted TV unit with marble backdrop",
+      "Full-height blackout drapery for acoustic comfort",
+      "Pair of terracotta lounge chairs for seating corner",
+      "Walk-in wardrobe with glass shutters and black trims",
+      "LED-lit shelving and organized closet layout"
+    ],
+    images: [
+      "/lovable-uploads/c9d4dfc6-16c0-40a2-bb4a-f614440773a4.png",
+      "/lovable-uploads/49dade7a-fa74-407d-84cb-65e52b9090ce.png",
+      "/lovable-uploads/91ed4d54-9081-4bb6-867f-5375cc885a23.png",
+      "/lovable-uploads/973263b4-3166-4027-b6c2-daab0ecd8a9e.png",
+      "/lovable-uploads/0f3449c8-c088-4923-b0d9-48184d87a9f1.png",
+      "/lovable-uploads/f604fd28-fe59-4c1d-960c-f72448bd6ef0.png",
+      "/lovable-uploads/e49721cf-f8e6-4a93-9303-38d091ede3d1.png"
+    ],
+    isFeatured: true,
+    tagline: "Modern master suite with walk-in wardrobe",
+    size: "2,400 sq ft",
+    completionYear: "2025",
+    client: "Mr. Suraj Chavat"
   }
 ];
 
