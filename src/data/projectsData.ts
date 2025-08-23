@@ -119,17 +119,7 @@ const projectsData: Project[] = [
       "Luxurious booth seating with tufted leather upholstery",
       "Custom wooden slat partitions for privacy"
     ],
-    images: [
-      "/lovable-uploads/2e804fb0-ded7-45e5-9f66-1b8b7a7db5f3.png",
-      "/lovable-uploads/13013ee4-b6f2-4185-bf4c-b0bf1df47376.png",
-      "/lovable-uploads/3190caf6-a4bb-4bd9-bc17-0a431181ea27.png",
-      "/lovable-uploads/42692b8a-a1f9-4eec-b743-2572aa3b42d2.png",
-      "/lovable-uploads/38ae6898-3904-4b87-8992-930e2a41780f.png",
-      "/lovable-uploads/ce13bcb7-8776-4777-9b53-c2784384f1cc.png",
-      "/lovable-uploads/4d334534-99b9-4ffb-a658-4e039ab197ae.png",
-      "/lovable-uploads/d595e80c-5e1a-4f26-8f29-611f98e546de.png",
-      "/lovable-uploads/62574016-f798-47a9-9ebf-afbbca95f307.png"
-    ],
+    images: ["/assets/hero-living-room.jpg"],
     isFeatured: true,
     designer: "Balaji Design Studio",
     tagline: "Contemporary hospitality design",
