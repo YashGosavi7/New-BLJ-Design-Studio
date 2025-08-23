@@ -784,6 +784,41 @@ const projectsData: Project[] = [
     completionYear: "2024",
     budget: "$45,000",
     client: "Premium Hotels Group"
+  },
+  {
+    id: "modern-ice-cream-shop",
+    title: "Modern Ice Cream Shop",
+    category: "Commercial",
+    location: "Retail District",
+    description: "A vibrant and contemporary ice cream parlor featuring playful design elements with colorful cube pendant lighting, modern counter displays, and comfortable seating areas. The design combines functionality with a fun, welcoming atmosphere that appeals to customers of all ages.",
+    features: [
+      "Colorful geometric pendant lighting installation",
+      "Modern display freezers with glass tops",
+      "Black and white chevron pattern counter design",
+      "Contemporary seating with wooden benches",
+      "Branded wall graphics and menu displays",
+      "Clean gray tile wainscoting throughout",
+      "Efficient self-service counter layout",
+      "Bright and welcoming color scheme",
+      "Modern storage and operational areas",
+      "Large windows for natural light"
+    ],
+    images: [
+      "/lovable-uploads/e3eb4ac3-80c9-4167-99b8-1272646e0f5d.png",
+      "/lovable-uploads/cbe9e5f3-ea82-4237-a2fe-e3962bc0737d.png",
+      "/lovable-uploads/76b6fe4a-ead4-46e3-a075-c932979a51a3.png",
+      "/lovable-uploads/8f871dcf-6110-45ab-88d3-49d074313b80.png",
+      "/lovable-uploads/09b80edb-3f9c-4fc4-b54a-7d888fe2f615.png",
+      "/lovable-uploads/2d54eabb-50e8-4409-9e9a-7d75921a6700.png",
+      "/lovable-uploads/0b940a4e-96c1-40ee-b68b-c870021a10c6.png"
+    ],
+    isFeatured: true,
+    designer: "Commercial Design Studio",
+    tagline: "Sweet design meets modern retail experience",
+    size: "800 sq ft",
+    completionYear: "2024",
+    budget: "₹25 Lakh",
+    client: "Artisan Ice Cream Co."
   }
 ];
 
