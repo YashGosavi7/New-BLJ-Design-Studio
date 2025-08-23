@@ -859,7 +859,7 @@ const projectsData: Project[] = [
     title: "Mr. Dapke Family Residence",
     category: "Residential",
     location: "Mumbai, Maharashtra",
-    description: "A contemporary family residence showcasing sophisticated modern design with warm neutral tones, premium materials, and functional elegance. The project features custom entrance solutions, open-plan living spaces, and a state-of-the-art kitchen designed for modern family living.",
+    description: "A contemporary family residence showcasing sophisticated modern design with warm neutral tones, premium materials, and functional elegance. The project features custom entrance solutions, open-plan living spaces, state-of-the-art kitchen, luxurious bedrooms, and thoughtfully designed children's spaces.",
     features: [
       "Custom wooden entrance door with personalized family nameplate",
       "Modern console unit with decorative display shelving",
@@ -872,6 +872,13 @@ const projectsData: Project[] = [
       "Handleless kitchen cabinets in warm beige tones",
       "Premium stainless steel appliances and built-in refrigerator",
       "White quartz countertops with undermount lighting",
+      "Master bedroom with upholstered headboard and pendant lighting",
+      "Custom built-in wardrobes with mixed material finishes",
+      "Elegant Roman blinds with integrated window treatments",
+      "Designer ceiling fans with modern architectural details",
+      "Children's room with football-themed storage solutions",
+      "Dedicated study area with cork board and task lighting",
+      "Built-in display shelves with integrated LED lighting",
       "Seamless indoor-outdoor flow with modern ceiling fans"
     ],
     images: [
@@ -883,7 +890,15 @@ const projectsData: Project[] = [
       "/lovable-uploads/b9a5fb4b-99f2-4f66-95b6-27a65ad071ce.png",
       "/lovable-uploads/69488671-e809-43c1-84b3-ba7d8a457718.png",
       "/lovable-uploads/1844b030-d5f4-4138-b11c-d337bbdbf5c9.png",
-      "/lovable-uploads/7c45b5c3-0731-404b-a218-980f6b969b38.png"
+      "/lovable-uploads/7c45b5c3-0731-404b-a218-980f6b969b38.png",
+      "/lovable-uploads/e718b1c0-0b37-4919-be56-0a86a64733b5.png",
+      "/lovable-uploads/1614cc82-8ea6-4897-af24-47a3ed3903e7.png",
+      "/lovable-uploads/84a0d741-a351-4d21-b5e1-41b9878de0f3.png",
+      "/lovable-uploads/5ec6bf94-1ecf-4601-a925-47584529ff4a.png",
+      "/lovable-uploads/d12df966-44d9-445d-bf91-e48cc279b256.png",
+      "/lovable-uploads/123bdb01-cf16-4012-9d43-6276e795001c.png",
+      "/lovable-uploads/c8ff8600-40f7-4222-ae39-808b98dd7418.png",
+      "/lovable-uploads/4f0cd6c4-0ea8-4604-bc59-c000cc95cc91.png"
     ],
     isFeatured: true,
     designer: "Nirmitee Interior",
