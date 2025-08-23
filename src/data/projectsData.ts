@@ -1037,7 +1037,11 @@ const projectsData: Project[] = [
       "/lovable-uploads/d7d3723f-eaca-4040-b034-68943faf1ce9.png",
       "/lovable-uploads/c72884d9-9339-484d-9fe8-523ff95f665a.png",
       "/lovable-uploads/574a5f48-98a5-49d0-9032-8d132bc38a69.png",
-      "/lovable-uploads/432cbd8f-47ed-42de-9e3a-ed4364884533.png"
+      "/lovable-uploads/432cbd8f-47ed-42de-9e3a-ed4364884533.png",
+      "/lovable-uploads/8a553d9c-f22a-44d4-a659-afdba7e4fc06.png",
+      "/lovable-uploads/d9fbd31b-7d5f-46ce-8f14-c97760d33658.png",
+      "/lovable-uploads/baf5bed0-a0bc-4714-ad2e-c6006301ec56.png",
+      "/lovable-uploads/3179c841-cba1-4a07-986a-23fd2d81233d.png"
     ],
     isFeatured: true,
     tagline: "Contemporary residential design with modern elegance",
