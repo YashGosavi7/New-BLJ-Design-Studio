@@ -945,7 +945,14 @@ const projectsData: Project[] = [
       "/lovable-uploads/6264197e-2e2f-4a74-96eb-a79f27f573df.png",
       "/lovable-uploads/d521eca4-795d-4de6-af90-4a08acf79482.png",
       "/lovable-uploads/44e8c4d7-15b1-4931-ac8f-fcaed61f0e27.png",
-      "/lovable-uploads/f726d216-eb90-46b1-8f61-1cc472eb544f.png"
+      "/lovable-uploads/f726d216-eb90-46b1-8f61-1cc472eb544f.png",
+      "/lovable-uploads/62649e74-9e33-4cf8-93c8-a5a7e374e912.png",
+      "/lovable-uploads/9f7840f9-a43e-4bcf-aaa0-2060b60abbd7.png",
+      "/lovable-uploads/309008c9-85de-4524-9a2f-5fcc54b3b092.png",
+      "/lovable-uploads/9bc49f57-886b-4bd7-b23d-727def7c7c5e.png",
+      "/lovable-uploads/6764bb7a-87a7-41e4-97ca-b115bf771390.png",
+      "/lovable-uploads/f23509e4-d8ca-4745-ad2d-2b34087f9108.png",
+      "/lovable-uploads/35f76954-b8df-4d98-9352-6484258b855d.png"
     ],
     isFeatured: true,
     designer: "Nirmitee Interior",
