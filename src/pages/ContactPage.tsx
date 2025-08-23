@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, Loader2 } from "lucide-react";
+import { useContactForm } from "@/hooks/useContactForm";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -10,6 +11,8 @@ const ContactPage = () => {
     message: ""
   });
 
+  const { isSubmitting, submitForm } = useContactForm();
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
       ...formData,
@@ -17,10 +20,20 @@ const ContactPage = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted:", formData);
+    
+    const success = await submitForm(formData);
+    if (success) {
+      // Reset form on successful submission
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        subject: "",
+        message: ""
+      });
+    }
   };
 
   return (
@@ -170,9 +183,11 @@ const ContactPage = () => {
 
               <button
                 type="submit"
-                className="w-full bg-roseGold text-white py-3 px-6 rounded-lg hover:bg-roseGold/90 transition-colors font-medium"
+                disabled={isSubmitting}
+                className="w-full bg-roseGold text-white py-3 px-6 rounded-lg hover:bg-roseGold/90 transition-colors font-medium disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
               >
-                Send Message
+                {isSubmitting && <Loader2 className="h-4 w-4 animate-spin" />}
+                {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>
             </form>
           </div>
