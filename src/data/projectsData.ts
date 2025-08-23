@@ -751,6 +751,39 @@ const projectsData: Project[] = [
     designer: "Balaji Design Studio",
     tagline: "Bold hospitality experience",
     budget: "₹1 Crore"
+  },
+  {
+    id: "hotel-room-premium",
+    title: "Premium Hotel Room",
+    category: "Hospitality",
+    location: "Modern Hotel",
+    description: "A sophisticated hotel room design featuring contemporary elegance with warm wood tones, neutral palettes, and functional workspace integration. This premium accommodation combines comfort with modern aesthetics, creating an inviting atmosphere for discerning guests.",
+    features: [
+      "Contemporary wooden furniture with natural finish",
+      "Integrated workspace with built-in desk",
+      "Neutral color palette with warm accent lighting",
+      "Modern entertainment and storage solutions",
+      "Luxurious bedding and textile selection",
+      "Efficient space planning for comfort and functionality",
+      "Premium marble and wood material combinations",
+      "Ambient lighting with LED strip accents"
+    ],
+    images: [
+      "/lovable-uploads/c3a5895a-2957-4737-af65-ed9ab0d5965d.png",
+      "/lovable-uploads/55830752-c63c-4092-b521-6090af65d025.png",
+      "/lovable-uploads/eb5f3ae3-78e5-40e1-9715-f82dbdf5e4c5.png",
+      "/lovable-uploads/40223f05-f5de-4067-b03e-63ecff1eeefb.png",
+      "/lovable-uploads/e4aab451-64be-43cd-a18e-b0505262c39e.png",
+      "/lovable-uploads/e05ae03a-30b1-4257-a29c-f1c471a297c4.png",
+      "/lovable-uploads/e3647674-4fac-4427-a7ab-dbc07b327ec6.png"
+    ],
+    isFeatured: true,
+    designer: "Interior Design Studio",
+    tagline: "Contemporary luxury meets functional design",
+    size: "350 sq ft",
+    completionYear: "2024",
+    budget: "$45,000",
+    client: "Premium Hotels Group"
   }
 ];
 
