@@ -992,6 +992,40 @@ const projectsData: Project[] = [
     size: "2,400 sq ft",
     completionYear: "2025",
     client: "Mr. Suraj Chavat"
+  },
+  {
+    id: "datta-ghule-residence",
+    title: "Datta Ghule",
+    category: "Residential",
+    location: "Mumbai, Maharashtra",
+    description: "A contemporary residential design featuring modern living spaces with elegant finishes and thoughtful interior design. The project showcases a blend of comfort and style with premium materials and sophisticated lighting solutions.",
+    features: [
+      "Modern living room with contemporary furniture",
+      "Open kitchen design with premium appliances",
+      "Elegant dining area with statement lighting",
+      "Luxurious bedroom with custom storage solutions",
+      "Spa-like bathroom with high-end fixtures",
+      "Walk-in wardrobe with organized storage",
+      "Premium flooring and wall finishes",
+      "Integrated lighting design throughout",
+      "Custom furniture and built-in solutions"
+    ],
+    images: [
+      "/placeholder.svg",
+      "/placeholder.svg",
+      "/placeholder.svg",
+      "/placeholder.svg",
+      "/placeholder.svg",
+      "/placeholder.svg",
+      "/placeholder.svg",
+      "/placeholder.svg",
+      "/placeholder.svg"
+    ],
+    isFeatured: true,
+    tagline: "Contemporary residential design with modern elegance",
+    size: "3,200 sq ft",
+    completionYear: "2024",
+    client: "Datta Ghule"
   }
 ];
 
