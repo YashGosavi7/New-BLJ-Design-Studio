@@ -819,6 +819,40 @@ const projectsData: Project[] = [
     completionYear: "2024",
     budget: "₹25 Lakh",
     client: "Artisan Ice Cream Co."
+  },
+  {
+    id: "luxury-lodge-accommodation",
+    title: "Luxury Lodge Accommodation",
+    category: "Hospitality",
+    location: "Hill Station Resort",
+    description: "An exquisite lodge accommodation featuring premium interior design with rich wooden finishes, elegant drapery, and sophisticated bathroom amenities. The design combines luxury hospitality standards with cozy lodge aesthetics, creating an intimate and upscale guest experience.",
+    features: [
+      "Premium wooden furniture with rich walnut finishes",
+      "Luxurious floor-to-ceiling curtains with elegant tiebacks",
+      "Built-in entertainment unit with flat-screen TV",
+      "Comfortable seating area with plush armchairs",
+      "Marble bathroom with premium fixtures",
+      "Glass-enclosed shower with modern rainfall showerhead",
+      "Textured accent walls with sophisticated lighting",
+      "Custom wooden door with traditional room numbering",
+      "Floating shelves with decorative elements",
+      "Professional hospitality-grade lighting design"
+    ],
+    images: [
+      "/lovable-uploads/54001f0d-760f-41c5-a6bf-2c41047847fb.png",
+      "/lovable-uploads/7e1619a7-66ed-4ae6-8b2c-cf7ae62803c7.png",
+      "/lovable-uploads/631edee1-085a-4b21-adcb-2fd9bb1b4726.png",
+      "/lovable-uploads/67d51982-28e8-4bf7-8212-456d9a82542c.png",
+      "/lovable-uploads/ab73aec4-c7e4-499b-b0d5-5d8e927d2f30.png",
+      "/lovable-uploads/b97bfef4-1630-415a-9866-053ff222a44c.png"
+    ],
+    isFeatured: true,
+    designer: "Nirmitee Interior",
+    tagline: "Luxury hospitality with traditional lodge charm",
+    size: "450 sq ft",
+    completionYear: "2024",
+    budget: "₹18 Lakh",
+    client: "Mountain Lodge Resort"
   }
 ];
 
