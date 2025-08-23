@@ -1011,15 +1011,15 @@ const projectsData: Project[] = [
       "Custom furniture and built-in solutions"
     ],
     images: [
-      "/placeholder.svg",
-      "/placeholder.svg",
-      "/placeholder.svg",
-      "/placeholder.svg",
-      "/placeholder.svg",
-      "/placeholder.svg",
-      "/placeholder.svg",
-      "/placeholder.svg",
-      "/placeholder.svg"
+      "/lovable-uploads/d5fcb2fb-9d85-40ca-a0f1-fdc0c56e0750.png",
+      "/lovable-uploads/2e7ca853-bcae-4703-867a-0742cec4b193.png",
+      "/lovable-uploads/63b2c785-3e0e-4c57-8ef9-a879df074a5b.png",
+      "/lovable-uploads/25cca959-490c-4310-afc8-78f45a4c8b55.png",
+      "/lovable-uploads/60cabbce-04a7-46af-a963-181cc4e47501.png",
+      "/lovable-uploads/25f5e791-de55-4085-8b45-9b025b758d54.png",
+      "/lovable-uploads/0ca9b840-278e-4a2c-b1da-b5fd60a7f9b2.png",
+      "/lovable-uploads/72b7ea26-54eb-445f-8abd-c041270dd009.png",
+      "/lovable-uploads/ff293396-9232-4616-be11-1f5e9cf72a17.png"
     ],
     isFeatured: true,
     tagline: "Contemporary residential design with modern elegance",
