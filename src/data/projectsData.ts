@@ -907,6 +907,44 @@ const projectsData: Project[] = [
     completionYear: "2024",
     budget: "₹45 Lakh",
     client: "Mr. Dapke Family"
+  },
+  {
+    id: "gaikwad-residence-2024",
+    title: "Mr. Gaikwad Family Residence",
+    category: "Residential",
+    location: "Mumbai, Maharashtra",
+    description: "An elegant residential project showcasing luxurious modern design with traditional Indian elements. Features sophisticated entrance design, premium interior spaces with rich wood finishes, marble flooring, and carefully curated lighting creating a perfect blend of contemporary comfort and cultural aesthetics.",
+    features: [
+      "Grand entrance with decorative grille work and landscape lighting",
+      "Multi-level entrance steps with marble and stone finishes",
+      "Custom wooden main door with traditional brass elements",
+      "Interior foyer with stunning checkered marble flooring",
+      "Decorative wall art featuring traditional Indian motifs",
+      "Built-in display niches with accent lighting",
+      "Luxurious living room with curved sectional seating",
+      "Premium entertainment unit with integrated storage",
+      "Rich wood ceiling with linear LED lighting",
+      "Floor-to-ceiling curtains with elegant drapery",
+      "Marble accent walls with decorative paneling"
+    ],
+    images: [
+      "/lovable-uploads/888cc0b1-4bc9-45e9-9a5c-2a66f49b76c6.png",
+      "/lovable-uploads/a70b0095-b8dc-4e41-a633-317b1993c5b0.png",
+      "/lovable-uploads/e7cc2fec-92ee-40d3-bd9f-f74c139099b2.png",
+      "/lovable-uploads/84a7f395-829b-4931-8b62-443cf4a3adf5.png",
+      "/lovable-uploads/a3254d13-31e9-4a02-b0b1-97c077d3a06a.png",
+      "/lovable-uploads/cf3323f4-07c6-4846-a9c8-f3e6d9fe8e8f.png",
+      "/lovable-uploads/6e79074c-185d-4754-8dc1-65b55d12517b.png",
+      "/lovable-uploads/3108fbaa-a5dd-4276-89bf-28149fe5b60d.png",
+      "/lovable-uploads/d7daeeb0-10d4-4382-a2b5-70f813f6badf.png"
+    ],
+    isFeatured: true,
+    designer: "Nirmitee Interior",
+    tagline: "Luxury meets tradition in modern living",
+    size: "3,200 sq ft",
+    completionYear: "2024",
+    budget: "₹55 Lakh",
+    client: "Mr. Gaikwad Family"
   }
 ];
 
