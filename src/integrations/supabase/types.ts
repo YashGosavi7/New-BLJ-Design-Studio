@@ -10,96 +10,20 @@ export type Database = {
   // Allows to automatically instantiate createClient with right options
   // instead of createClient<Database, { PostgrestVersion: 'XX' }>(URL, KEY)
   __InternalSupabase: {
-    PostgrestVersion: "12.2.12 (cd3cf9e)"
+    PostgrestVersion: "13.0.5"
   }
   public: {
     Tables: {
-      contact_submissions: {
-        Row: {
-          created_at: string
-          email: string
-          id: string
-          ip_address: unknown | null
-          message: string
-          name: string
-          phone: string | null
-          processed: boolean | null
-          spam_score: number | null
-          subject: string | null
-          user_agent: string | null
-        }
-        Insert: {
-          created_at?: string
-          email: string
-          id?: string
-          ip_address?: unknown | null
-          message: string
-          name: string
-          phone?: string | null
-          processed?: boolean | null
-          spam_score?: number | null
-          subject?: string | null
-          user_agent?: string | null
-        }
-        Update: {
-          created_at?: string
-          email?: string
-          id?: string
-          ip_address?: unknown | null
-          message?: string
-          name?: string
-          phone?: string | null
-          processed?: boolean | null
-          spam_score?: number | null
-          subject?: string | null
-          user_agent?: string | null
-        }
-        Relationships: []
-      }
-      user_roles: {
-        Row: {
-          created_at: string
-          id: string
-          role: Database["public"]["Enums"]["app_role"]
-          user_id: string
-        }
-        Insert: {
-          created_at?: string
-          id?: string
-          role: Database["public"]["Enums"]["app_role"]
-          user_id: string
-        }
-        Update: {
-          created_at?: string
-          id?: string
-          role?: Database["public"]["Enums"]["app_role"]
-          user_id?: string
-        }
-        Relationships: []
-      }
+      [_ in never]: never
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      check_contact_rate_limit: {
-        Args: { client_email: string; client_ip: unknown }
-        Returns: boolean
-      }
-      cleanup_old_contact_submissions: {
-        Args: Record<PropertyKey, never>
-        Returns: undefined
-      }
-      has_role: {
-        Args: {
-          _role: Database["public"]["Enums"]["app_role"]
-          _user_id: string
-        }
-        Returns: boolean
-      }
+      [_ in never]: never
     }
     Enums: {
-      app_role: "admin" | "moderator" | "user"
+      [_ in never]: never
     }
     CompositeTypes: {
       [_ in never]: never
@@ -226,8 +150,6 @@ export type CompositeTypes<
 
 export const Constants = {
   public: {
-    Enums: {
-      app_role: ["admin", "moderator", "user"],
-    },
+    Enums: {},
   },
 } as const
