@@ -4,107 +4,133 @@ import aboutTeam from "../assets/about-team.jpg";
 import HeroSection from "../components/HeroSection";
 import SectionTitle from "../components/SectionTitle";
 import ProjectCard from "../components/ProjectCard";
+import OptimizedImage from "../components/OptimizedImage";
 import projectsData from "../data/projectsData";
+import { Helmet } from "react-helmet";
 
 const HomePage = () => {
   const featuredProjects = projectsData.filter(project => project.isFeatured);
 
   return (
-    <div className="min-h-screen">
-      {/* Original Hero Section */}
-      <HeroSection
-        backgroundImage={heroImage}
-        showCityScroll={true}
-        credibilityStatement="600+ Projects Across India's Leading Cities"
-      >
-        <div className="text-center max-w-4xl mx-auto flex flex-col justify-end h-full pb-20">
-          <h1 className="text-4xl md:text-6xl text-white font-playfair mb-6 leading-tight">
-            Balaji Design Studio
-          </h1>
-          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto">
-            <strong>creative creation by creative people</strong>
-          </p>
-          <Link
-            to="/portfolio"
-            className="bg-roseGold text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-roseGold/90 transition-colors inline-block"
-          >
-            Explore Our Work
-          </Link>
-        </div>
-      </HeroSection>
-
-      {/* Featured Projects */}
-      <section className="section-padding bg-lightGray">
-        <div className="container mx-auto">
-          <SectionTitle
-            title="Featured Projects"
-            subtitle="A glimpse of our recent work across India"
-            center
-          />
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {featuredProjects.map((project, index) => (
-              <ProjectCard
-                key={project.id}
-                id={project.id}
-                title={project.title}
-                category={project.category}
-                location={project.location}
-                image={project.images[0]}
-                size={project.size}
-                completionYear={project.completionYear}
-                designer={project.designer}
-                tagline={project.tagline}
-                index={index}
-              />
-            ))}
-          </div>
-
-          <div className="text-center mt-12">
+    <>
+      <Helmet>
+        <title>Balaji Design Studio | Award-Winning Interior Designers in Mumbai & India</title>
+        <meta name="description" content="Transform your space with Balaji Design Studio. 600+ luxury residential, commercial & hospitality projects across Mumbai, Pune, Bangalore. Expert interior designers delivering premium finishes and timeless elegance." />
+      </Helmet>
+      
+      <div className="min-h-screen">
+        {/* Enhanced Hero Section */}
+        <HeroSection
+          backgroundImage={heroImage}
+          showCityScroll={true}
+          credibilityStatement="600+ Award-Winning Projects Transforming Spaces Across India"
+        >
+          <div className="text-center max-w-5xl mx-auto flex flex-col justify-end h-full pb-20 px-4">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl text-white font-playfair mb-8 leading-tight tracking-tight drop-shadow-2xl">
+              Balaji Design Studio
+            </h1>
+            <p className="text-2xl md:text-3xl lg:text-4xl text-white/95 mb-12 max-w-3xl mx-auto font-light drop-shadow-lg">
+              Creative Creation by Creative People
+            </p>
             <Link
               to="/portfolio"
-              className="bg-roseGold text-white px-6 py-3 rounded-lg hover:bg-roseGold/90 transition-colors inline-block"
+              className="bg-roseGold text-white px-10 py-5 rounded-xl text-lg md:text-xl font-semibold hover:bg-roseGold/90 hover:scale-105 transition-all duration-300 inline-block shadow-2xl backdrop-blur-sm"
             >
-              View All Projects
+              Explore Our Portfolio
             </Link>
           </div>
-        </div>
-      </section>
+        </HeroSection>
 
-      {/* About Section */}
-      <section className="section-padding bg-warmWhite">
-        <div className="container mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-playfair text-darkGray mb-6">
-                About Our Studio
-              </h2>
-              <p className="text-lg text-darkGray/80 mb-6 leading-relaxed">
-                With over 600+ successful projects across India's leading cities, 
-                Balaji Design Studio has established itself as a premier interior 
-                design firm dedicated to creating spaces that inspire and delight.
-              </p>
-              <p className="text-lg text-darkGray/80 mb-8 leading-relaxed">
-                Our team of creative professionals brings together years of experience 
-                in residential, commercial, and hospitality design to deliver 
-                exceptional results that exceed expectations.
-              </p>
+        {/* Featured Projects - Enhanced */}
+        <section className="py-20 md:py-32 bg-gradient-to-b from-lightGray/30 to-warmWhite">
+          <div className="container mx-auto px-4 md:px-6 lg:px-8">
+            <SectionTitle
+              title="Featured Projects"
+              subtitle="Discover our portfolio of award-winning residential, commercial, and hospitality designs"
+              center
+            />
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 max-w-6xl mx-auto">
+              {featuredProjects.map((project, index) => (
+                <ProjectCard
+                  key={project.id}
+                  id={project.id}
+                  title={project.title}
+                  category={project.category}
+                  location={project.location}
+                  image={project.images[0]}
+                  size={project.size}
+                  completionYear={project.completionYear}
+                  designer={project.designer}
+                  tagline={project.tagline}
+                  index={index}
+                />
+              ))}
+            </div>
+
+            <div className="text-center mt-16">
               <Link
-                to="/about"
-                className="bg-roseGold text-white px-6 py-3 rounded-lg hover:bg-roseGold/90 transition-colors inline-block"
+                to="/portfolio"
+                className="bg-roseGold text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-roseGold/90 hover:scale-105 transition-all duration-300 inline-block shadow-lg"
               >
-                Learn More About Us
+                View Complete Portfolio
               </Link>
             </div>
-            <img 
-              src={aboutTeam} 
-              alt="Balaji Design Studio Team" 
-              className="h-96 w-full object-cover rounded-lg"
-            />
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
+
+        {/* About Section - Enhanced */}
+        <section className="py-20 md:py-32 bg-warmWhite">
+          <div className="container mx-auto px-4 md:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center max-w-7xl mx-auto">
+              <div className="space-y-8">
+                <div>
+                  <h2 className="text-4xl md:text-5xl lg:text-6xl font-playfair text-darkGray mb-6 leading-tight">
+                    Crafting Extraordinary Spaces
+                  </h2>
+                  <div className="w-20 h-1 bg-roseGold mb-8"></div>
+                </div>
+                
+                <p className="text-lg md:text-xl text-darkGray/90 leading-relaxed">
+                  With over <strong className="text-roseGold">600+ successful projects</strong> across India's leading cities, 
+                  Balaji Design Studio has established itself as a premier interior 
+                  design firm dedicated to creating spaces that inspire and delight.
+                </p>
+                
+                <p className="text-lg md:text-xl text-darkGray/80 leading-relaxed">
+                  Our team of award-winning creative professionals brings together years of experience 
+                  in residential, commercial, and hospitality design to deliver 
+                  exceptional results that exceed expectations.
+                </p>
+                
+                <div className="pt-4">
+                  <Link
+                    to="/about"
+                    className="inline-flex items-center gap-2 bg-roseGold text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-roseGold/90 hover:scale-105 transition-all duration-300 shadow-lg"
+                  >
+                    Learn More About Us
+                    <span className="text-xl">→</span>
+                  </Link>
+                </div>
+              </div>
+              
+              <div className="relative">
+                <OptimizedImage
+                  src={aboutTeam}
+                  alt="Balaji Design Studio - Award-winning interior design team"
+                  className="h-[500px] md:h-[600px] w-full rounded-2xl shadow-2xl"
+                  objectFit="cover"
+                />
+                <div className="absolute -bottom-6 -right-6 bg-roseGold text-white p-8 rounded-xl shadow-xl">
+                  <p className="text-4xl font-playfair font-bold mb-1">600+</p>
+                  <p className="text-sm font-medium">Projects Delivered</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </>
   );
 };
 
