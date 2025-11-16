@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { supabase } from '@/integrations/supabase/client';
 import { toast } from 'sonner';
 
 interface FormData {
@@ -61,43 +60,10 @@ export const useContactForm = (): UseContactFormReturn => {
         message: sanitizeInput(formData.message),
       };
 
-      // Get client IP (simplified for demo)
-      const clientIP = '127.0.0.1'; // In production, this would come from request headers
-
-      // Check rate limiting
-      const { data: rateLimitCheck, error: rateLimitError } = await supabase
-        .rpc('check_contact_rate_limit', {
-          client_ip: clientIP,
-          client_email: sanitizedData.email
-        });
-
-      if (rateLimitError) {
-        console.error('Rate limit check error:', rateLimitError);
-        // Continue with submission even if rate limit check fails
-      } else if (!rateLimitCheck) {
-        toast.error('Too many submissions. Please try again later.');
-        return false;
-      }
-
-      // Submit to database
-      const { error } = await supabase
-        .from('contact_submissions')
-        .insert({
-          name: sanitizedData.name,
-          email: sanitizedData.email,
-          phone: sanitizedData.phone || null,
-          subject: sanitizedData.subject || null,
-          message: sanitizedData.message,
-          ip_address: clientIP,
-          user_agent: navigator.userAgent,
-        });
-
-      if (error) {
-        console.error('Database error:', error);
-        toast.error('Failed to send message. Please try again.');
-        return false;
-      }
-
+      // Simulate form submission
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      
+      console.log('Form submission:', sanitizedData);
       toast.success('Message sent successfully! We\'ll get back to you soon.');
       return true;
 

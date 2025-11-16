@@ -1,5 +1,8 @@
 import { useParams, Navigate } from "react-router-dom";
 import projectsData from "../data/projectsData";
+import OptimizedImage from "../components/OptimizedImage";
+import { Helmet } from "react-helmet";
+import { MapPin, Calendar, Ruler, Tag } from "lucide-react";
 
 const ProjectPage = () => {
   const { projectId } = useParams();
@@ -13,74 +16,107 @@ const ProjectPage = () => {
   }
 
   return (
-    <div className="min-h-screen pt-20">
-      <div className="container mx-auto px-4 py-12">
-        {/* Project Header */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-playfair text-darkGray mb-4">
-            {project.title}
-          </h1>
-          <p className="text-xl text-roseGold mb-2">{project.tagline}</p>
-          <div className="flex flex-wrap justify-center gap-6 text-sm text-darkGray/70">
-            <span className="flex items-center">
-              <svg className="w-4 h-4 mr-1 text-roseGold" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-              </svg>
-              {project.location}
-            </span>
-            <span>{project.size}</span>
-            <span>{project.completionYear}</span>
-            <span className="text-roseGold font-medium">{project.budget}</span>
-          </div>
-        </div>
-
-        {/* Project Images Gallery */}
-        <div className="mb-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {project.images.map((image, index) => (
-              <div key={index} className="group relative overflow-hidden rounded-lg shadow-lg">
-                <img 
-                  src={image} 
-                  alt={`${project.title} - Image ${index + 1}`}
-                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Project Details */}
-        <div className="max-w-4xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12">
-            {/* Description */}
-            <div>
-              <h2 className="text-2xl font-playfair text-darkGray mb-4">Project Overview</h2>
-              <p className="text-darkGray/80 leading-relaxed mb-6">
-                {project.description}
-              </p>
-              
-              <div className="flex items-center text-sm text-darkGray/60 mb-4">
-                <span className="font-medium">Designer:</span>
-                <span className="ml-2">{project.designer}</span>
-              </div>
+    <>
+      <Helmet>
+        <title>{project.title} | {project.category} Interior Design by Balaji Design Studio</title>
+        <meta name="description" content={`${project.description.substring(0, 155)}...`} />
+      </Helmet>
+      
+      <article className="min-h-screen pt-20">
+        <div className="container mx-auto px-4 md:px-6 lg:px-8 py-12 md:py-16">
+          {/* Project Header - Enhanced */}
+          <header className="text-center mb-12 md:mb-16">
+            <div className="inline-block bg-roseGold/10 text-roseGold px-6 py-2 rounded-full mb-6">
+              <span className="font-semibold">{project.category}</span>
             </div>
+            
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-playfair text-darkGray mb-6 leading-tight">
+              {project.title}
+            </h1>
+            
+            {project.tagline && (
+              <p className="text-xl md:text-2xl text-roseGold mb-8 font-medium">{project.tagline}</p>
+            )}
+            
+            <div className="flex flex-wrap justify-center gap-6 md:gap-8 text-base md:text-lg text-darkGray/70">
+              <span className="flex items-center gap-2">
+                <MapPin size={20} className="text-roseGold" />
+                <strong>{project.location}</strong>
+              </span>
+              <span className="flex items-center gap-2">
+                <Ruler size={20} className="text-roseGold" />
+                {project.size}
+              </span>
+              <span className="flex items-center gap-2">
+                <Calendar size={20} className="text-roseGold" />
+                {project.completionYear}
+              </span>
+              {project.budget && (
+                <span className="flex items-center gap-2">
+                  <Tag size={20} className="text-roseGold" />
+                  <strong className="text-roseGold">{project.budget}</strong>
+                </span>
+              )}
+            </div>
+          </header>
 
-            {/* Features */}
-            <div>
-              <h3 className="text-xl font-playfair text-darkGray mb-4">Key Features</h3>
-              <ul className="space-y-2">
-                {project.features.map((feature, index) => (
-                  <li key={index} className="flex items-start text-darkGray/80">
-                    <span className="w-2 h-2 bg-roseGold rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                    {feature}
-                  </li>
-                ))}
-              </ul>
+          {/* Project Images Gallery - Optimized */}
+          <div className="mb-16 md:mb-20">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+              {project.images.map((image, index) => (
+                <div key={index} className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                  <OptimizedImage
+                    src={image}
+                    alt={`${project.title} - ${project.category} interior design view ${index + 1}`}
+                    className="w-full h-72 md:h-80"
+                    objectFit="cover"
+                    priority={index === 0}
+                  />
+                </div>
+              ))}
             </div>
           </div>
+
+          {/* Project Details - Enhanced Layout */}
+          <div className="max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-5 gap-12 md:gap-16">
+              {/* Description - Takes more space */}
+              <div className="md:col-span-3 space-y-8">
+                <div>
+                  <h2 className="text-3xl md:text-4xl font-playfair text-darkGray mb-6">Project Overview</h2>
+                  <div className="w-20 h-1 bg-roseGold mb-6"></div>
+                  <p className="text-lg md:text-xl text-darkGray/90 leading-relaxed">
+                    {project.description}
+                  </p>
+                </div>
+                
+                {project.designer && (
+                  <div className="flex items-center gap-3 text-base md:text-lg text-darkGray/70 bg-lightGray/30 px-6 py-4 rounded-xl">
+                    <span className="font-semibold text-darkGray">Designer:</span>
+                    <span className="text-roseGold font-medium">{project.designer}</span>
+                  </div>
+                )}
+              </div>
+
+              {/* Features - Sidebar */}
+              <div className="md:col-span-2">
+                <div className="bg-gradient-to-br from-lightGray/40 to-warmWhite p-8 rounded-2xl shadow-lg sticky top-24">
+                  <h3 className="text-2xl md:text-3xl font-playfair text-darkGray mb-6">Key Features</h3>
+                  <ul className="space-y-4">
+                    {project.features.map((feature, index) => (
+                      <li key={index} className="flex items-start text-base md:text-lg text-darkGray/80">
+                        <span className="w-2.5 h-2.5 bg-roseGold rounded-full mr-4 mt-2 flex-shrink-0"></span>
+                        <span className="leading-relaxed">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      </article>
+    </>
   );
 };
 
