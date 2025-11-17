@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Mail, Phone, MapPin, Clock, Loader2 } from "lucide-react";
 import { useContactForm } from "@/hooks/useContactForm";
+import { Helmet } from "react-helmet";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -37,57 +38,81 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="min-h-screen pt-20">
-      <div className="container mx-auto px-4 py-12">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-playfair text-darkGray mb-4">
-            Contact Us
-          </h1>
-          <p className="text-xl text-darkGray/70 max-w-2xl mx-auto">
-            Ready to start your design journey? Get in touch with our team.
-          </p>
-        </div>
+    <>
+      <Helmet>
+        <title>Contact Us | Balaji Design Studio - Get Your Free Consultation</title>
+        <meta name="description" content="Contact Balaji Design Studio for expert interior design services. Call +91 98765 43210 or visit us in Mumbai. Free consultation available for all projects." />
+        <meta name="keywords" content="contact interior designer, Mumbai interior design, free design consultation, interior design quote, Balaji Design Studio contact" />
+      </Helmet>
+      
+      <article className="min-h-screen pt-20 bg-gradient-to-b from-warmWhite to-lightGray/30">
+        <div className="container mx-auto px-4 md:px-6 lg:px-8 py-16 md:py-20">
+          <header className="text-center mb-16 animate-fade-in">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-playfair text-darkGray mb-6">
+              Contact Us
+            </h1>
+            <p className="text-xl md:text-2xl text-darkGray/70 max-w-3xl mx-auto leading-relaxed">
+              Ready to start your design journey? Get in touch with our expert team.
+            </p>
+            <div className="w-24 h-1 bg-roseGold mx-auto mt-6"></div>
+          </header>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 max-w-7xl mx-auto">
           {/* Contact Information */}
-          <div>
-            <h2 className="text-2xl font-playfair text-darkGray mb-8">Get in Touch</h2>
+          <div className="animate-slide-in-left">
+            <h2 className="text-3xl md:text-4xl font-playfair text-darkGray mb-10">Get in Touch</h2>
             
-            <div className="space-y-6">
-              <div className="flex items-start space-x-4">
-                <Phone className="text-roseGold mt-1" size={20} />
-                <div>
-                  <h3 className="font-semibold text-darkGray mb-1">Phone</h3>
-                  <p className="text-darkGray/70">+91 98765 43210</p>
-                  <p className="text-darkGray/70">+91 87654 32109</p>
+            <div className="space-y-8">
+              <div className="flex items-start space-x-4 bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+                <div className="w-12 h-12 bg-roseGold/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Phone className="text-roseGold" size={22} />
                 </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <Mail className="text-roseGold mt-1" size={20} />
                 <div>
-                  <h3 className="font-semibold text-darkGray mb-1">Email</h3>
-                  <p className="text-darkGray/70">info@balajidesign.com</p>
-                  <p className="text-darkGray/70">projects@balajidesign.com</p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <MapPin className="text-roseGold mt-1" size={20} />
-                <div>
-                  <h3 className="font-semibold text-darkGray mb-1">Address</h3>
-                  <p className="text-darkGray/70">
-                    123 Design Street,<br />
-                    Mumbai, Maharashtra 400001<br />
-                    India
+                  <h3 className="font-semibold text-lg text-darkGray mb-2">Phone</h3>
+                  <p className="text-darkGray/70 hover:text-roseGold transition-colors">
+                    <a href="tel:+919876543210">+91 98765 43210</a>
+                  </p>
+                  <p className="text-darkGray/70 hover:text-roseGold transition-colors">
+                    <a href="tel:+918765432109">+91 87654 32109</a>
                   </p>
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <Clock className="text-roseGold mt-1" size={20} />
+              <div className="flex items-start space-x-4 bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+                <div className="w-12 h-12 bg-roseGold/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Mail className="text-roseGold" size={22} />
+                </div>
                 <div>
-                  <h3 className="font-semibold text-darkGray mb-1">Business Hours</h3>
+                  <h3 className="font-semibold text-lg text-darkGray mb-2">Email</h3>
+                  <p className="text-darkGray/70 hover:text-roseGold transition-colors">
+                    <a href="mailto:info@balajidesign.com">info@balajidesign.com</a>
+                  </p>
+                  <p className="text-darkGray/70 hover:text-roseGold transition-colors">
+                    <a href="mailto:projects@balajidesign.com">projects@balajidesign.com</a>
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4 bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+                <div className="w-12 h-12 bg-roseGold/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <MapPin className="text-roseGold" size={22} />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg text-darkGray mb-2">Address</h3>
+                  <address className="text-darkGray/70 not-italic leading-relaxed">
+                    123 Design Street,<br />
+                    Mumbai, Maharashtra 400001<br />
+                    India
+                  </address>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4 bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+                <div className="w-12 h-12 bg-roseGold/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Clock className="text-roseGold" size={22} />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg text-darkGray mb-2">Business Hours</h3>
                   <p className="text-darkGray/70">Monday - Friday: 9:00 AM - 6:00 PM</p>
                   <p className="text-darkGray/70">Saturday: 10:00 AM - 4:00 PM</p>
                   <p className="text-darkGray/70">Sunday: Closed</p>
@@ -97,8 +122,8 @@ const ContactPage = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-white rounded-lg shadow-lg p-8">
-            <h2 className="text-2xl font-playfair text-darkGray mb-6">Send us a Message</h2>
+          <div className="bg-white rounded-2xl shadow-xl p-8 md:p-10 animate-slide-in-right border border-lightGray/20">
+            <h2 className="text-3xl md:text-4xl font-playfair text-darkGray mb-8">Send us a Message</h2>
             
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
@@ -192,8 +217,9 @@ const ContactPage = () => {
             </form>
           </div>
         </div>
-      </div>
-    </div>
+        </div>
+      </article>
+    </>
   );
 };
 

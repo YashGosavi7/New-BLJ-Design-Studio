@@ -57,9 +57,10 @@ const Header = ({ isScrolled }: HeaderProps) => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 text-darkGray hover:text-roseGold transition-colors"
+            className="md:hidden p-2 text-darkGray hover:text-roseGold transition-colors hover:scale-110"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label="Toggle menu"
+            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={isMenuOpen}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -67,8 +68,8 @@ const Header = ({ isScrolled }: HeaderProps) => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden bg-white/95 backdrop-blur-md border-t border-lightGray">
-            <nav className="py-4">
+          <nav className="md:hidden bg-white/95 backdrop-blur-md border-t border-lightGray animate-fade-in" aria-label="Mobile navigation">
+            <div className="py-4">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
@@ -83,8 +84,8 @@ const Header = ({ isScrolled }: HeaderProps) => {
                   {item.name}
                 </Link>
               ))}
-            </nav>
-          </div>
+            </div>
+          </nav>
         )}
       </div>
     </header>
