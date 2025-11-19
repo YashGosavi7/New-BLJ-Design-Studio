@@ -41,7 +41,7 @@ const ContactPage = () => {
     <>
       <Helmet>
         <title>Contact Us | Balaji Design Studio - Get Your Free Consultation</title>
-        <meta name="description" content="Contact Balaji Design Studio for expert interior design services. Call +91 98765 43210 or visit us in Mumbai. Free consultation available for all projects." />
+        <meta name="description" content="Contact Balaji Design Studio for expert interior design services. Call +91 97620 00000. Free consultation available for all projects." />
         <meta name="keywords" content="contact interior designer, Mumbai interior design, free design consultation, interior design quote, Balaji Design Studio contact" />
       </Helmet>
       
@@ -70,10 +70,7 @@ const ContactPage = () => {
                 <div>
                   <h3 className="font-semibold text-lg text-darkGray mb-2">Phone</h3>
                   <p className="text-darkGray/70 hover:text-roseGold transition-colors">
-                    <a href="tel:+919876543210">+91 98765 43210</a>
-                  </p>
-                  <p className="text-darkGray/70 hover:text-roseGold transition-colors">
-                    <a href="tel:+918765432109">+91 87654 32109</a>
+                    <a href="tel:+919762000000">+91 97620 00000</a>
                   </p>
                 </div>
               </div>
@@ -85,27 +82,11 @@ const ContactPage = () => {
                 <div>
                   <h3 className="font-semibold text-lg text-darkGray mb-2">Email</h3>
                   <p className="text-darkGray/70 hover:text-roseGold transition-colors">
-                    <a href="mailto:info@balajidesign.com">info@balajidesign.com</a>
-                  </p>
-                  <p className="text-darkGray/70 hover:text-roseGold transition-colors">
-                    <a href="mailto:projects@balajidesign.com">projects@balajidesign.com</a>
+                    <a href="mailto:balajidesignstudio@hotmail.com">balajidesignstudio@hotmail.com</a>
                   </p>
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4 bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
-                <div className="w-12 h-12 bg-roseGold/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <MapPin className="text-roseGold" size={22} />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg text-darkGray mb-2">Address</h3>
-                  <address className="text-darkGray/70 not-italic leading-relaxed">
-                    123 Design Street,<br />
-                    Mumbai, Maharashtra 400001<br />
-                    India
-                  </address>
-                </div>
-              </div>
 
               <div className="flex items-start space-x-4 bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
                 <div className="w-12 h-12 bg-roseGold/10 rounded-lg flex items-center justify-center flex-shrink-0">
