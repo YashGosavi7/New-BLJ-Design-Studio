@@ -28,6 +28,42 @@ export interface Project {
 
 const projectsData: Project[] = [
   {
+    id: "bapu-sample-flat",
+    title: "Bapu Sample Flat",
+    category: "Residential",
+    location: "Maharashtra, India",
+    size: "—",
+    completionYear: "2025",
+    description: "A sophisticated residential apartment showcasing modern interior design with elegant neutral tones, premium finishes, and thoughtful spatial planning. The project features textured accent walls, contemporary furniture, and seamless integration of living and dining spaces.",
+    features: [
+      "Elegant apartment lobby with wood-paneled doors and marble finishes",
+      "Welcome entrance with decorative mat and minimalist aesthetic",
+      "Spacious stairwell with contemporary black metal railings",
+      "Foyer with artistic black and white photography",
+      "Living room with circular textured feature wall",
+      "Comfortable seating with accent cushions in warm tones",
+      "Modern dining area with designer pendant lighting",
+      "Open plan layout connecting living and dining spaces",
+      "Premium flooring with marble effect tiles",
+      "Integrated ceiling design with recessed lighting"
+    ],
+    images: [
+      "/assets/bapu-flat-1.jpg",
+      "/assets/bapu-flat-2.jpg",
+      "/assets/bapu-flat-3.jpg",
+      "/assets/bapu-flat-4.jpg",
+      "/assets/bapu-flat-5.jpg",
+      "/assets/bapu-flat-6.jpg",
+      "/assets/bapu-flat-7.jpg",
+      "/assets/bapu-flat-8.jpg",
+      "/assets/bapu-flat-9.jpg"
+    ],
+    isFeatured: true,
+    designer: "Balaji Design Studio",
+    tagline: "Contemporary apartment living",
+    area: "—"
+  },
+  {
     id: "shivam-kamthe-residence",
     title: "Shivam Kamthe",
     category: "Residential",
