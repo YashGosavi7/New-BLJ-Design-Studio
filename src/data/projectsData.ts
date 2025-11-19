@@ -128,34 +128,17 @@ const projectsData: Project[] = [
       "/assets/akshay-sonawane-6.jpg",
       "/assets/akshay-sonawane-7.jpg",
       "/assets/akshay-sonawane-8.jpg",
-      "/assets/akshay-sonawane-9.jpg"
+      "/assets/akshay-sonawane-9.jpg",
+      "/assets/akshay-sonawane-10.jpg",
+      "/assets/akshay-sonawane-11.jpg",
+      "/assets/akshay-sonawane-12.jpg",
+      "/assets/akshay-sonawane-13.jpg",
+      "/assets/akshay-sonawane-14.jpg"
     ],
     isFeatured: true,
     designer: "Balaji Design Studio",
     tagline: "Modern elegance meets traditional warmth",
     budget: "₹42 Lakhs"
-  },
-  {
-    id: "boutique-hotel-goa",
-    title: "Boutique Hotel Design",
-    category: "Hospitality",
-    location: "Goa",
-    size: "8,000 sq ft",
-    completionYear: "2022",
-    description: "Elegant boutique hotel with coastal influences and modern amenities, creating memorable guest experiences.",
-    features: [
-      "Coastal design elements",
-      "Luxury guest suites",
-      "Infinity pool area",
-      "Spa and wellness center",
-      "Beachfront restaurant",
-      "Local art integration"
-    ],
-    images: ["/assets/about-team.jpg"],
-    isFeatured: false,
-    designer: "Balaji Design Studio",
-    tagline: "Coastal luxury hospitality",
-    budget: "₹80 Lakhs"
   },
   {
     id: "roop-jewelers",

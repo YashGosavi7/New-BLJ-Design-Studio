@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin, Instagram, Facebook, Linkedin } from "lucide-react";
+import { Mail, Phone, Instagram, Facebook, Linkedin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -16,7 +16,9 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://www.instagram.com/balaji_design_studio_/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-lightGray hover:text-roseGold transition-colors"
                 aria-label="Instagram"
               >
@@ -105,18 +107,11 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone size={16} className="text-roseGold" />
-                <span className="text-lightGray">+91 98765 43210</span>
+                <span className="text-lightGray">+91 97620 00000</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail size={16} className="text-roseGold" />
-                <span className="text-lightGray">info@balajidesign.com</span>
-              </div>
-              <div className="flex items-start space-x-3">
-                <MapPin size={16} className="text-roseGold mt-1" />
-                <span className="text-lightGray">
-                  123 Design Street,<br />
-                  Mumbai, Maharashtra 400001
-                </span>
+                <span className="text-lightGray">balajidesignstudio@hotmail.com</span>
               </div>
             </div>
           </div>
