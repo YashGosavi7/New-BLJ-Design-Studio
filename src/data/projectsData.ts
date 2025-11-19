@@ -56,7 +56,16 @@ const projectsData: Project[] = [
       "/assets/bapu-flat-6.jpg",
       "/assets/bapu-flat-7.jpg",
       "/assets/bapu-flat-8.jpg",
-      "/assets/bapu-flat-9.jpg"
+      "/assets/bapu-flat-9.jpg",
+      "/assets/bapu-flat-10.jpg",
+      "/assets/bapu-flat-11.jpg",
+      "/assets/bapu-flat-12.jpg",
+      "/assets/bapu-flat-13.jpg",
+      "/assets/bapu-flat-14.jpg",
+      "/assets/bapu-flat-15.jpg",
+      "/assets/bapu-flat-16.jpg",
+      "/assets/bapu-flat-17.jpg",
+      "/assets/bapu-flat-18.jpg"
     ],
     isFeatured: true,
     designer: "Balaji Design Studio",
