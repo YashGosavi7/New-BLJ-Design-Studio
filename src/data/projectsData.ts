@@ -187,7 +187,16 @@ const projectsData: Project[] = [
       "/assets/7-treats-24.jpg",
       "/assets/7-treats-25.jpg",
       "/assets/7-treats-26.jpg",
-      "/assets/7-treats-27.jpg"
+      "/assets/7-treats-27.jpg",
+      "/assets/7-treats-28.jpg",
+      "/assets/7-treats-29.jpg",
+      "/assets/7-treats-30.jpg",
+      "/assets/7-treats-31.jpg",
+      "/assets/7-treats-32.jpg",
+      "/assets/7-treats-33.jpg",
+      "/assets/7-treats-34.jpg",
+      "/assets/7-treats-35.jpg",
+      "/assets/7-treats-36.jpg"
     ],
     isFeatured: true,
     designer: "Balaji Design Studio",
