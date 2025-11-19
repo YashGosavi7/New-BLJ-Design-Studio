@@ -1149,7 +1149,17 @@ const projectsData: Project[] = [
       "/assets/deepak-sir-15.jpg",
       "/assets/deepak-sir-16.jpg",
       "/assets/deepak-sir-17.jpg",
-      "/assets/deepak-sir-18.jpg"
+      "/assets/deepak-sir-18.jpg",
+      "/assets/deepak-sir-19.jpg",
+      "/assets/deepak-sir-20.jpg",
+      "/assets/deepak-sir-21.jpg",
+      "/assets/deepak-sir-22.jpg",
+      "/assets/deepak-sir-23.jpg",
+      "/assets/deepak-sir-24.jpg",
+      "/assets/deepak-sir-25.jpg",
+      "/assets/deepak-sir-26.jpg",
+      "/assets/deepak-sir-27.jpg",
+      "/assets/deepak-sir-28.jpg"
     ],
     isFeatured: true,
     designer: "Balaji Design Studio",
