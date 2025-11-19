@@ -141,6 +141,42 @@ const projectsData: Project[] = [
     budget: "₹42 Lakhs"
   },
   {
+    id: "7-treats-restaurant",
+    title: "7 Treats Family Restaurant & Bar",
+    category: "Hospitality",
+    location: "Pune",
+    size: "3,500 sq ft",
+    completionYear: "2024",
+    description: "A vibrant family restaurant and bar featuring innovative design with green moss walls, custom lighting installations, and eclectic decor. The space combines natural elements with contemporary styling, creating a warm and inviting atmosphere for casual dining and socializing.",
+    features: [
+      "Illuminated '7 Treats' signage with green moss wall backdrop",
+      "Custom decorative entrance with red frame detailing",
+      "Unique rope chandelier lighting installations",
+      "Decorative ceiling with suspended umbrella art installation",
+      "Ornate glass-paneled wooden doors with traditional motifs",
+      "Modern bar area with creative pendant lights",
+      "Comfortable booth seating with leather upholstery",
+      "Wooden partition screens for semi-private dining areas",
+      "Ambient LED accent lighting throughout",
+      "Mix of contemporary and traditional decor elements"
+    ],
+    images: [
+      "/assets/7-treats-1.jpg",
+      "/assets/7-treats-2.jpg",
+      "/assets/7-treats-3.jpg",
+      "/assets/7-treats-4.jpg",
+      "/assets/7-treats-5.jpg",
+      "/assets/7-treats-6.jpg",
+      "/assets/7-treats-7.jpg",
+      "/assets/7-treats-8.jpg",
+      "/assets/7-treats-9.jpg"
+    ],
+    isFeatured: true,
+    designer: "Balaji Design Studio",
+    tagline: "Where good food meets creative ambiance",
+    budget: "₹38 Lakhs"
+  },
+  {
     id: "roop-jewelers",
     title: "Roop Jewelers",
     category: "Commercial",
