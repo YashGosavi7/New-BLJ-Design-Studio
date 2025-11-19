@@ -1113,6 +1113,39 @@ const projectsData: Project[] = [
     size: "3,200 sq ft",
     completionYear: "2024",
     client: "Datta Ghule"
+  },
+  {
+    id: "mr-deepak-sir",
+    title: "Mr. Deepak Sir",
+    category: "Residential",
+    location: "Maharashtra, India",
+    size: "—",
+    completionYear: "2025",
+    description: "An elegant residential interior design project showcasing modern aesthetics with thoughtful space planning and premium finishes. The design features sophisticated furniture selections, contemporary decor elements, and a harmonious color palette.",
+    features: [
+      "Modern living room with contemporary furniture",
+      "Elegant bedroom design with premium finishes",
+      "Well-planned kitchen and dining areas",
+      "Stylish decor and lighting solutions",
+      "Thoughtful color coordination throughout",
+      "Quality materials and craftsmanship",
+      "Functional and aesthetic space utilization"
+    ],
+    images: [
+      "/assets/deepak-sir-1.jpg",
+      "/assets/deepak-sir-2.jpg",
+      "/assets/deepak-sir-3.jpg",
+      "/assets/deepak-sir-4.jpg",
+      "/assets/deepak-sir-5.jpg",
+      "/assets/deepak-sir-6.jpg",
+      "/assets/deepak-sir-7.jpg",
+      "/assets/deepak-sir-8.jpg",
+      "/assets/deepak-sir-9.jpg"
+    ],
+    isFeatured: true,
+    designer: "Balaji Design Studio",
+    tagline: "Contemporary elegance meets modern living",
+    client: "Mr. Deepak"
   }
 ];
 
