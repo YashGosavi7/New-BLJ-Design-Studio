@@ -1201,11 +1201,44 @@ const projectsData: Project[] = [
       "/assets/hotel-patilwada-12.jpg",
       "/assets/hotel-patilwada-13.jpg",
       "/assets/hotel-patilwada-14.jpg",
-      "/assets/hotel-patilwada-15.jpg"
+      "/assets/hotel-patilwada-15.jpg",
+      "/assets/hotel-patilwada-16.jpg",
+      "/assets/hotel-patilwada-17.jpg",
+      "/assets/hotel-patilwada-18.jpg"
     ],
     isFeatured: false,
     designer: "Balaji Design Studio",
     tagline: "Contemporary hospitality at its finest"
+  },
+  {
+    id: "hotel-grand-11",
+    title: "Hotel Grand 11",
+    category: "Hospitality",
+    location: "Maharashtra, India",
+    size: "12,000 sq ft",
+    completionYear: "2024",
+    description: "A luxurious hotel project featuring contemporary design with premium finishes, elegant interiors, and world-class guest amenities. The design creates a sophisticated atmosphere that combines modern comfort with timeless elegance.",
+    features: [
+      "Luxury hospitality design",
+      "Premium guest suites",
+      "Grand lobby and reception",
+      "Fine dining restaurants",
+      "Executive conference facilities",
+      "Spa and wellness center",
+      "Rooftop lounge",
+      "State-of-the-art amenities"
+    ],
+    images: [
+      "/assets/hotel-grand11-1.jpg",
+      "/assets/hotel-grand11-2.jpg",
+      "/assets/hotel-grand11-3.jpg",
+      "/assets/hotel-grand11-4.jpg",
+      "/assets/hotel-grand11-5.jpg",
+      "/assets/hotel-grand11-6.jpg"
+    ],
+    isFeatured: true,
+    designer: "Balaji Design Studio",
+    tagline: "Where luxury meets sophistication"
   }
 ];
 
