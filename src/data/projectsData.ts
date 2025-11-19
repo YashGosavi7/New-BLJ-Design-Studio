@@ -302,7 +302,9 @@ const projectsData: Project[] = [
     ],
     images: [
       "/lovable-uploads/f816dacc-d4a7-442d-a40f-9a19b793bf20.png",
-      "/lovable-uploads/50c7c58a-9db2-421d-8c09-ca3f343fd126.png"
+      "/lovable-uploads/50c7c58a-9db2-421d-8c09-ca3f343fd126.png",
+      "/assets/golden-leaf-new-1.jpg",
+      "/assets/golden-leaf-new-2.jpg"
     ],
     isFeatured: true,
     designer: "Balaji Design Studio",
@@ -1165,6 +1167,36 @@ const projectsData: Project[] = [
     designer: "Balaji Design Studio",
     tagline: "Contemporary elegance meets modern living",
     client: "Mr. Deepak"
+  },
+  {
+    id: "hotel-patilwada",
+    title: "Hotel Patilwada",
+    category: "Hospitality",
+    location: "Maharashtra, India",
+    size: "8,500 sq ft",
+    completionYear: "2024",
+    description: "A modern hotel project featuring contemporary hospitality design with elegant interiors, premium finishes, and thoughtful guest experience planning. The design showcases sophisticated spaces that blend comfort with style.",
+    features: [
+      "Contemporary hospitality design",
+      "Premium guest room interiors",
+      "Modern lobby and reception areas",
+      "Elegant dining spaces",
+      "Sophisticated lighting design",
+      "Quality finishes throughout",
+      "Comfortable guest amenities",
+      "Professional service areas"
+    ],
+    images: [
+      "/assets/hotel-patilwada-1.jpg",
+      "/assets/hotel-patilwada-2.jpg",
+      "/assets/hotel-patilwada-3.jpg",
+      "/assets/hotel-patilwada-4.jpg",
+      "/assets/hotel-patilwada-5.jpg",
+      "/assets/hotel-patilwada-6.jpg"
+    ],
+    isFeatured: false,
+    designer: "Balaji Design Studio",
+    tagline: "Contemporary hospitality at its finest"
   }
 ];
 
