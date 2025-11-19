@@ -102,6 +102,40 @@ const projectsData: Project[] = [
     budget: "₹35 Lakhs"
   },
   {
+    id: "akshay-sonawane-residence",
+    title: "Akshay Sonawane Residence",
+    category: "Residential",
+    location: "Pune",
+    size: "2,800 sq ft",
+    completionYear: "2025",
+    description: "A contemporary residential interior featuring warm wood paneling, modern minimalist design, and sophisticated living spaces. The project showcases a harmonious blend of traditional elements with modern aesthetics, including custom woodwork, designer lighting, and premium finishes throughout.",
+    features: [
+      "Elegant entrance foyer with Ganesha deity and custom woodwork",
+      "Spacious living room with wooden ceiling panel and designer TV unit",
+      "Modern kitchen with marble backsplash and under-cabinet lighting",
+      "Contemporary bedroom with tufted headboard and pendant lighting",
+      "Premium Italian marble flooring throughout",
+      "Custom wooden slat partitions and door designs",
+      "Designer false ceiling with recessed lighting",
+      "High-end appliances and smart home integration"
+    ],
+    images: [
+      "/assets/akshay-sonawane-1.jpg",
+      "/assets/akshay-sonawane-2.jpg",
+      "/assets/akshay-sonawane-3.jpg",
+      "/assets/akshay-sonawane-4.jpg",
+      "/assets/akshay-sonawane-5.jpg",
+      "/assets/akshay-sonawane-6.jpg",
+      "/assets/akshay-sonawane-7.jpg",
+      "/assets/akshay-sonawane-8.jpg",
+      "/assets/akshay-sonawane-9.jpg"
+    ],
+    isFeatured: true,
+    designer: "Balaji Design Studio",
+    tagline: "Modern elegance meets traditional warmth",
+    budget: "₹42 Lakhs"
+  },
+  {
     id: "boutique-hotel-goa",
     title: "Boutique Hotel Design",
     category: "Hospitality",
