@@ -1192,7 +1192,16 @@ const projectsData: Project[] = [
       "/assets/hotel-patilwada-3.jpg",
       "/assets/hotel-patilwada-4.jpg",
       "/assets/hotel-patilwada-5.jpg",
-      "/assets/hotel-patilwada-6.jpg"
+      "/assets/hotel-patilwada-6.jpg",
+      "/assets/hotel-patilwada-7.jpg",
+      "/assets/hotel-patilwada-8.jpg",
+      "/assets/hotel-patilwada-9.jpg",
+      "/assets/hotel-patilwada-10.jpg",
+      "/assets/hotel-patilwada-11.jpg",
+      "/assets/hotel-patilwada-12.jpg",
+      "/assets/hotel-patilwada-13.jpg",
+      "/assets/hotel-patilwada-14.jpg",
+      "/assets/hotel-patilwada-15.jpg"
     ],
     isFeatured: false,
     designer: "Balaji Design Studio",
