@@ -1290,6 +1290,40 @@ const projectsData: Project[] = [
     isFeatured: true,
     designer: "Balaji Design Studio",
     tagline: "Where entertainment meets elegance"
+  },
+  {
+    id: "latur-udyaan",
+    title: "Latur Udyaan",
+    category: "Commercial",
+    location: "Latur, Maharashtra",
+    completionYear: "2023",
+    size: "5,000 sq ft",
+    budget: "₹75 Lakhs",
+    description: "A modern commercial space featuring sophisticated interior design with elegant furnishings, contemporary lighting, and thoughtful spatial planning. The project showcases a blend of functionality and aesthetics, creating an inviting environment for visitors and staff.",
+    features: [
+      "Contemporary commercial design",
+      "Elegant interior styling",
+      "Custom lighting solutions",
+      "Modern furniture selection",
+      "Optimized space planning",
+      "Premium finishes",
+      "Strategic color palette",
+      "Comfortable seating areas"
+    ],
+    images: [
+      "/assets/latur-udyaan-1.jpg",
+      "/assets/latur-udyaan-2.jpg",
+      "/assets/latur-udyaan-3.jpg",
+      "/assets/latur-udyaan-4.jpg",
+      "/assets/latur-udyaan-5.jpg",
+      "/assets/latur-udyaan-6.jpg",
+      "/assets/latur-udyaan-7.jpg",
+      "/assets/latur-udyaan-8.jpg",
+      "/assets/latur-udyaan-9.jpg"
+    ],
+    isFeatured: true,
+    designer: "Balaji Design Studio",
+    tagline: "Modern design with timeless appeal"
   }
 ];
 
