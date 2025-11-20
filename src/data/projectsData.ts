@@ -1402,11 +1402,43 @@ const projectsData: Project[] = [
       "/assets/sachin-tarovade-7.jpg",
       "/assets/sachin-tarovade-8.jpg",
       "/assets/sachin-tarovade-9.jpg",
-      "/assets/sachin-tarovade-10.jpg"
+      "/assets/sachin-tarovade-10.jpg",
+      "/assets/sachin-tarovade-11.jpg"
     ],
     isFeatured: true,
     designer: "Balaji Design Studio",
     tagline: "Vibrant family living with modern comforts"
+  },
+  {
+    id: "mr-navale-flat",
+    title: "Mr. Navale Flat",
+    category: "Residential",
+    location: "Maharashtra, India",
+    completionYear: "2024",
+    size: "2,500 sq ft",
+    budget: "₹65 Lakhs",
+    description: "A modern residential flat featuring a harmonious blend of contemporary design and functional living spaces. The project showcases elegant interiors with clean lines, strategic use of lighting, and carefully selected color palettes that create a warm and inviting atmosphere for the family.",
+    features: [
+      "Contemporary living spaces with modern aesthetics",
+      "Premium flooring and finishes throughout",
+      "Strategic lighting design for ambiance",
+      "Custom-designed furniture and storage solutions",
+      "Open-plan layout for seamless flow",
+      "Modern kitchen with integrated appliances",
+      "Elegant bedroom designs with comfortable layouts",
+      "High-quality materials and craftsmanship",
+      "Attention to detail in every space",
+      "Family-friendly functional design"
+    ],
+    images: [
+      "/assets/mr-navale-1.jpg",
+      "/assets/mr-navale-2.jpg",
+      "/assets/mr-navale-3.jpg",
+      "/assets/mr-navale-4.jpg"
+    ],
+    isFeatured: true,
+    designer: "Balaji Design Studio",
+    tagline: "Modern elegance meets functional living"
   }
 ];
 
