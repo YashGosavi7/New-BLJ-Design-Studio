@@ -1257,6 +1257,39 @@ const projectsData: Project[] = [
     isFeatured: true,
     designer: "Balaji Design Studio",
     tagline: "Where luxury meets sophistication"
+  },
+  {
+    id: "hotel-nightclub",
+    title: "Hotel Night Club",
+    category: "Hospitality",
+    location: "India",
+    completionYear: "2023",
+    size: "2,500 sq ft",
+    budget: "₹50 Lakhs",
+    description: "A vibrant nightclub and lounge space featuring energetic design with bold purple lighting, luxurious velvet seating, and dynamic entertainment areas. The Knight Riders themed venue creates an electrifying atmosphere perfect for celebrations and nightlife.",
+    features: [
+      "Dynamic nightclub design",
+      "Premium lounge seating",
+      "Custom entertainment booths",
+      "Vibrant LED lighting system",
+      "Themed wall graphics",
+      "Dance floor and stage area",
+      "VIP sections",
+      "Contemporary bar design"
+    ],
+    images: [
+      "/assets/hotel-nightclub-1.jpg",
+      "/assets/hotel-nightclub-2.jpg",
+      "/assets/hotel-nightclub-3.jpg",
+      "/assets/hotel-nightclub-4.jpg",
+      "/assets/hotel-nightclub-5.jpg",
+      "/assets/hotel-nightclub-6.jpg",
+      "/assets/hotel-nightclub-7.jpg",
+      "/assets/hotel-nightclub-8.jpg"
+    ],
+    isFeatured: true,
+    designer: "Balaji Design Studio",
+    tagline: "Where entertainment meets elegance"
   }
 ];
 
