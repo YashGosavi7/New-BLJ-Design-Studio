@@ -1333,6 +1333,42 @@ const projectsData: Project[] = [
     isFeatured: true,
     designer: "Balaji Design Studio",
     tagline: "Modern design with timeless appeal"
+  },
+  {
+    id: "psi-office",
+    title: "PSI Office",
+    category: "Commercial",
+    location: "Maharashtra, India",
+    completionYear: "2024",
+    size: "2,500 sq ft",
+    budget: "₹60 Lakhs",
+    description: "A prestigious Maharashtra Police office featuring traditional wood paneling, modern amenities, and professional interior design. The space combines official functionality with warm aesthetics, incorporating the Maharashtra Police emblem and historical photographs of freedom fighters.",
+    features: [
+      "Executive office with wood paneling",
+      "Maharashtra Police branding integration",
+      "Historical portraits display",
+      "Professional meeting area with mesh seating",
+      "Custom woodwork with recessed lighting",
+      "Visitor waiting lounge with Indian flag",
+      "India map wall art installation",
+      "Elegant entrance with glass door",
+      "Traditional police memorabilia display",
+      "Contemporary false ceiling design"
+    ],
+    images: [
+      "/assets/psi-office-1.jpg",
+      "/assets/psi-office-2.jpg",
+      "/assets/psi-office-3.jpg",
+      "/assets/psi-office-4.jpg",
+      "/assets/psi-office-5.jpg",
+      "/assets/psi-office-6.jpg",
+      "/assets/psi-office-7.jpg",
+      "/assets/psi-office-8.jpg",
+      "/assets/psi-office-9.jpg"
+    ],
+    isFeatured: true,
+    designer: "Balaji Design Studio",
+    tagline: "Professional excellence in public service design"
   }
 ];
 
