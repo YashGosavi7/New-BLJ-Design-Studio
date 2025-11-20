@@ -1243,7 +1243,16 @@ const projectsData: Project[] = [
       "/assets/hotel-grand11-12.jpg",
       "/assets/hotel-grand11-13.jpg",
       "/assets/hotel-grand11-14.jpg",
-      "/assets/hotel-grand11-15.jpg"
+      "/assets/hotel-grand11-15.jpg",
+      "/assets/hotel-grand11-16.jpg",
+      "/assets/hotel-grand11-17.jpg",
+      "/assets/hotel-grand11-18.jpg",
+      "/assets/hotel-grand11-19.jpg",
+      "/assets/hotel-grand11-20.jpg",
+      "/assets/hotel-grand11-21.jpg",
+      "/assets/hotel-grand11-22.jpg",
+      "/assets/hotel-grand11-23.jpg",
+      "/assets/hotel-grand11-24.jpg"
     ],
     isFeatured: true,
     designer: "Balaji Design Studio",
