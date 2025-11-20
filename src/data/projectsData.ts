@@ -1369,6 +1369,44 @@ const projectsData: Project[] = [
     isFeatured: true,
     designer: "Balaji Design Studio",
     tagline: "Professional excellence in public service design"
+  },
+  {
+    id: "sachin-tarovade-flat",
+    title: "Sachin Tarovade Flat",
+    category: "Residential",
+    location: "Maharashtra, India",
+    completionYear: "2024",
+    size: "3,800 sq ft",
+    budget: "₹85 Lakhs",
+    description: "A contemporary residential flat featuring vibrant turquoise and yellow accent colors throughout. The design showcases sophisticated living spaces with wood paneling, modern kids' rooms with loft beds, a state-of-the-art kitchen, and traditional pooja room integration. The project beautifully balances modern aesthetics with functional family living.",
+    features: [
+      "Kids bedroom with yellow accent storage and grey wardrobes",
+      "Master bedroom with turquoise accents and wood paneling",
+      "TV unit bedroom with peacock wall art and study area",
+      "Modern modular kitchen with breakfast counter",
+      "Space-saving loft bed with integrated study desk",
+      "Living room with wooden slat partition elements",
+      "Decorative wall art including tree motifs",
+      "Traditional wooden pooja unit with skylight",
+      "Textured accent walls in multiple rooms",
+      "Designer pendant and chandelier lighting",
+      "Open plan living and dining areas"
+    ],
+    images: [
+      "/assets/sachin-tarovade-1.jpg",
+      "/assets/sachin-tarovade-2.jpg",
+      "/assets/sachin-tarovade-3.jpg",
+      "/assets/sachin-tarovade-4.jpg",
+      "/assets/sachin-tarovade-5.jpg",
+      "/assets/sachin-tarovade-6.jpg",
+      "/assets/sachin-tarovade-7.jpg",
+      "/assets/sachin-tarovade-8.jpg",
+      "/assets/sachin-tarovade-9.jpg",
+      "/assets/sachin-tarovade-10.jpg"
+    ],
+    isFeatured: true,
+    designer: "Balaji Design Studio",
+    tagline: "Vibrant family living with modern comforts"
   }
 ];
 
