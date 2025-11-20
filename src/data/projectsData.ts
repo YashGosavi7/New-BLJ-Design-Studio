@@ -1319,7 +1319,16 @@ const projectsData: Project[] = [
       "/assets/latur-udyaan-6.jpg",
       "/assets/latur-udyaan-7.jpg",
       "/assets/latur-udyaan-8.jpg",
-      "/assets/latur-udyaan-9.jpg"
+      "/assets/latur-udyaan-9.jpg",
+      "/assets/latur-udyaan-10.jpg",
+      "/assets/latur-udyaan-11.jpg",
+      "/assets/latur-udyaan-12.jpg",
+      "/assets/latur-udyaan-13.jpg",
+      "/assets/latur-udyaan-14.jpg",
+      "/assets/latur-udyaan-15.jpg",
+      "/assets/latur-udyaan-16.jpg",
+      "/assets/latur-udyaan-17.jpg",
+      "/assets/latur-udyaan-18.jpg"
     ],
     isFeatured: true,
     designer: "Balaji Design Studio",
