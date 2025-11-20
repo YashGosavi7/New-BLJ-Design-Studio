@@ -1439,6 +1439,43 @@ const projectsData: Project[] = [
     isFeatured: true,
     designer: "Balaji Design Studio",
     tagline: "Modern elegance meets functional living"
+  },
+  {
+    id: "mr-utture",
+    title: "Mr. Utture",
+    category: "Residential",
+    location: "Maharashtra, India",
+    completionYear: "2024",
+    size: "2,800 sq ft",
+    budget: "₹70 Lakhs",
+    description: "A sophisticated residential project that exemplifies contemporary living with meticulous attention to detail. The design seamlessly integrates modern aesthetics with functional spaces, creating a warm and inviting home environment. Premium materials and thoughtful layouts ensure both style and comfort throughout the residence.",
+    features: [
+      "Contemporary interior design with modern aesthetics",
+      "Premium flooring and high-end finishes",
+      "Custom lighting solutions for ambiance",
+      "Spacious living and dining areas",
+      "Modern modular kitchen with premium appliances",
+      "Elegant bedroom suites with walk-in wardrobes",
+      "Designer bathrooms with luxury fittings",
+      "Smart storage solutions throughout",
+      "High-quality materials and craftsmanship",
+      "Thoughtful space planning for family living"
+    ],
+    images: [
+      "/assets/mr-utture-1.jpg",
+      "/assets/mr-utture-2.jpg",
+      "/assets/mr-utture-3.jpg",
+      "/assets/mr-utture-4.jpg",
+      "/assets/mr-utture-5.jpg",
+      "/assets/mr-utture-6.jpg",
+      "/assets/mr-utture-7.jpg",
+      "/assets/mr-utture-8.jpg",
+      "/assets/mr-utture-9.jpg",
+      "/assets/mr-utture-10.jpg"
+    ],
+    isFeatured: true,
+    designer: "Balaji Design Studio",
+    tagline: "Contemporary sophistication meets comfortable living"
   }
 ];
 
