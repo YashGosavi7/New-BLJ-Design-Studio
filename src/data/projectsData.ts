@@ -1605,11 +1605,47 @@ const projectsData: Project[] = [
       "/assets/harshal-wani-flat-17.jpg",
       "/assets/harshal-wani-flat-18.jpg",
       "/assets/harshal-wani-flat-19.jpg",
-      "/assets/harshal-wani-flat-20.jpg"
+      "/assets/harshal-wani-flat-20.jpg",
+      "/assets/harshal-wani-flat-21.jpg",
+      "/assets/harshal-wani-flat-22.jpg"
     ],
     isFeatured: false,
     designer: "Balaji Design Studio",
     tagline: "Modern living spaces with timeless elegance"
+  },
+  {
+    id: "matoshree-pure-veg-restaurant",
+    title: "Matoshree Pure Veg Restaurant",
+    category: "Commercial",
+    location: "Pune, Maharashtra",
+    size: "2,500 sq ft",
+    completionYear: "2024",
+    description: "A vibrant and welcoming pure vegetarian restaurant that celebrates traditional Indian cuisine with contemporary design elements. The interior design creates an inviting atmosphere with warm colors, comfortable seating arrangements, and thoughtful spatial planning. Every element has been carefully curated to enhance the dining experience while maintaining cultural authenticity and modern comfort.",
+    features: [
+      "Traditional yet modern interior design",
+      "Comfortable dining area layout",
+      "Efficient kitchen planning",
+      "Warm and inviting ambiance",
+      "Cultural design elements",
+      "Custom furniture and seating",
+      "Strategic lighting design",
+      "Durable commercial-grade finishes",
+      "Brand-consistent color scheme",
+      "Optimized customer flow"
+    ],
+    images: [
+      "/assets/matoshree-restaurant-1.jpg",
+      "/assets/matoshree-restaurant-2.jpg",
+      "/assets/matoshree-restaurant-3.jpg",
+      "/assets/matoshree-restaurant-4.jpg",
+      "/assets/matoshree-restaurant-5.jpg",
+      "/assets/matoshree-restaurant-6.jpg",
+      "/assets/matoshree-restaurant-7.jpg",
+      "/assets/matoshree-restaurant-8.jpg"
+    ],
+    isFeatured: false,
+    designer: "Balaji Design Studio",
+    tagline: "Where tradition meets contemporary dining"
   }
 ];
 
