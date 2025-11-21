@@ -1551,7 +1551,15 @@ const projectsData: Project[] = [
       "/assets/kale-office-7.jpg",
       "/assets/kale-office-8.jpg",
       "/assets/kale-office-9.jpg",
-      "/assets/kale-office-10.jpg"
+      "/assets/kale-office-10.jpg",
+      "/assets/kale-office-11.jpg",
+      "/assets/kale-office-12.jpg",
+      "/assets/kale-office-13.jpg",
+      "/assets/kale-office-14.jpg",
+      "/assets/kale-office-15.jpg",
+      "/assets/kale-office-16.jpg",
+      "/assets/kale-office-17.jpg",
+      "/assets/kale-office-18.jpg"
     ],
     isFeatured: true,
     designer: "Balaji Design Studio",
