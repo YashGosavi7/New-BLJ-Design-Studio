@@ -1481,11 +1481,44 @@ const projectsData: Project[] = [
       "/assets/mr-utture-17.jpg",
       "/assets/mr-utture-18.jpg",
       "/assets/mr-utture-19.jpg",
-      "/assets/mr-utture-20.jpg"
+      "/assets/mr-utture-20.jpg",
+      "/assets/mr-utture-21.jpg",
+      "/assets/mr-utture-22.jpg",
+      "/assets/mr-utture-23.jpg"
     ],
     isFeatured: true,
     designer: "Balaji Design Studio",
     tagline: "Contemporary sophistication meets comfortable living"
+  },
+  {
+    id: "mr-ambedkar-bunglow",
+    title: "Mr. Ambedkar Bunglow",
+    category: "Residential",
+    location: "Maharashtra, India",
+    completionYear: "2024",
+    size: "4,500 sq ft",
+    budget: "₹1.2 Crores",
+    description: "A magnificent luxury bungalow featuring neoclassical architecture with grand arched facades, ornate balustrades, and sophisticated exterior lighting. The design showcases elegant white stone finishes, decorative columns, and expansive landscaping that creates an impressive street presence. This prestigious residence combines timeless architectural elements with modern luxury living.",
+    features: [
+      "Neoclassical architecture with grand arched facades",
+      "Ornate white balustrades and decorative columns",
+      "Multi-level design with spacious balconies",
+      "Elegant exterior lighting with vintage-style fixtures",
+      "Premium white stone and textured finishes",
+      "Grand entrance gate with decorative metalwork",
+      "Expansive compound wall with classical detailing",
+      "Professional landscaping with greenery and planters",
+      "Sophisticated night illumination design",
+      "Imposing street presence with symmetrical design"
+    ],
+    images: [
+      "/assets/mr-ambedkar-1.jpg",
+      "/assets/mr-ambedkar-2.jpg",
+      "/assets/mr-ambedkar-3.jpg"
+    ],
+    isFeatured: true,
+    designer: "Balaji Design Studio",
+    tagline: "Neoclassical grandeur meets modern luxury living"
   }
 ];
 
