@@ -1641,7 +1641,16 @@ const projectsData: Project[] = [
       "/assets/matoshree-restaurant-5.jpg",
       "/assets/matoshree-restaurant-6.jpg",
       "/assets/matoshree-restaurant-7.jpg",
-      "/assets/matoshree-restaurant-8.jpg"
+      "/assets/matoshree-restaurant-8.jpg",
+      "/assets/matoshree-restaurant-9.jpg",
+      "/assets/matoshree-restaurant-10.jpg",
+      "/assets/matoshree-restaurant-11.jpg",
+      "/assets/matoshree-restaurant-12.jpg",
+      "/assets/matoshree-restaurant-13.jpg",
+      "/assets/matoshree-restaurant-14.jpg",
+      "/assets/matoshree-restaurant-15.jpg",
+      "/assets/matoshree-restaurant-16.jpg",
+      "/assets/matoshree-restaurant-17.jpg"
     ],
     isFeatured: false,
     designer: "Balaji Design Studio",
