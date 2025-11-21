@@ -1471,7 +1471,17 @@ const projectsData: Project[] = [
       "/assets/mr-utture-7.jpg",
       "/assets/mr-utture-8.jpg",
       "/assets/mr-utture-9.jpg",
-      "/assets/mr-utture-10.jpg"
+      "/assets/mr-utture-10.jpg",
+      "/assets/mr-utture-11.jpg",
+      "/assets/mr-utture-12.jpg",
+      "/assets/mr-utture-13.jpg",
+      "/assets/mr-utture-14.jpg",
+      "/assets/mr-utture-15.jpg",
+      "/assets/mr-utture-16.jpg",
+      "/assets/mr-utture-17.jpg",
+      "/assets/mr-utture-18.jpg",
+      "/assets/mr-utture-19.jpg",
+      "/assets/mr-utture-20.jpg"
     ],
     isFeatured: true,
     designer: "Balaji Design Studio",
