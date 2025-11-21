@@ -1472,20 +1472,47 @@ const projectsData: Project[] = [
       "/assets/mr-utture-8.jpg",
       "/assets/mr-utture-9.jpg",
       "/assets/mr-utture-10.jpg",
-      "/assets/mr-utture-11.jpg",
-      "/assets/mr-utture-12.jpg",
-      "/assets/mr-utture-13.jpg",
-      "/assets/mr-utture-14.jpg",
-      "/assets/mr-utture-15.jpg",
-      "/assets/mr-utture-16.jpg",
-      "/assets/mr-utture-17.jpg",
-      "/assets/mr-utture-18.jpg",
-      "/assets/mr-utture-19.jpg",
-      "/assets/mr-utture-20.jpg"
+      "/assets/mr-utture-21.jpg",
+      "/assets/mr-utture-22.jpg",
+      "/assets/mr-utture-23.jpg"
     ],
     isFeatured: true,
     designer: "Balaji Design Studio",
     tagline: "Contemporary sophistication meets comfortable living"
+  },
+  {
+    id: "mr-ambedkar-bunglow",
+    title: "Mr. Ambedkar Bunglow",
+    category: "Residential",
+    location: "Maharashtra, India",
+    completionYear: "2024",
+    size: "3,500 sq ft",
+    budget: "₹85 Lakhs",
+    description: "An elegant bungalow design that showcases a perfect blend of traditional and contemporary architectural elements. The project features spacious interiors, thoughtful layouts, and premium finishes that create a luxurious living environment for modern family living.",
+    features: [
+      "Spacious bungalow with modern architecture",
+      "Premium flooring and high-quality finishes",
+      "Custom lighting design throughout",
+      "Open-plan living and dining areas",
+      "Modern kitchen with integrated appliances",
+      "Luxurious bedroom suites",
+      "Elegant interior design elements",
+      "High-quality materials and craftsmanship",
+      "Thoughtful space planning",
+      "Contemporary design aesthetics"
+    ],
+    images: [
+      "/assets/mr-ambedkar-1.jpg",
+      "/assets/mr-ambedkar-2.jpg",
+      "/assets/mr-ambedkar-3.jpg",
+      "/assets/mr-ambedkar-4.jpg",
+      "/assets/mr-ambedkar-5.jpg",
+      "/assets/mr-ambedkar-6.jpg",
+      "/assets/mr-ambedkar-7.jpg"
+    ],
+    isFeatured: true,
+    designer: "Balaji Design Studio",
+    tagline: "Modern bungalow living with elegant design"
   }
 ];
 
