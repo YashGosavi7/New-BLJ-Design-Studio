@@ -1686,7 +1686,12 @@ const projectsData: Project[] = [
       "/assets/lonavala-farmhouse-7.png",
       "/assets/lonavala-farmhouse-8.png",
       "/assets/lonavala-farmhouse-9.png",
-      "/assets/lonavala-farmhouse-10.png"
+      "/assets/lonavala-farmhouse-10.png",
+      "/assets/lonavala-farmhouse-11.png",
+      "/assets/lonavala-farmhouse-12.png",
+      "/assets/lonavala-farmhouse-13.png",
+      "/assets/lonavala-farmhouse-14.png",
+      "/assets/lonavala-farmhouse-15.png"
     ],
     isFeatured: true,
     designer: "Balaji Design Studio",
