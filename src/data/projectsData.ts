@@ -1595,7 +1595,17 @@ const projectsData: Project[] = [
       "/assets/harshal-wani-flat-7.jpg",
       "/assets/harshal-wani-flat-8.jpg",
       "/assets/harshal-wani-flat-9.jpg",
-      "/assets/harshal-wani-flat-10.jpg"
+      "/assets/harshal-wani-flat-10.jpg",
+      "/assets/harshal-wani-flat-11.jpg",
+      "/assets/harshal-wani-flat-12.jpg",
+      "/assets/harshal-wani-flat-13.jpg",
+      "/assets/harshal-wani-flat-14.jpg",
+      "/assets/harshal-wani-flat-15.jpg",
+      "/assets/harshal-wani-flat-16.jpg",
+      "/assets/harshal-wani-flat-17.jpg",
+      "/assets/harshal-wani-flat-18.jpg",
+      "/assets/harshal-wani-flat-19.jpg",
+      "/assets/harshal-wani-flat-20.jpg"
     ],
     isFeatured: false,
     designer: "Balaji Design Studio",
