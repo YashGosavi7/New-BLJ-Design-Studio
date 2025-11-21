@@ -1519,6 +1519,43 @@ const projectsData: Project[] = [
     isFeatured: true,
     designer: "Balaji Design Studio",
     tagline: "Neoclassical grandeur meets modern luxury living"
+  },
+  {
+    id: "kale-office",
+    title: "Kale Office",
+    category: "Commercial",
+    location: "Maharashtra, India",
+    completionYear: "2024",
+    size: "3,500 sq ft",
+    budget: "₹85 Lakhs",
+    description: "A sophisticated modern office space featuring contemporary design with clean lines and professional aesthetics. The workspace showcases elegant wooden flooring, minimalist workstations, and carefully curated lighting. Reception areas combine luxury marble finishes with modern furniture, creating an impressive corporate environment that balances functionality with refined style.",
+    features: [
+      "Contemporary open-plan office layout",
+      "Premium wooden flooring throughout",
+      "Modern ergonomic workstations",
+      "Sophisticated reception area with marble finishes",
+      "Designer lighting fixtures and track lighting",
+      "Climate-controlled comfortable workspace",
+      "Professional meeting and conference areas",
+      "Minimalist aesthetic with neutral color palette",
+      "Efficient space utilization for productivity",
+      "High-quality materials and finishes"
+    ],
+    images: [
+      "/assets/kale-office-1.jpg",
+      "/assets/kale-office-2.jpg",
+      "/assets/kale-office-3.jpg",
+      "/assets/kale-office-4.jpg",
+      "/assets/kale-office-5.jpg",
+      "/assets/kale-office-6.jpg",
+      "/assets/kale-office-7.jpg",
+      "/assets/kale-office-8.jpg",
+      "/assets/kale-office-9.jpg",
+      "/assets/kale-office-10.jpg"
+    ],
+    isFeatured: true,
+    designer: "Balaji Design Studio",
+    tagline: "Contemporary workspace design for modern professionals"
   }
 ];
 
