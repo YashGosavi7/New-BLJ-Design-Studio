@@ -1564,6 +1564,42 @@ const projectsData: Project[] = [
     isFeatured: true,
     designer: "Balaji Design Studio",
     tagline: "Contemporary workspace design for modern professionals"
+  },
+  {
+    id: "harshal-wani-flat",
+    title: "Mr. Harshal Wani Flat",
+    category: "Residential",
+    location: "Pune, Maharashtra",
+    size: "1,200 sq ft",
+    completionYear: "2024",
+    description: "A beautifully designed residential flat that combines contemporary aesthetics with functional living spaces. This project showcases elegant interiors with a perfect blend of modern design elements and comfort. The space features thoughtful layouts, premium finishes, and a harmonious color palette that creates a warm and inviting atmosphere throughout the home.",
+    features: [
+      "Contemporary interior design",
+      "Modular kitchen with premium fittings",
+      "Elegant living and dining area",
+      "Modern bedroom designs",
+      "Optimized storage solutions",
+      "Premium flooring and wall finishes",
+      "Designer lighting fixtures",
+      "Customized furniture solutions",
+      "Efficient space planning",
+      "Quality material selection"
+    ],
+    images: [
+      "/assets/harshal-wani-flat-1.jpg",
+      "/assets/harshal-wani-flat-2.jpg",
+      "/assets/harshal-wani-flat-3.jpg",
+      "/assets/harshal-wani-flat-4.jpg",
+      "/assets/harshal-wani-flat-5.jpg",
+      "/assets/harshal-wani-flat-6.jpg",
+      "/assets/harshal-wani-flat-7.jpg",
+      "/assets/harshal-wani-flat-8.jpg",
+      "/assets/harshal-wani-flat-9.jpg",
+      "/assets/harshal-wani-flat-10.jpg"
+    ],
+    isFeatured: false,
+    designer: "Balaji Design Studio",
+    tagline: "Modern living spaces with timeless elegance"
   }
 ];
 
