@@ -1655,6 +1655,42 @@ const projectsData: Project[] = [
     isFeatured: false,
     designer: "Balaji Design Studio",
     tagline: "Where tradition meets contemporary dining"
+  },
+  {
+    id: "lonavala-farmhouse",
+    title: "Lonavala Farm House",
+    category: "Residential",
+    location: "Lonavala, Maharashtra",
+    size: "—",
+    completionYear: "2025",
+    description: "A stunning farmhouse retreat in the scenic hills of Lonavala featuring contemporary design with natural elements, spacious living areas, and seamless indoor-outdoor integration. The project showcases modern architecture with premium finishes and thoughtful spatial planning.",
+    features: [
+      "Contemporary exterior with geometric lines",
+      "Spacious open-plan living areas",
+      "Natural stone and wood accents",
+      "Large windows for natural light",
+      "Modern kitchen with premium appliances",
+      "Luxurious bedrooms with ensuite bathrooms",
+      "Outdoor entertainment spaces",
+      "Landscaped gardens and courtyards",
+      "Premium flooring and finishes",
+      "Integrated lighting design"
+    ],
+    images: [
+      "/assets/lonavala-farmhouse-1.png",
+      "/assets/lonavala-farmhouse-2.png",
+      "/assets/lonavala-farmhouse-3.png",
+      "/assets/lonavala-farmhouse-4.png",
+      "/assets/lonavala-farmhouse-5.png",
+      "/assets/lonavala-farmhouse-6.png",
+      "/assets/lonavala-farmhouse-7.png",
+      "/assets/lonavala-farmhouse-8.png",
+      "/assets/lonavala-farmhouse-9.png",
+      "/assets/lonavala-farmhouse-10.png"
+    ],
+    isFeatured: true,
+    designer: "Balaji Design Studio",
+    tagline: "Serene hillside retreat"
   }
 ];
 
