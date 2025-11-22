@@ -1752,7 +1752,17 @@ const projectsData: Project[] = [
       "/assets/harpale-37.png",
       "/assets/harpale-38.png",
       "/assets/harpale-39.png",
-      "/assets/harpale-40.png"
+      "/assets/harpale-40.png",
+      "/assets/harpale-41.png",
+      "/assets/harpale-42.png",
+      "/assets/harpale-43.png",
+      "/assets/harpale-44.png",
+      "/assets/harpale-45.png",
+      "/assets/harpale-46.png",
+      "/assets/harpale-47.png",
+      "/assets/harpale-48.png",
+      "/assets/harpale-49.png",
+      "/assets/harpale-50.png"
     ],
     isFeatured: false,
     designer: "Balaji Design Studio",
