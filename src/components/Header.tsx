@@ -30,11 +30,11 @@ const Header = ({ isScrolled }: HeaderProps) => {
       }`}
     >
       <div className="container mx-auto px-4 md:px-6">
-        <div className="flex items-center justify-between h-20 md:h-24 lg:h-28">
+        <div className="flex items-start justify-between h-20 md:h-24 lg:h-28 pt-2">
           {/* Logo */}
           <Link
             to="/"
-            className="flex items-center hover:opacity-90 transition-opacity ml-4 md:ml-6 mt-3"
+            className="flex items-center hover:opacity-90 transition-opacity"
           >
             <img
               src={logoImage}
@@ -44,7 +44,7 @@ const Header = ({ isScrolled }: HeaderProps) => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8 lg:space-x-10">
+          <nav className="hidden md:flex items-start pt-2 space-x-8 lg:space-x-10">
             {navItems.map((item) => (
               <Link
                 key={item.name}
@@ -65,7 +65,7 @@ const Header = ({ isScrolled }: HeaderProps) => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-3 text-darkGray hover:text-roseGold transition-colors hover:scale-110 touch-manipulation"
+            className="md:hidden p-3 text-darkGray hover:text-roseGold transition-colors hover:scale-110 touch-manipulation mt-1"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
             aria-expanded={isMenuOpen}
