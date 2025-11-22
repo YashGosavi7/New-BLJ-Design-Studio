@@ -1803,7 +1803,16 @@ const projectsData: Project[] = [
       "/assets/divekar-16.png",
       "/assets/divekar-17.png",
       "/assets/divekar-18.png",
-      "/assets/divekar-19.png"
+      "/assets/divekar-19.png",
+      "/assets/divekar-20.png",
+      "/assets/divekar-21.png",
+      "/assets/divekar-22.png",
+      "/assets/divekar-23.png",
+      "/assets/divekar-24.png",
+      "/assets/divekar-25.png",
+      "/assets/divekar-26.png",
+      "/assets/divekar-27.png",
+      "/assets/divekar-28.png"
     ],
     isFeatured: false,
     designer: "Balaji Design Studio",
