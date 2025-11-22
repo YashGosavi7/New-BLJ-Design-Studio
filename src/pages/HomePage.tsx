@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import heroImage from "../assets/hero-living-room.jpg";
+import heroImage from "../assets/hero-mansion.png";
 import aboutTeam from "../assets/about-team.jpg";
 import HeroSection from "../components/HeroSection";
 import SectionTitle from "../components/SectionTitle";
