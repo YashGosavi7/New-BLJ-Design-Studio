@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Home, Building2, Hotel, MapPin, Ruler, Calendar, MessageCircle } from "lucide-react";
+import { Home, Building2, Hotel, MapPin, Ruler, Calendar } from "lucide-react";
 import OptimizedImage from "./OptimizedImage";
 
 interface ProjectCardProps {
@@ -75,18 +75,6 @@ const ProjectCard = ({
             <h3 className="text-2xl md:text-3xl font-playfair font-bold text-darkGray mb-3 group-hover:text-roseGold transition-colors duration-300">
               {title}
             </h3>
-            
-            {/* WhatsApp CTA */}
-            <a
-              href="https://wa.me/919762000000"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={(e) => e.stopPropagation()}
-              className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300 hover:scale-105 shadow-md mb-3"
-            >
-              <MessageCircle size={16} />
-              Connect on WhatsApp
-            </a>
             
             <div className="flex items-center space-x-2 text-darkGray/70 mb-3">
               <MapPin size={18} className="text-roseGold flex-shrink-0" />
