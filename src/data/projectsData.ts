@@ -1762,11 +1762,42 @@ const projectsData: Project[] = [
       "/assets/harpale-47.png",
       "/assets/harpale-48.png",
       "/assets/harpale-49.png",
-      "/assets/harpale-50.png"
+      "/assets/harpale-50.png",
+      "/assets/harpale-51.png"
     ],
     isFeatured: false,
     designer: "Balaji Design Studio",
     tagline: "Contemporary elegance"
+  },
+  {
+    id: "mr-gorakh-divekar",
+    title: "Mr. Gorakh Divekar Residence",
+    category: "Residential",
+    location: "Pune, Maharashtra",
+    completionYear: "2024",
+    size: "2,800 sq ft",
+    description: "A refined residential project featuring modern architectural design with attention to detail and functional elegance.",
+    features: [
+      "Contemporary design aesthetics",
+      "High-quality finishes",
+      "Efficient space utilization",
+      "Natural ventilation and lighting",
+      "Modern amenities integration"
+    ],
+    images: [
+      "/assets/divekar-1.png",
+      "/assets/divekar-2.png",
+      "/assets/divekar-3.png",
+      "/assets/divekar-4.png",
+      "/assets/divekar-5.png",
+      "/assets/divekar-6.png",
+      "/assets/divekar-7.png",
+      "/assets/divekar-8.png",
+      "/assets/divekar-9.png"
+    ],
+    isFeatured: false,
+    designer: "Balaji Design Studio",
+    tagline: "Modern living redefined"
   }
 ];
 
