@@ -53,7 +53,7 @@ const HeroSection = ({
               </p>
             </div>
           )}
-          <CityScrollAnimation speed="medium" />
+          <CityScrollAnimation speed="medium" pauseOnHover={false} />
         </div>
       )}
     </section>
