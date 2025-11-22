@@ -34,7 +34,7 @@ const Header = ({ isScrolled }: HeaderProps) => {
           {/* Logo */}
           <Link
             to="/"
-            className="flex items-center hover:opacity-90 transition-opacity"
+            className="flex items-center hover:opacity-90 transition-opacity -ml-2"
           >
             <img
               src={logoImage}
