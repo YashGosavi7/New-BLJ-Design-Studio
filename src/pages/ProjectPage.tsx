@@ -2,7 +2,7 @@ import { useParams, Navigate } from "react-router-dom";
 import projectsData from "../data/projectsData";
 import ImageLightbox from "../components/ImageLightbox";
 import { Helmet } from "react-helmet";
-import { MapPin, Calendar, Ruler, Tag } from "lucide-react";
+import { MapPin, Calendar, Ruler, Tag, MessageCircle } from "lucide-react";
 
 const ProjectPage = () => {
   const { projectId } = useParams();
@@ -37,6 +37,17 @@ const ProjectPage = () => {
             {project.tagline && (
               <p className="text-xl md:text-2xl text-roseGold mb-8 font-medium">{project.tagline}</p>
             )}
+            
+            {/* WhatsApp CTA */}
+            <a
+              href="https://wa.me/919762000000"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg text-base md:text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg mb-8"
+            >
+              <MessageCircle size={20} />
+              Connect on WhatsApp
+            </a>
             
             <div className="flex flex-wrap justify-center gap-6 md:gap-8 text-base md:text-lg text-darkGray/70">
               <span className="flex items-center gap-2">
