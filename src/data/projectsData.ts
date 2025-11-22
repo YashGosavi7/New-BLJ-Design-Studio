@@ -29,7 +29,7 @@ export interface Project {
 const projectsData: Project[] = [
   {
     id: "bapu-sample-flat",
-    title: "Gokuldham Residency Show Flat",
+    title: "Bapu Sample Flat",
     category: "Residential",
     location: "Maharashtra, India",
     size: "—",
