@@ -25,7 +25,7 @@ const HomePage = () => {
           showCityScroll={true}
           credibilityStatement="600+ Award-Winning Projects Transforming Spaces Across India"
         >
-          <div className="text-center max-w-5xl mx-auto flex flex-col justify-end h-full pb-16 md:pb-20 px-4 md:px-6">
+          <div className="text-center max-w-5xl mx-auto flex flex-col justify-center items-center h-full px-4 md:px-6">
             <h1 className="text-3xl md:text-5xl lg:text-6xl text-white font-playfair mb-6 md:mb-8 leading-tight tracking-tight drop-shadow-2xl font-medium animate-fade-in">
               Balaji Design Studio
             </h1>
