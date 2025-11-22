@@ -25,16 +25,17 @@ const HomePage = () => {
           showCityScroll={true}
           credibilityStatement="600+ Award-Winning Projects Transforming Spaces Across India"
         >
-          <div className="text-center max-w-5xl mx-auto flex flex-col justify-end h-full pb-20 px-4">
-            <h1 className="text-5xl md:text-7xl lg:text-8xl text-white font-playfair mb-8 leading-tight tracking-tight drop-shadow-2xl">
+          <div className="text-center max-w-5xl mx-auto flex flex-col justify-end h-full pb-16 md:pb-20 px-4 md:px-6">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl text-white font-playfair mb-6 md:mb-8 leading-tight tracking-tight drop-shadow-2xl font-medium animate-fade-in">
               Balaji Design Studio
             </h1>
-            <p className="text-2xl md:text-3xl lg:text-4xl text-white/95 mb-12 max-w-3xl mx-auto font-light drop-shadow-lg">
+            <p className="text-lg md:text-xl lg:text-2xl text-white/95 mb-8 md:mb-10 max-w-2xl mx-auto font-light drop-shadow-lg leading-relaxed animate-fade-in" style={{ animationDelay: '0.2s' }}>
               Creative Creation by Creative People
             </p>
             <Link
               to="/portfolio"
-              className="bg-roseGold text-white px-10 py-5 rounded-xl text-lg md:text-xl font-semibold hover:bg-roseGold/90 hover:scale-105 transition-all duration-300 inline-block shadow-2xl backdrop-blur-sm"
+              className="bg-roseGold text-white px-8 py-3.5 md:px-10 md:py-4 rounded-xl text-base md:text-lg font-semibold hover:bg-roseGold/90 hover:scale-105 transition-all duration-300 inline-block shadow-2xl backdrop-blur-sm animate-fade-in"
+              style={{ animationDelay: '0.4s' }}
             >
               Explore Our Portfolio
             </Link>
@@ -42,7 +43,7 @@ const HomePage = () => {
         </HeroSection>
 
         {/* Featured Projects - Enhanced */}
-        <section className="py-20 md:py-32 bg-gradient-to-b from-lightGray/30 to-warmWhite">
+        <section className="py-16 md:py-24 lg:py-32 bg-gradient-to-b from-lightGray/30 to-warmWhite">
           <div className="container mx-auto px-4 md:px-6 lg:px-8">
             <SectionTitle
               title="Featured Projects"
@@ -50,7 +51,7 @@ const HomePage = () => {
               center
             />
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 lg:gap-12 max-w-6xl mx-auto">
               {featuredProjects.map((project, index) => (
                 <ProjectCard
                   key={project.id}
@@ -68,10 +69,10 @@ const HomePage = () => {
               ))}
             </div>
 
-            <div className="text-center mt-16">
+            <div className="text-center mt-12 md:mt-16">
               <Link
                 to="/portfolio"
-                className="bg-roseGold text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-roseGold/90 hover:scale-105 transition-all duration-300 inline-block shadow-lg"
+                className="bg-roseGold text-white px-8 py-3.5 md:px-10 md:py-4 rounded-xl text-base md:text-lg font-semibold hover:bg-roseGold/90 hover:scale-105 transition-all duration-300 inline-block shadow-lg"
               >
                 View Complete Portfolio
               </Link>
@@ -80,24 +81,24 @@ const HomePage = () => {
         </section>
 
         {/* About Section - Enhanced */}
-        <section className="py-20 md:py-32 bg-warmWhite">
+        <section className="py-16 md:py-24 lg:py-32 bg-warmWhite">
           <div className="container mx-auto px-4 md:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center max-w-7xl mx-auto">
-              <div className="space-y-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-12 lg:gap-16 items-center max-w-7xl mx-auto">
+              <div className="space-y-6 md:space-y-8">
                 <div>
-                  <h2 className="text-4xl md:text-5xl lg:text-6xl font-playfair text-darkGray mb-6 leading-tight">
+                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-playfair text-darkGray mb-6 leading-tight font-medium">
                     Crafting Extraordinary Spaces
                   </h2>
-                  <div className="w-20 h-1 bg-roseGold mb-8"></div>
+                  <div className="w-20 h-1 bg-roseGold mb-6 md:mb-8"></div>
                 </div>
                 
-                <p className="text-lg md:text-xl text-darkGray/90 leading-relaxed">
+                <p className="text-base md:text-lg lg:text-xl text-darkGray/90 leading-relaxed">
                   With over <strong className="text-roseGold">600+ successful projects</strong> across India's leading cities, 
                   Balaji Design Studio has established itself as a premier interior 
                   design firm dedicated to creating spaces that inspire and delight.
                 </p>
                 
-                <p className="text-lg md:text-xl text-darkGray/80 leading-relaxed">
+                <p className="text-base md:text-lg lg:text-xl text-darkGray/80 leading-relaxed">
                   Our team of award-winning creative professionals brings together years of experience 
                   in residential, commercial, and hospitality design to deliver 
                   exceptional results that exceed expectations.
@@ -106,7 +107,7 @@ const HomePage = () => {
                 <div className="pt-4">
                   <Link
                     to="/about"
-                    className="inline-flex items-center gap-2 bg-roseGold text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-roseGold/90 hover:scale-105 transition-all duration-300 shadow-lg"
+                    className="inline-flex items-center gap-2 bg-roseGold text-white px-8 py-3.5 md:px-10 md:py-4 rounded-xl text-base md:text-lg font-semibold hover:bg-roseGold/90 hover:scale-105 transition-all duration-300 shadow-lg"
                   >
                     Learn More About Us
                     <span className="text-xl">→</span>
@@ -118,12 +119,12 @@ const HomePage = () => {
                 <OptimizedImage
                   src={aboutTeam}
                   alt="Balaji Design Studio - Award-winning interior design team"
-                  className="h-[500px] md:h-[600px] w-full rounded-2xl shadow-2xl"
+                  className="h-[400px] md:h-[500px] lg:h-[600px] w-full rounded-2xl shadow-2xl"
                   objectFit="cover"
                 />
-                <div className="absolute -bottom-6 -right-6 bg-roseGold text-white p-8 rounded-xl shadow-xl">
-                  <p className="text-4xl font-playfair font-bold mb-1">600+</p>
-                  <p className="text-sm font-medium">Projects Delivered</p>
+                <div className="absolute -bottom-4 -right-4 md:-bottom-6 md:-right-6 bg-roseGold text-white p-6 md:p-8 rounded-xl shadow-xl">
+                  <p className="text-3xl md:text-4xl font-playfair font-bold mb-1">600+</p>
+                  <p className="text-xs md:text-sm font-medium">Projects Delivered</p>
                 </div>
               </div>
             </div>

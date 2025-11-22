@@ -20,7 +20,7 @@ const HeroSection = ({
   credibilityStatement = "600+ Projects Across India's Leading Cities"
 }: HeroSectionProps) => {
   return (
-    <section className="relative h-screen flex flex-col items-center justify-center overflow-hidden">
+      <section className="relative h-screen flex flex-col items-center justify-center overflow-hidden">
       {/* Optimized background image */}
       <div className="absolute inset-0">
         <OptimizedImage
@@ -33,11 +33,13 @@ const HeroSection = ({
       </div>
       
       {overlay && (
-        <div className={`absolute inset-0 ${overlayOpacity} backdrop-blur-[0.5px]`}></div>
+        <div className={`absolute inset-0 ${overlayOpacity} backdrop-blur-[0.5px]`}>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/30"></div>
+        </div>
       )}
 
-      <div className="container mx-auto px-4 md:px-6 lg:px-8 py-24 relative z-10 flex-grow flex items-center justify-center">
-        <div className="animate-fade-in" style={{ animationDuration: '1s' }}>
+      <div className="container mx-auto px-4 md:px-6 lg:px-8 py-16 md:py-24 relative z-10 flex-grow flex items-center justify-center">
+        <div className="animate-fade-in" style={{ animationDuration: '0.8s' }}>
           {children}
         </div>
       </div>

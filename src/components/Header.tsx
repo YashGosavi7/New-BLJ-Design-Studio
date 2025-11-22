@@ -30,16 +30,16 @@ const Header = ({ isScrolled }: HeaderProps) => {
       }`}
     >
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20 md:h-24">
+        <div className="flex items-center justify-between h-16 md:h-20 lg:h-20">
           {/* Logo */}
           <Link
             to="/"
-            className="flex items-center hover:opacity-90 transition-opacity py-3"
+            className="flex items-center hover:opacity-90 transition-opacity py-2"
           >
             <img
               src={logoImage}
               alt="Balaji Design Studio"
-              className="w-[150px] md:w-[180px] lg:w-[220px] h-auto object-contain brightness-110"
+              className="w-[110px] md:w-[140px] lg:w-[160px] h-auto object-contain brightness-105"
             />
           </Link>
 
@@ -65,12 +65,12 @@ const Header = ({ isScrolled }: HeaderProps) => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 text-darkGray hover:text-roseGold transition-colors hover:scale-110"
+            className="md:hidden p-3 text-darkGray hover:text-roseGold transition-colors hover:scale-110 touch-manipulation"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
             aria-expanded={isMenuOpen}
           >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMenuOpen ? <X size={26} /> : <Menu size={26} />}
           </button>
         </div>
 

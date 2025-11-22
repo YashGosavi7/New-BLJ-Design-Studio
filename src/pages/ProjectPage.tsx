@@ -1,6 +1,6 @@
 import { useParams, Navigate } from "react-router-dom";
 import projectsData from "../data/projectsData";
-import OptimizedImage from "../components/OptimizedImage";
+import ImageLightbox from "../components/ImageLightbox";
 import { Helmet } from "react-helmet";
 import { MapPin, Calendar, Ruler, Tag } from "lucide-react";
 
@@ -60,21 +60,12 @@ const ProjectPage = () => {
             </div>
           </header>
 
-          {/* Project Images Gallery - Optimized */}
+          {/* Project Images Gallery - Interactive Lightbox */}
           <div className="mb-16 md:mb-20">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-              {project.images.map((image, index) => (
-                <div key={index} className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                  <OptimizedImage
-                    src={image}
-                    alt={`${project.title} - ${project.category} interior design view ${index + 1}`}
-                    className="w-full h-72 md:h-80"
-                    objectFit="cover"
-                    priority={index === 0}
-                  />
-                </div>
-              ))}
-            </div>
+            <ImageLightbox 
+              images={project.images}
+              altPrefix={`${project.title} - ${project.category} interior design view`}
+            />
           </div>
 
           {/* Project Details - Enhanced Layout */}
