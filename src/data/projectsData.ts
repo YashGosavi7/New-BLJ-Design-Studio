@@ -1696,6 +1696,37 @@ const projectsData: Project[] = [
     isFeatured: true,
     designer: "Balaji Design Studio",
     tagline: "Serene hillside retreat"
+  },
+  {
+    id: "mr-harpale",
+    title: "Mr. Harpale Residence",
+    category: "Residential",
+    location: "Mumbai, Maharashtra",
+    completionYear: "2024",
+    size: "2,500 sq ft",
+    description: "A sophisticated residential project showcasing contemporary design principles and elegant living spaces.",
+    features: [
+      "Modern interior design",
+      "Premium finishes and materials",
+      "Optimized space planning",
+      "Natural lighting integration",
+      "Custom furniture design"
+    ],
+    images: [
+      "/assets/harpale-1.png",
+      "/assets/harpale-2.png",
+      "/assets/harpale-3.png",
+      "/assets/harpale-4.png",
+      "/assets/harpale-5.png",
+      "/assets/harpale-6.png",
+      "/assets/harpale-7.png",
+      "/assets/harpale-8.png",
+      "/assets/harpale-9.png",
+      "/assets/harpale-10.png"
+    ],
+    isFeatured: false,
+    designer: "Balaji Design Studio",
+    tagline: "Contemporary elegance"
   }
 ];
 
