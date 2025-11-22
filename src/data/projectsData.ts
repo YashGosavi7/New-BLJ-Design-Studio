@@ -1836,7 +1836,9 @@ const projectsData: Project[] = [
       "Functional kitchen design with premium appliances",
       "Master bedroom with comfortable furnishings",
       "Bedroom spaces with ambient lighting",
-      "Premium finishes throughout the flat"
+      "Premium finishes throughout the flat",
+      "Children's bedroom with creative design",
+      "Kids room with playful elements and functional storage"
     ],
     images: [
       "/assets/nibm-flat-1.png",
@@ -1848,11 +1850,60 @@ const projectsData: Project[] = [
       "/assets/nibm-flat-7.png",
       "/assets/nibm-flat-8.png",
       "/assets/nibm-flat-9.png",
-      "/assets/nibm-flat-10.png"
+      "/assets/nibm-flat-10.png",
+      "/assets/nibm-flat-11.png",
+      "/assets/nibm-flat-12.png"
     ],
     isFeatured: false,
     designer: "Balaji Design Studio",
     tagline: "Contemporary flat living"
+  },
+  {
+    id: "abhishek-bhavan",
+    title: "Abhishek Bhavan",
+    category: "Residential",
+    location: "Pune",
+    size: "—",
+    completionYear: "2025",
+    description: "Abhishek Bhavan is a residential project that showcases elegant interior design with attention to detail and modern aesthetics. The project features sophisticated living spaces with premium finishes and thoughtful design elements.",
+    features: [
+      "Modern residential interiors",
+      "Premium finishes and materials",
+      "Sophisticated design elements",
+      "Well-planned living spaces",
+      "Contemporary furniture and fixtures"
+    ],
+    images: [
+      "/assets/abhishek-bhavan-1.png",
+      "/assets/abhishek-bhavan-2.png",
+      "/assets/abhishek-bhavan-3.png"
+    ],
+    isFeatured: false,
+    designer: "Balaji Design Studio",
+    tagline: "Elegant residential living"
+  },
+  {
+    id: "park-infinia",
+    title: "Park Infinia",
+    category: "Residential",
+    location: "Pune",
+    size: "—",
+    completionYear: "2025",
+    description: "Park Infinia represents contemporary residential design with a focus on modern living. The project features sleek interiors with premium materials and sophisticated design elements that create an upscale living environment.",
+    features: [
+      "Contemporary residential design",
+      "Premium interior finishes",
+      "Modern aesthetic approach",
+      "Sophisticated living spaces",
+      "High-end fixtures and fittings"
+    ],
+    images: [
+      "/assets/park-infinia-1.png",
+      "/assets/park-infinia-2.png"
+    ],
+    isFeatured: false,
+    designer: "Balaji Design Studio",
+    tagline: "Modern upscale living"
   }
 ];
 
