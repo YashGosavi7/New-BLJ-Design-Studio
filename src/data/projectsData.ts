@@ -1817,6 +1817,42 @@ const projectsData: Project[] = [
     isFeatured: false,
     designer: "Balaji Design Studio",
     tagline: "Modern living redefined"
+  },
+  {
+    id: "nibm-flat",
+    title: "Nibm Flat",
+    category: "Residential",
+    location: "NIBM, Pune",
+    size: "—",
+    completionYear: "2025",
+    description: "A contemporary residential flat in NIBM showcasing modern interior design with elegant spaces. The project features a welcoming entrance, stylish living areas, functional kitchen, and comfortable bedrooms with premium finishes and thoughtful design elements.",
+    features: [
+      "Elegant main entrance with decorative elements",
+      "Welcoming foyer with modern flooring",
+      "Spacious living room with contemporary furniture",
+      "Multiple living area configurations",
+      "Dining area with modern table setup",
+      "Well-equipped modern kitchen",
+      "Functional kitchen design with premium appliances",
+      "Master bedroom with comfortable furnishings",
+      "Bedroom spaces with ambient lighting",
+      "Premium finishes throughout the flat"
+    ],
+    images: [
+      "/assets/nibm-flat-1.png",
+      "/assets/nibm-flat-2.png",
+      "/assets/nibm-flat-3.png",
+      "/assets/nibm-flat-4.png",
+      "/assets/nibm-flat-5.png",
+      "/assets/nibm-flat-6.png",
+      "/assets/nibm-flat-7.png",
+      "/assets/nibm-flat-8.png",
+      "/assets/nibm-flat-9.png",
+      "/assets/nibm-flat-10.png"
+    ],
+    isFeatured: false,
+    designer: "Balaji Design Studio",
+    tagline: "Contemporary flat living"
   }
 ];
 
