@@ -39,7 +39,7 @@ const Header = ({ isScrolled }: HeaderProps) => {
             <img
               src={logoImage}
               alt="Balaji Design Studio"
-              className="w-[110px] md:w-[140px] lg:w-[160px] h-auto object-contain brightness-105"
+              className="w-[110px] md:w-[140px] lg:w-[160px] h-auto object-contain brightness-105 mt-2"
             />
           </Link>
 
