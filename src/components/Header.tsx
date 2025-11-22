@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import logoImage from "@/assets/balaji-logo.png";
 
 interface HeaderProps {
   isScrolled: boolean;
@@ -33,9 +34,13 @@ const Header = ({ isScrolled }: HeaderProps) => {
           {/* Logo */}
           <Link
             to="/"
-            className="text-2xl font-playfair font-bold text-darkGray hover:text-roseGold transition-colors"
+            className="flex items-center hover:opacity-90 transition-opacity"
           >
-            Balaji Design Studio
+            <img
+              src={logoImage}
+              alt="Balaji Design Studio"
+              className="h-12 w-auto md:h-14 lg:h-16 object-contain"
+            />
           </Link>
 
           {/* Desktop Navigation */}
