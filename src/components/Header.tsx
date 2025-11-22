@@ -23,39 +23,42 @@ const Header = ({ isScrolled }: HeaderProps) => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`absolute top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
           ? "bg-white/95 backdrop-blur-md shadow-lg"
           : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="flex items-center justify-between h-20 md:h-24">
           {/* Logo */}
           <Link
             to="/"
-            className="flex items-center hover:opacity-90 transition-opacity"
+            className="flex items-center hover:opacity-90 transition-opacity py-3"
           >
             <img
               src={logoImage}
               alt="Balaji Design Studio"
-              className="h-12 w-auto md:h-14 lg:h-16 object-contain"
+              className="w-[150px] md:w-[180px] lg:w-[220px] h-auto object-contain brightness-110"
             />
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-8 lg:space-x-10">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 to={item.path}
-                className={`font-lato font-medium transition-colors ${
+                className={`font-lato font-semibold text-base lg:text-lg tracking-wide py-2 px-1 transition-all duration-300 relative group ${
                   isActive(item.path)
-                    ? "text-roseGold"
+                    ? "text-roseGold font-bold"
                     : "text-darkGray hover:text-roseGold"
                 }`}
               >
                 {item.name}
+                <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-roseGold transform origin-left transition-transform duration-300 ${
+                  isActive(item.path) ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
+                }`}></span>
               </Link>
             ))}
           </nav>
@@ -79,9 +82,9 @@ const Header = ({ isScrolled }: HeaderProps) => {
                 <Link
                   key={item.name}
                   to={item.path}
-                  className={`block py-2 px-4 font-lato font-medium transition-colors ${
+                  className={`block py-3 px-4 font-lato font-semibold text-base tracking-wide transition-colors ${
                     isActive(item.path)
-                      ? "text-roseGold bg-roseGold/10"
+                      ? "text-roseGold bg-roseGold/10 font-bold"
                       : "text-darkGray hover:text-roseGold hover:bg-roseGold/5"
                   }`}
                   onClick={() => setIsMenuOpen(false)}
