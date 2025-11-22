@@ -31,7 +31,7 @@ const Header = ({
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between h-20 md:h-24 lg:h-28">
           {/* Logo */}
-          <Link to="/" className="flex items-center hover:opacity-90 transition-opacity">
+          <Link to="/" className="flex items-center hover:opacity-90 transition-opacity mt-4 md:mt-5 lg:mt-6">
             <img src={logoImage} alt="Balaji Design Studio" className="w-[130px] md:w-[160px] lg:w-[180px] h-auto object-contain brightness-105 rounded-md shadow opacity-65" />
           </Link>
 
