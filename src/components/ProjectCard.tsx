@@ -61,7 +61,12 @@ const ProjectCard = ({
             className="w-full h-full transform group-hover:scale-110 transition-transform duration-700"
             objectFit="cover"
             aspectRatio="16/9"
+<<<<<<< HEAD
             priority={priority}
+=======
+            priority={index !== undefined && index < 4}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+>>>>>>> 194cef3 (Configure for Netlify deployment and optimize image loading)
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500"></div>
           

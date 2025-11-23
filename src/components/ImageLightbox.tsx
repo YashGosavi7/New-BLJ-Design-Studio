@@ -3,6 +3,7 @@ import Lightbox from 'yet-another-react-lightbox';
 import Zoom from 'yet-another-react-lightbox/plugins/zoom';
 import 'yet-another-react-lightbox/styles.css';
 import { cn } from '@/lib/utils';
+import OptimizedImage from './OptimizedImage';
 
 interface ImageLightboxProps {
   images: string[];
@@ -39,13 +40,15 @@ const ImageLightbox = ({
             className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 cursor-zoom-in focus:outline-none focus:ring-2 focus:ring-roseGold focus:ring-offset-2"
             aria-label={`View ${altPrefix} ${index + 1} in fullscreen`}
           >
-            <img
+            <OptimizedImage
               src={image}
               alt={`${altPrefix} ${index + 1}`}
-              className="w-full h-64 md:h-72 lg:h-80 object-cover transition-transform duration-500 group-hover:scale-110"
-              loading={index < 3 ? 'eager' : 'lazy'}
+              className="w-full h-64 md:h-72 lg:h-80 transition-transform duration-500 group-hover:scale-110"
+              objectFit="cover"
+              priority={index < 3}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
-            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center pointer-events-none">
               <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full">
                 <span className="text-darkGray font-medium text-sm">Click to expand</span>
               </div>

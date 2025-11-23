@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Home, Building2, Hotel } from "lucide-react";
 import ProjectCard from "../components/ProjectCard";
 import SectionTitle from "../components/SectionTitle";
 import projectsData from "../data/projectsData";
 import { Helmet } from "react-helmet";
+import { preloadCriticalImages } from "../utils/imagePreloader";
 
 const PortfolioPage = () => {
   const [activeFilter, setActiveFilter] = useState<string>("All");
@@ -18,6 +19,18 @@ const PortfolioPage = () => {
   const filteredProjects = activeFilter === "All" 
     ? projectsData 
     : projectsData.filter(project => project.category === activeFilter);
+
+  // Preload critical images (first 6 images) when page loads or filter changes
+  useEffect(() => {
+    const criticalImageUrls = filteredProjects
+      .slice(0, 6)
+      .map(project => project.images[0])
+      .filter(Boolean);
+    
+    if (criticalImageUrls.length > 0) {
+      preloadCriticalImages(criticalImageUrls, 6);
+    }
+  }, [activeFilter]);
 
   return (
     <>
