@@ -80,6 +80,7 @@ const PortfolioPage = () => {
               designer={project.designer}
               tagline={project.tagline}
               index={index}
+              priority={index < 3}
             />
           ))}
         </div>

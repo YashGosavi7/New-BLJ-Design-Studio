@@ -65,6 +65,7 @@ const HomePage = () => {
                   designer={project.designer}
                   tagline={project.tagline}
                   index={index}
+                  priority={index < 2}
                 />
               ))}
             </div>

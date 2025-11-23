@@ -13,6 +13,7 @@ interface ProjectCardProps {
   index?: number;
   size?: string;
   completionYear?: string;
+  priority?: boolean;
 }
 
 const getCategoryIcon = (category: string) => {
@@ -38,7 +39,8 @@ const ProjectCard = ({
   tagline,
   index = 0,
   size,
-  completionYear
+  completionYear,
+  priority = false
 }: ProjectCardProps) => {
   const CategoryIcon = getCategoryIcon(category);
   
@@ -59,6 +61,7 @@ const ProjectCard = ({
             className="w-full h-full transform group-hover:scale-110 transition-transform duration-700"
             objectFit="cover"
             aspectRatio="16/9"
+            priority={priority}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500"></div>
           
