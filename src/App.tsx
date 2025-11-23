@@ -9,7 +9,6 @@ import Layout from "./components/Layout";
 import HomePage from "./pages/HomePage";
 import PortfolioPage from "./pages/PortfolioPage";
 import ProjectPage from "./pages/ProjectPage";
-import AboutPage from "./pages/AboutPage";
 import ServicesPage from "./pages/ServicesPage";
 import ContactPage from "./pages/ContactPage";
 import ImageUploadPage from "./pages/ImageUploadPage";
@@ -35,7 +34,6 @@ const App: React.FC = () => {
               <Route index element={<HomePage />} />
               <Route path="portfolio" element={<PortfolioPage />} />
               <Route path="portfolio/:projectId" element={<ProjectPage />} />
-              <Route path="about" element={<AboutPage />} />
               <Route path="services" element={<ServicesPage />} />
               <Route path="contact" element={<ContactPage />} />
               <Route path="upload" element={<ImageUploadPage />} />

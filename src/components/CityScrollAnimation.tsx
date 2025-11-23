@@ -56,18 +56,13 @@ const CityScrollAnimation = ({
           onMouseEnter={() => pauseOnHover && setIsPaused(true)}
           onMouseLeave={() => pauseOnHover && setIsPaused(false)}
         >
-          {/* First set of cities */}
-          {cities.map((city, index) => (
-            <span key={`city-1-${index}`} className="mx-8 text-sm md:text-base font-medium tracking-wider">
-              {city}
-            </span>
-          ))}
-          
-          {/* Duplicate set for seamless loop */}
-          {cities.map((city, index) => (
-            <span key={`city-2-${index}`} className="mx-8 text-sm md:text-base font-medium tracking-wider">
-              {city}
-            </span>
+          {/* Multiple sets for seamless infinite loop */}
+          {[1, 2, 3, 4].map((setNum) => (
+            cities.map((city, index) => (
+              <span key={`city-${setNum}-${index}`} className="mx-8 text-sm md:text-base font-medium tracking-wider">
+                {city}
+              </span>
+            ))
           ))}
         </div>
       </div>
