@@ -80,10 +80,6 @@ const ProjectCard = ({
               {title}
             </h3>
             
-            <div className="flex items-center space-x-2 text-darkGray/70 mb-3">
-              <MapPin size={18} className="text-roseGold flex-shrink-0" />
-              <span className="text-base font-medium">{location}</span>
-            </div>
             
             {designer && (
               <p className="text-sm text-darkGray/60 italic">by {designer}</p>
@@ -91,20 +87,12 @@ const ProjectCard = ({
           </div>
 
           {/* Additional Details */}
-          <div className="flex flex-wrap gap-4 pt-3 border-t border-lightGray/50">
-            {completionYear && (
-              <div className="flex items-center space-x-2 text-sm text-darkGray/70">
-                <Calendar size={16} className="text-roseGold" />
-                <span className="font-medium">{completionYear}</span>
-              </div>
-            )}
-            {size && (
-              <div className="flex items-center space-x-2 text-sm text-darkGray/70">
-                <Ruler size={16} className="text-roseGold" />
-                <span className="font-medium">{size}</span>
-              </div>
-            )}
-          </div>
+          {completionYear && (
+            <div className="flex items-center space-x-2 text-sm text-darkGray/70 pt-3 border-t border-lightGray/50">
+              <Calendar size={16} className="text-roseGold" />
+              <span className="font-medium">{completionYear}</span>
+            </div>
+          )}
           
           <div className="pt-3">
             <span className="inline-flex items-center text-roseGold font-medium text-sm group-hover:gap-2 gap-1 transition-all duration-300">
