@@ -51,14 +51,6 @@ const ProjectPage = () => {
             
             <div className="flex flex-wrap justify-center gap-6 md:gap-8 text-base md:text-lg text-darkGray/70">
               <span className="flex items-center gap-2">
-                <MapPin size={20} className="text-roseGold" />
-                <strong>{project.location}</strong>
-              </span>
-              <span className="flex items-center gap-2">
-                <Ruler size={20} className="text-roseGold" />
-                {project.size}
-              </span>
-              <span className="flex items-center gap-2">
                 <Calendar size={20} className="text-roseGold" />
                 {project.completionYear}
               </span>
