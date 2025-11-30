@@ -24,7 +24,7 @@ const Header = ({ isScrolled }: HeaderProps) => {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
           ? "bg-background/95 backdrop-blur-md border-b border-border"
-          : "bg-transparent"
+          : "bg-background/90 backdrop-blur-sm"
       }`}
     >
       <div className="container-editorial">
@@ -37,9 +37,7 @@ const Header = ({ isScrolled }: HeaderProps) => {
             <img
               src={logoImage}
               alt="Balaji Design Studio"
-              className={`w-[100px] md:w-[120px] h-auto object-contain transition-all duration-300 ${
-                isScrolled ? "" : "brightness-0 invert"
-              }`}
+              className="w-[110px] md:w-[130px] h-auto object-contain transition-all duration-300"
             />
           </Link>
 
@@ -50,20 +48,14 @@ const Header = ({ isScrolled }: HeaderProps) => {
                 key={item.name}
                 to={item.path}
                 className={`font-inter font-medium text-sm tracking-widest uppercase py-2 transition-all duration-300 relative group ${
-                  isScrolled
-                    ? isActive(item.path)
-                      ? "text-foreground"
-                      : "text-foreground/70 hover:text-foreground"
-                    : isActive(item.path)
-                    ? "text-white"
-                    : "text-white hover:text-white/80"
+                  isActive(item.path)
+                    ? "text-foreground"
+                    : "text-foreground/70 hover:text-foreground"
                 }`}
               >
                 {item.name}
                 <span
-                  className={`absolute -bottom-1 left-0 w-full h-px transition-transform duration-300 origin-left ${
-                    isScrolled ? "bg-foreground" : "bg-white"
-                  } ${
+                  className={`absolute -bottom-1 left-0 w-full h-px bg-foreground transition-transform duration-300 origin-left ${
                     isActive(item.path)
                       ? "scale-x-100"
                       : "scale-x-0 group-hover:scale-x-100"
@@ -75,11 +67,7 @@ const Header = ({ isScrolled }: HeaderProps) => {
 
           {/* Mobile Menu Button */}
           <button
-            className={`md:hidden p-3 transition-colors touch-manipulation ${
-              isScrolled
-                ? "text-foreground hover:text-muted-foreground"
-                : "text-white hover:text-white/70"
-            }`}
+            className="md:hidden p-3 transition-colors touch-manipulation text-foreground hover:text-muted-foreground"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
             aria-expanded={isMenuOpen}

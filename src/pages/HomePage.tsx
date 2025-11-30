@@ -34,16 +34,22 @@ const HomePage = () => {
               <h1 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-playfair mb-4 md:mb-6 leading-tight">
                 Balaji Design Studio
               </h1>
-              <p className="text-white/90 text-base sm:text-lg md:text-xl lg:text-2xl font-inter font-light tracking-wide">
+              <p className="text-white/90 text-base sm:text-lg md:text-xl lg:text-2xl font-inter font-light tracking-wide mb-8">
                 Creative Creation by Creative People
               </p>
+              <Link
+                to="/portfolio"
+                className="inline-flex items-center justify-center border border-white text-white px-8 py-3 font-inter font-medium text-sm tracking-widest uppercase transition-all duration-300 hover:bg-white hover:text-black"
+              >
+                View Our Portfolio
+              </Link>
             </div>
           </div>
 
           {/* Tagline and City Scroll Bar at Bottom */}
-          <div className="relative z-10">
-            <div className="text-center py-4 bg-darkGray/70">
-              <p className="text-white/90 text-sm md:text-base font-inter tracking-widest uppercase">
+          <div className="relative z-10 bg-darkGray/80">
+            <div className="text-center py-6 md:py-8">
+              <p className="text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl font-playfair italic tracking-wide">
                 600+ Award-Winning Projects Transforming Spaces Across India
               </p>
             </div>
