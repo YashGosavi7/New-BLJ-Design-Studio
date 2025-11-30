@@ -21,7 +21,6 @@ const ProjectCard = ({
   category,
   image,
   index = 0,
-  completionYear,
   priority = false
 }: ProjectCardProps) => {
   return (
@@ -57,14 +56,9 @@ const ProjectCard = ({
 
         {/* Project Info */}
         <div className="space-y-2">
-          <div className="flex items-center justify-between">
-            <h3 className="text-xl md:text-2xl font-playfair text-foreground group-hover:opacity-70 transition-opacity duration-300">
-              {title}
-            </h3>
-            <span className="text-xs tracking-widest uppercase text-muted-foreground font-inter">
-              {completionYear}
-            </span>
-          </div>
+          <h3 className="text-xl md:text-2xl font-playfair text-foreground group-hover:opacity-70 transition-opacity duration-300">
+            {title}
+          </h3>
           <div className="flex items-center justify-between">
             <span className="text-sm text-muted-foreground font-inter">
               {category}
