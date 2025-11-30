@@ -16,7 +16,7 @@ const ImageLightbox = ({
   images, 
   altPrefix = 'Gallery image',
   className,
-  gridCols = 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3'
+  gridCols = 'grid-cols-1 md:grid-cols-2'
 }: ImageLightboxProps) => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -37,20 +37,22 @@ const ImageLightbox = ({
           <button
             key={index}
             onClick={() => openLightbox(index)}
-            className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 cursor-zoom-in focus:outline-none focus:ring-2 focus:ring-roseGold focus:ring-offset-2"
+            className="group relative overflow-hidden bg-muted cursor-zoom-in focus:outline-none focus:ring-2 focus:ring-foreground focus:ring-offset-2"
             aria-label={`View ${altPrefix} ${index + 1} in fullscreen`}
           >
             <OptimizedImage
               src={image}
               alt={`${altPrefix} ${index + 1}`}
-              className="w-full h-64 md:h-72 lg:h-80 transition-transform duration-500 group-hover:scale-110"
+              className="w-full aspect-[4/3] image-hover-zoom"
               objectFit="cover"
-              priority={index < 3}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              priority={index < 4}
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
-            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center pointer-events-none">
-              <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full">
-                <span className="text-darkGray font-medium text-sm">Click to expand</span>
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500 flex items-center justify-center pointer-events-none">
+              <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <span className="bg-background text-foreground px-4 py-2 text-xs tracking-widest uppercase font-inter">
+                  View
+                </span>
               </div>
             </div>
           </button>
@@ -77,7 +79,7 @@ const ImageLightbox = ({
           closeOnPullDown: true,
         }}
         styles={{
-          container: { backgroundColor: 'rgba(0, 0, 0, 0.95)' },
+          container: { backgroundColor: 'rgba(0, 0, 0, 0.98)' },
         }}
       />
     </>

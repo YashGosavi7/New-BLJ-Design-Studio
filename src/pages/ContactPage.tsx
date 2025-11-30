@@ -2,122 +2,151 @@ import { Mail, Phone, Clock, MessageCircle } from "lucide-react";
 import { Helmet } from "react-helmet";
 
 const ContactPage = () => {
-  const phoneNumber = "919762000000"; // WhatsApp number without + or spaces
+  const phoneNumber = "919762000000";
   const whatsappMessage = encodeURIComponent("Hello! I'm interested in your interior design services. I'd like to discuss my project.");
 
   return (
     <>
       <Helmet>
-        <title>Contact Us | Balaji Design Studio - Get Your Free Consultation</title>
-        <meta name="description" content="Contact Balaji Design Studio for expert interior design services. Call +91 97620 00000. Free consultation available for all projects." />
-        <meta name="keywords" content="contact interior designer, Mumbai interior design, free design consultation, interior design quote, Balaji Design Studio contact" />
+        <title>Contact | Balaji Design Studio</title>
+        <meta name="description" content="Get in touch with Balaji Design Studio. Let's build something beautiful together." />
       </Helmet>
       
-      <article className="min-h-screen pt-20 bg-gradient-to-b from-warmWhite to-lightGray/30">
-        <div className="container mx-auto px-4 md:px-6 lg:px-8 py-16 md:py-20">
-          <header className="text-center mb-16 animate-fade-in">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-playfair text-darkGray mb-6">
-              Contact Us
-            </h1>
-            <p className="text-xl md:text-2xl text-darkGray/70 max-w-3xl mx-auto leading-relaxed">
-              Ready to start your design journey? Get in touch with our expert team.
-            </p>
-            <div className="w-24 h-1 bg-roseGold mx-auto mt-6"></div>
-          </header>
+      <article className="min-h-screen pt-24 md:pt-32 bg-background">
+        {/* Hero Section */}
+        <section className="section-padding border-b border-border">
+          <div className="container-editorial">
+            <div className="max-w-3xl animate-fade-in">
+              <div className="separator-thick mb-8" />
+              <h1 className="text-foreground mb-8">
+                Let's Build Something<br />Beautiful.
+              </h1>
+              <p className="text-muted-foreground text-lg md:text-xl max-w-xl">
+                Ready to transform your space? We'd love to hear about your project and discuss how we can bring your vision to life.
+              </p>
+            </div>
+          </div>
+        </section>
 
-          <div className="max-w-5xl mx-auto">
-            {/* WhatsApp CTA Section */}
-            <div className="mb-16 animate-scale-in">
-              <div className="bg-gradient-to-br from-[#25D366]/10 via-white to-roseGold/5 rounded-3xl shadow-2xl p-8 md:p-12 border border-[#25D366]/20">
-                <div className="text-center space-y-6">
-                  <div className="inline-flex items-center justify-center w-20 h-20 bg-[#25D366] rounded-full shadow-lg animate-pulse">
-                    <MessageCircle className="text-white" size={40} />
-                  </div>
-                  
-                  <h2 className="text-3xl md:text-4xl font-playfair text-darkGray">
-                    Let's Talk About Your Project
+        {/* Contact Content */}
+        <section className="section-padding">
+          <div className="container-editorial">
+            <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
+              {/* Left Column - CTA */}
+              <div className="space-y-12 animate-fade-in">
+                <div>
+                  <h2 className="text-2xl md:text-3xl font-playfair text-foreground mb-6">
+                    Start a Conversation
                   </h2>
-                  
-                  <p className="text-lg md:text-xl text-darkGray/70 max-w-2xl mx-auto leading-relaxed">
-                    Connect with us instantly on WhatsApp for quick responses and personalized consultation
+                  <p className="text-muted-foreground mb-8">
+                    Connect with us directly on WhatsApp for quick responses and personalized consultation.
                   </p>
                   
                   <a
                     href={`https://wa.me/${phoneNumber}?text=${whatsappMessage}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-3 bg-[#25D366] text-white px-10 py-5 rounded-2xl text-lg md:text-xl font-semibold hover:bg-[#20BD5A] hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl"
+                    className="inline-flex items-center gap-3 bg-foreground text-background px-8 py-4 font-inter font-medium text-sm tracking-widest uppercase transition-all duration-300 hover:bg-muted-foreground"
                   >
-                    <MessageCircle size={28} />
+                    <MessageCircle size={20} />
                     Chat on WhatsApp
                   </a>
+                </div>
+
+                {/* Contact Details */}
+                <div className="space-y-8 pt-8 border-t border-border">
+                  <div className="flex items-start gap-6">
+                    <div className="w-12 h-12 flex items-center justify-center border border-border">
+                      <Phone className="text-foreground" size={20} />
+                    </div>
+                    <div>
+                      <h3 className="font-inter text-sm tracking-widest uppercase text-muted-foreground mb-2">
+                        Phone
+                      </h3>
+                      <a
+                        href="tel:+919762000000"
+                        className="text-foreground hover:opacity-70 transition-opacity text-lg"
+                      >
+                        +91 97620 00000
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-6">
+                    <div className="w-12 h-12 flex items-center justify-center border border-border">
+                      <Mail className="text-foreground" size={20} />
+                    </div>
+                    <div>
+                      <h3 className="font-inter text-sm tracking-widest uppercase text-muted-foreground mb-2">
+                        Email
+                      </h3>
+                      <a
+                        href="mailto:balajidesignstudio@hotmail.com"
+                        className="text-foreground hover:opacity-70 transition-opacity"
+                      >
+                        balajidesignstudio@hotmail.com
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-6">
+                    <div className="w-12 h-12 flex items-center justify-center border border-border">
+                      <Clock className="text-foreground" size={20} />
+                    </div>
+                    <div>
+                      <h3 className="font-inter text-sm tracking-widest uppercase text-muted-foreground mb-2">
+                        Business Hours
+                      </h3>
+                      <div className="text-foreground space-y-1">
+                        <p>Mon – Fri: 9AM – 6PM</p>
+                        <p>Saturday: 10AM – 4PM</p>
+                        <p className="text-muted-foreground">Sunday: Closed</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Right Column - Stats */}
+              <div className="animate-fade-in" style={{ animationDelay: '200ms' }}>
+                <div className="bg-muted p-10 md:p-16 h-full flex flex-col justify-center">
+                  <h3 className="text-xl font-playfair text-foreground mb-12">
+                    Why Work With Us
+                  </h3>
                   
-                  <p className="text-sm text-darkGray/60 italic">
-                    Usually responds within minutes during business hours
-                  </p>
-                </div>
-              </div>
-            </div>
+                  <div className="space-y-10">
+                    <div className="border-b border-border pb-10">
+                      <p className="text-5xl md:text-6xl font-playfair text-foreground mb-2">
+                        600+
+                      </p>
+                      <p className="text-sm tracking-widest uppercase text-muted-foreground font-inter">
+                        Projects Completed
+                      </p>
+                    </div>
 
-            {/* Contact Information Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-              <div className="flex flex-col items-center text-center bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in" style={{ animationDelay: '0.1s' }}>
-                <div className="w-16 h-16 bg-roseGold/10 rounded-full flex items-center justify-center mb-4">
-                  <Phone className="text-roseGold" size={28} />
-                </div>
-                <h3 className="font-semibold text-xl text-darkGray mb-3">Phone</h3>
-                <p className="text-darkGray/70 hover:text-roseGold transition-colors">
-                  <a href="tel:+919762000000" className="text-lg">+91 97620 00000</a>
-                </p>
-              </div>
+                    <div className="border-b border-border pb-10">
+                      <p className="text-5xl md:text-6xl font-playfair text-foreground mb-2">
+                        15+
+                      </p>
+                      <p className="text-sm tracking-widest uppercase text-muted-foreground font-inter">
+                        Years of Experience
+                      </p>
+                    </div>
 
-              <div className="flex flex-col items-center text-center bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-                <div className="w-16 h-16 bg-roseGold/10 rounded-full flex items-center justify-center mb-4">
-                  <Mail className="text-roseGold" size={28} />
-                </div>
-                <h3 className="font-semibold text-xl text-darkGray mb-3">Email</h3>
-                <p className="text-darkGray/70 hover:text-roseGold transition-colors break-all">
-                  <a href="mailto:balajidesignstudio@hotmail.com" className="text-base">
-                    balajidesignstudio@hotmail.com
-                  </a>
-                </p>
-              </div>
-
-              <div className="flex flex-col items-center text-center bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-                <div className="w-16 h-16 bg-roseGold/10 rounded-full flex items-center justify-center mb-4">
-                  <Clock className="text-roseGold" size={28} />
-                </div>
-                <h3 className="font-semibold text-xl text-darkGray mb-3">Business Hours</h3>
-                <div className="text-darkGray/70 space-y-1">
-                  <p>Mon - Fri: 9AM - 6PM</p>
-                  <p>Saturday: 10AM - 4PM</p>
-                  <p>Sunday: Closed</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Additional Info */}
-            <div className="text-center bg-white rounded-2xl shadow-lg p-8 md:p-10 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-              <h3 className="text-2xl font-playfair text-darkGray mb-4">
-                Why Choose Balaji Design Studio?
-              </h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-                <div className="space-y-2">
-                  <p className="text-3xl font-bold text-roseGold">600+</p>
-                  <p className="text-darkGray/70">Projects Completed</p>
-                </div>
-                <div className="space-y-2">
-                  <p className="text-3xl font-bold text-roseGold">15+</p>
-                  <p className="text-darkGray/70">Years Experience</p>
-                </div>
-                <div className="space-y-2">
-                  <p className="text-3xl font-bold text-roseGold">100%</p>
-                  <p className="text-darkGray/70">Client Satisfaction</p>
+                    <div>
+                      <p className="text-5xl md:text-6xl font-playfair text-foreground mb-2">
+                        100%
+                      </p>
+                      <p className="text-sm tracking-widest uppercase text-muted-foreground font-inter">
+                        Client Satisfaction
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </article>
     </>
   );

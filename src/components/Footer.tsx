@@ -1,126 +1,59 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone, Instagram, Facebook, Linkedin } from "lucide-react";
+import { Instagram } from "lucide-react";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer className="bg-darkGray text-white">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Company Info */}
-          <div>
-            <h3 className="text-xl font-playfair font-bold mb-4 text-roseGold">
+    <footer className="bg-foreground text-background">
+      <div className="container-editorial py-16 md:py-24 px-6 md:px-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
+          {/* Brand */}
+          <div className="md:col-span-2">
+            <h3 className="text-2xl md:text-3xl font-playfair text-background mb-4">
               Balaji Design Studio
             </h3>
-            <p className="text-lightGray mb-4 leading-relaxed">
-              Creating beautiful, functional spaces that reflect your unique style and enhance your lifestyle.
+            <p className="text-background/60 max-w-md leading-relaxed font-inter mb-6">
+              Creating timeless interior and architectural experiences through detail, materiality, and refined spatial thinking.
             </p>
-            <div className="flex space-x-4">
-              <a
-                href="https://www.instagram.com/balaji_design_studio_/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-lightGray hover:text-roseGold transition-colors"
-                aria-label="Instagram"
-              >
-                <Instagram size={20} />
-              </a>
-              <a
-                href="#"
-                className="text-lightGray hover:text-roseGold transition-colors"
-                aria-label="Facebook"
-              >
-                <Facebook size={20} />
-              </a>
-              <a
-                href="#"
-                className="text-lightGray hover:text-roseGold transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin size={20} />
-              </a>
-            </div>
+            <a
+              href="https://www.instagram.com/balaji_design_studio_/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-background/60 hover:text-background transition-colors"
+              aria-label="Instagram"
+            >
+              <Instagram size={18} />
+              <span className="text-sm font-inter">Follow us</span>
+            </a>
           </div>
 
-          {/* Quick Links */}
+          {/* Navigation */}
           <div>
-            <h4 className="text-lg font-playfair font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2">
-              <li>
-                <Link
-                  to="/"
-                  className="text-lightGray hover:text-roseGold transition-colors"
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/portfolio"
-                  className="text-lightGray hover:text-roseGold transition-colors"
-                >
-                  Portfolio
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/about"
-                  className="text-lightGray hover:text-roseGold transition-colors"
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/services"
-                  className="text-lightGray hover:text-roseGold transition-colors"
-                >
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/contact"
-                  className="text-lightGray hover:text-roseGold transition-colors"
-                >
-                  Contact
-                </Link>
-              </li>
-            </ul>
+            <h4 className="text-xs tracking-widest uppercase text-background/60 font-inter mb-6">
+              Navigation
+            </h4>
+            <nav className="space-y-4">
+              <Link to="/" className="block text-background/80 hover:text-background transition-colors font-inter text-sm">Home</Link>
+              <Link to="/portfolio" className="block text-background/80 hover:text-background transition-colors font-inter text-sm">Portfolio</Link>
+              <Link to="/services" className="block text-background/80 hover:text-background transition-colors font-inter text-sm">Services</Link>
+              <Link to="/contact" className="block text-background/80 hover:text-background transition-colors font-inter text-sm">Contact</Link>
+            </nav>
           </div>
 
-          {/* Services */}
+          {/* Contact */}
           <div>
-            <h4 className="text-lg font-playfair font-semibold mb-4">Services</h4>
-            <ul className="space-y-2 text-lightGray">
-              <li>Residential Design</li>
-              <li>Commercial Spaces</li>
-              <li>Office Interiors</li>
-              <li>Hospitality Design</li>
-              <li>Space Planning</li>
-              <li>3D Visualization</li>
-            </ul>
-          </div>
-
-          {/* Contact Info */}
-          <div>
-            <h4 className="text-lg font-playfair font-semibold mb-4">Contact Info</h4>
-            <div className="space-y-3">
-              <div className="flex items-center space-x-3">
-                <Phone size={16} className="text-roseGold" />
-                <span className="text-lightGray">+91 97620 00000</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Mail size={16} className="text-roseGold" />
-                <span className="text-lightGray">balajidesignstudio@hotmail.com</span>
-              </div>
+            <h4 className="text-xs tracking-widest uppercase text-background/60 font-inter mb-6">Contact</h4>
+            <div className="space-y-4 text-sm font-inter">
+              <a href="tel:+919762000000" className="block text-background/80 hover:text-background transition-colors">+91 97620 00000</a>
+              <a href="mailto:balajidesignstudio@hotmail.com" className="block text-background/80 hover:text-background transition-colors">balajidesignstudio@hotmail.com</a>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-lightGray/20 mt-8 pt-8 text-center">
-          <p className="text-lightGray">
-            © {new Date().getFullYear()} Balaji Design Studio. All rights reserved.
-          </p>
+        <div className="mt-16 pt-8 border-t border-background/10 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-background/40 text-xs tracking-widest uppercase font-inter">© {currentYear} Balaji Design Studio</p>
+          <p className="text-background/40 text-xs tracking-widest uppercase font-inter">Design With Intention</p>
         </div>
       </div>
     </footer>
