@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import heroImage from "../assets/hero-mansion.png";
 import OptimizedImage from "../components/OptimizedImage";
 import CategoryBlocks from "../components/CategoryBlocks";
+import CityScrollAnimation from "../components/CityScrollAnimation";
 import { Helmet } from "react-helmet";
 
 const HomePage = () => {
@@ -14,7 +15,7 @@ const HomePage = () => {
       
       <div className="min-h-screen bg-background">
         {/* Premium Hero Section */}
-        <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
+        <section className="relative h-screen min-h-[600px] md:min-h-[700px] flex flex-col overflow-hidden">
           {/* Background Image with subtle dark overlay */}
           <div className="absolute inset-0">
             <OptimizedImage
@@ -24,42 +25,24 @@ const HomePage = () => {
               objectFit="cover"
               priority={true}
             />
-            <div className="absolute inset-0 bg-black/40" />
+            <div className="absolute inset-0 bg-black/50" />
           </div>
 
-          {/* Hero Content - Center-left aligned */}
-          <div className="relative z-10 container-editorial w-full">
-            <div className="max-w-3xl animate-fade-in">
-              <h1 className="text-white mb-8 leading-none">
-                Design That<br />Defines Spaces.
+          {/* Hero Content - Center aligned */}
+          <div className="relative z-10 flex-1 flex items-center justify-center w-full px-6 md:px-8">
+            <div className="text-center animate-fade-in">
+              <h1 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-playfair mb-4 md:mb-6 leading-tight">
+                Balaji Design Studio
               </h1>
-              <p className="text-white/80 text-lg md:text-xl lg:text-2xl mb-12 max-w-2xl font-inter font-light leading-relaxed">
-                Balaji Design Studio creates timeless interior and architectural experiences through detail, materiality, and refined spatial thinking.
+              <p className="text-white/90 text-base sm:text-lg md:text-xl lg:text-2xl font-inter font-light tracking-wide">
+                Creative Creation by Creative People
               </p>
-              
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link
-                  to="/portfolio"
-                  className="inline-flex items-center justify-center bg-white text-black px-10 py-4 font-inter font-medium text-sm tracking-widest uppercase transition-all duration-300 hover:bg-black hover:text-white border border-white"
-                >
-                  View Portfolio
-                </Link>
-                <Link
-                  to="/contact"
-                  className="inline-flex items-center justify-center bg-transparent text-white px-10 py-4 font-inter font-medium text-sm tracking-widest uppercase transition-all duration-300 hover:bg-white hover:text-black border border-white/50"
-                >
-                  Get in Touch
-                </Link>
-              </div>
             </div>
           </div>
 
-          {/* Scroll Indicator */}
-          <div className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-fade-in" style={{ animationDelay: '1s' }}>
-            <div className="flex flex-col items-center text-white/60">
-              <span className="text-xs tracking-widest uppercase mb-4 font-inter">Scroll</span>
-              <div className="w-px h-12 bg-white/30" />
-            </div>
+          {/* City Scroll Bar at Bottom */}
+          <div className="relative z-10">
+            <CityScrollAnimation speed="medium" pauseOnHover={false} />
           </div>
         </section>
 
