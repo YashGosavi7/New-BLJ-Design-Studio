@@ -46,8 +46,19 @@ const HomePage = () => {
             </div>
           </div>
 
-          {/* City Scroll Bar at Bottom */}
-          <div className="relative z-10">
+          {/* Headline and City Scroll Bar at Bottom */}
+          <div className="relative z-10 bg-darkGray/80">
+            <div className="text-center py-5 md:py-6">
+              <p 
+                className="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl font-playfair font-medium"
+                style={{ 
+                  letterSpacing: '-0.5px',
+                  lineHeight: '115%'
+                }}
+              >
+                600+ Award-Winning Projects Transforming Spaces Across India
+              </p>
+            </div>
             <CityScrollAnimation speed="medium" pauseOnHover={false} />
           </div>
         </section>
