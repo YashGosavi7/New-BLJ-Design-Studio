@@ -53,10 +53,10 @@ const Header = ({ isScrolled }: HeaderProps) => {
                   isScrolled
                     ? isActive(item.path)
                       ? "text-foreground"
-                      : "text-muted-foreground hover:text-foreground"
+                      : "text-foreground/70 hover:text-foreground"
                     : isActive(item.path)
                     ? "text-white"
-                    : "text-white/70 hover:text-white"
+                    : "text-white hover:text-white/80"
                 }`}
               >
                 {item.name}

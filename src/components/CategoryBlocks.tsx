@@ -42,7 +42,7 @@ const CategoryBlocks = () => {
         <Link
           key={category.name}
           to={category.link}
-          className="block relative w-full h-[70vh] md:h-[75vh] lg:h-[80vh] overflow-hidden group"
+          className="block relative w-full h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[75vh] xl:h-[80vh] overflow-hidden group"
         >
           {/* Background Image */}
           <div className="absolute inset-0">
@@ -55,17 +55,17 @@ const CategoryBlocks = () => {
               sizes="100vw"
             />
             {/* Subtle gradient overlay for text readability */}
-            <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/20 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/30 to-transparent" />
           </div>
 
           {/* Category Name - Left aligned */}
           <div className="absolute inset-0 flex items-center">
-            <div className="container-editorial">
+            <div className="px-6 sm:px-8 md:px-12 lg:px-16 xl:px-24">
               <h2 
-                className="text-white text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-inter font-light tracking-[0.2em] uppercase transition-all duration-500 group-hover:tracking-[0.25em]"
+                className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-inter font-light uppercase transition-all duration-500 group-hover:tracking-[0.25em]"
                 style={{ 
-                  textShadow: '0 2px 20px rgba(0,0,0,0.3)',
-                  letterSpacing: '0.15em'
+                  textShadow: '0 2px 20px rgba(0,0,0,0.4)',
+                  letterSpacing: '0.12em'
                 }}
               >
                 {category.name}
