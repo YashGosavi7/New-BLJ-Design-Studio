@@ -1,16 +1,31 @@
 import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import projectsData from "../data/projectsData";
 import ProjectCard from "../components/ProjectCard";
 import { Helmet } from "react-helmet";
 
 const PortfolioPage = () => {
   const [activeFilter, setActiveFilter] = useState("All");
+  const location = useLocation();
   
   const categories = ["All", "Residential", "Commercial", "Hospitality"];
   
   const filteredProjects = activeFilter === "All" 
     ? projectsData 
     : projectsData.filter(project => project.category === activeFilter);
+
+  // Handle hash scroll on page load
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace('#', '');
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  }, [location.hash]);
 
   // Preload first 6 images for better UX
   useEffect(() => {
@@ -80,32 +95,40 @@ const PortfolioPage = () => {
           </div>
         </section>
 
-        {/* Projects Grid */}
-        <section className="section-padding" id="residential">
-          <div className="container-editorial">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16" id="office">
-              {filteredProjects.map((project, index) => (
-                <div key={project.id} id={index === 0 ? "architecture" : index === 1 ? "hospitality" : undefined}>
-                  <ProjectCard
-                    id={project.id}
-                    title={project.title}
-                    category={project.category}
-                    location={project.location}
-                    image={project.images[0]}
-                    index={index}
-                    priority={index < 4}
-                  />
+        {/* Projects by Category */}
+        {["Residential", "Commercial", "Hospitality"].map((category) => {
+          const categoryProjects = projectsData.filter(p => p.category === category);
+          if (activeFilter !== "All" && activeFilter !== category) return null;
+          if (categoryProjects.length === 0) return null;
+          
+          return (
+            <section key={category} id={category.toLowerCase()} className="section-padding border-b border-border last:border-b-0">
+              <div className="container-editorial">
+                <h2 className="text-2xl md:text-3xl font-playfair text-foreground mb-8">{category}</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16">
+                  {categoryProjects.map((project, index) => (
+                    <ProjectCard
+                      key={project.id}
+                      id={project.id}
+                      title={project.title}
+                      category={project.category}
+                      location={project.location}
+                      image={project.images[0]}
+                      index={index}
+                      priority={index < 4}
+                    />
+                  ))}
                 </div>
-              ))}
-            </div>
-
-            {filteredProjects.length === 0 && (
-              <div className="text-center py-24">
-                <p className="text-muted-foreground">No projects found in this category.</p>
               </div>
-            )}
+            </section>
+          );
+        })}
+
+        {filteredProjects.length === 0 && (
+          <div className="text-center py-24">
+            <p className="text-muted-foreground">No projects found in this category.</p>
           </div>
-        </section>
+        )}
       </article>
     </>
   );
