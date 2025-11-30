@@ -2,8 +2,12 @@ import { Link } from "react-router-dom";
 import heroImage from "../assets/hero-mansion.png";
 import OptimizedImage from "../components/OptimizedImage";
 import CategoryBlocks from "../components/CategoryBlocks";
-import CityScrollAnimation from "../components/CityScrollAnimation";
 import { Helmet } from "react-helmet";
+
+const cities = [
+  "Pune", "Latur", "Solapur", "Hyderabad", "Bangalore", 
+  "Delhi", "Kolkata", "Chennai", "Mumbai"
+];
 
 const HomePage = () => {
   return (
@@ -45,19 +49,31 @@ const HomePage = () => {
               </Link>
             </div>
           </div>
+        </section>
 
-          {/* Tagline and City Scroll Bar at Bottom */}
-          <div className="relative z-10 bg-darkGray/80">
-            <div className="text-center py-6 md:py-8">
-              <p className="text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl font-playfair italic tracking-wide">
-                600+ Award-Winning Projects Transforming Spaces Across India
-              </p>
+        {/* Award-Winning Projects Section */}
+        <section className="w-full bg-[#1a1a1a] py-12 md:py-16 lg:py-20">
+          <div className="container mx-auto px-6">
+            {/* Main Headline */}
+            <h2 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-playfair text-center mb-8 md:mb-12 leading-relaxed">
+              600+ Award-Winning Projects Transforming Spaces Across India
+            </h2>
+            
+            {/* City List */}
+            <div className="flex flex-wrap justify-center items-center gap-x-6 gap-y-3 md:gap-x-10 lg:gap-x-14">
+              {cities.map((city) => (
+                <span 
+                  key={city}
+                  className="text-[#eaeaea] text-sm md:text-base font-inter tracking-[0.15em] uppercase"
+                >
+                  {city}
+                </span>
+              ))}
             </div>
-            <CityScrollAnimation speed="medium" pauseOnHover={false} />
           </div>
         </section>
 
-        {/* Category Blocks Section - Noaidwin Studio Style */}
+        {/* Category Blocks Section */}
         <CategoryBlocks />
 
         {/* Studio Statement */}
