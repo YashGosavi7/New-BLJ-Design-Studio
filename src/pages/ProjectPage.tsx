@@ -2,7 +2,7 @@ import { useParams, Navigate, Link } from "react-router-dom";
 import projectsData from "../data/projectsData";
 import ImageLightbox from "../components/ImageLightbox";
 import { Helmet } from "react-helmet";
-import { Tag, MessageCircle, ArrowLeft } from "lucide-react";
+import { MessageCircle, ArrowLeft } from "lucide-react";
 
 const ProjectPage = () => {
   const { projectId } = useParams();
@@ -35,34 +35,35 @@ const ProjectPage = () => {
         </div>
 
         {/* Project Header */}
-        <header className="section-padding pt-0 border-b border-border">
-          <div className="container-editorial">
-            <div className="max-w-4xl animate-fade-in">
-              <div className="flex items-center gap-4 mb-8">
-                <span className="text-xs tracking-widest uppercase text-muted-foreground font-inter">
-                  {project.category}
-                </span>
-                <span className="w-8 h-px bg-border" />
-                <span className="text-xs tracking-widest uppercase text-muted-foreground font-inter">
-                  {project.completionYear}
-                </span>
-              </div>
-              
-              <h1 className="text-foreground mb-8">{project.title}</h1>
-              
-              {project.tagline && (
-                <p className="text-xl md:text-2xl text-muted-foreground mb-8 font-playfair italic">
-                  {project.tagline}
-                </p>
-              )}
-              
-              {project.budget && (
-                <div className="flex items-center gap-3 text-foreground">
-                  <Tag size={18} />
-                  <span className="font-inter font-medium">{project.budget}</span>
-                </div>
-              )}
-            </div>
+        <header className="pt-10 pb-5 border-b border-border">
+          <div className="max-w-[900px] mx-auto px-6 animate-fade-in">
+            <span className="text-xs tracking-widest uppercase text-muted-foreground font-inter mb-4 block">
+              {project.category}
+            </span>
+            
+            <h1 
+              className="text-foreground mb-2.5"
+              style={{ fontSize: '54px', lineHeight: '1.1' }}
+            >
+              {project.title}
+            </h1>
+            
+            {project.tagline && (
+              <p className="text-xl md:text-2xl text-muted-foreground mt-0 mb-5 font-playfair italic">
+                {project.tagline}
+              </p>
+            )}
+            
+            {/* WhatsApp CTA */}
+            <a
+              href={`https://wa.me/${phoneNumber}?text=${whatsappMessage}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-[#25D366] text-white px-6 py-3 font-inter font-medium text-sm tracking-wider uppercase transition-all duration-300 hover:bg-[#128C7E]"
+            >
+              <MessageCircle size={18} />
+              Enquire Now
+            </a>
           </div>
         </header>
 

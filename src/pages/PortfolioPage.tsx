@@ -43,19 +43,29 @@ const PortfolioPage = () => {
         </section>
 
         {/* Filter Navigation */}
-        <section className="py-8 border-b border-border sticky top-20 md:top-24 bg-background/95 backdrop-blur-md z-40">
+        <section className="py-8 border-b border-border bg-background">
           <div className="container-editorial">
             <nav className="flex flex-wrap gap-2 md:gap-8" aria-label="Project categories">
               {categories.map((category) => (
-                <button
+                <a
                   key={category}
-                  onClick={() => setActiveFilter(category)}
+                  href={category === "All" ? "/portfolio" : `/portfolio#${category.toLowerCase()}`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setActiveFilter(category);
+                    if (category !== "All") {
+                      const element = document.getElementById(category.toLowerCase());
+                      if (element) {
+                        element.scrollIntoView({ behavior: 'smooth' });
+                      }
+                    }
+                  }}
                   className={`px-4 py-2 font-inter text-sm tracking-widest uppercase transition-all duration-300 ${
                     activeFilter === category
                       ? "text-foreground border-b-2 border-foreground"
                       : "text-muted-foreground hover:text-foreground border-b-2 border-transparent"
                   }`}
-                  aria-pressed={activeFilter === category}
+                  aria-current={activeFilter === category ? "page" : undefined}
                 >
                   {category}
                   <span className="ml-2 text-xs text-muted-foreground">
@@ -64,28 +74,28 @@ const PortfolioPage = () => {
                       : projectsData.filter(p => p.category === category).length
                     })
                   </span>
-                </button>
+                </a>
               ))}
             </nav>
           </div>
         </section>
 
         {/* Projects Grid */}
-        <section className="section-padding">
+        <section className="section-padding" id="residential">
           <div className="container-editorial">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16" id="office">
               {filteredProjects.map((project, index) => (
-                <ProjectCard
-                  key={project.id}
-                  id={project.id}
-                  title={project.title}
-                  category={project.category}
-                  location={project.location}
-                  image={project.images[0]}
-                  completionYear={project.completionYear}
-                  index={index}
-                  priority={index < 4}
-                />
+                <div key={project.id} id={index === 0 ? "architecture" : index === 1 ? "hospitality" : undefined}>
+                  <ProjectCard
+                    id={project.id}
+                    title={project.title}
+                    category={project.category}
+                    location={project.location}
+                    image={project.images[0]}
+                    index={index}
+                    priority={index < 4}
+                  />
+                </div>
               ))}
             </div>
 
