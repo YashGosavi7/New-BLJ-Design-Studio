@@ -40,8 +40,13 @@ const HomePage = () => {
             </div>
           </div>
 
-          {/* City Scroll Bar at Bottom */}
+          {/* Tagline and City Scroll Bar at Bottom */}
           <div className="relative z-10">
+            <div className="text-center py-4 bg-darkGray/70">
+              <p className="text-white/90 text-sm md:text-base font-inter tracking-widest uppercase">
+                600+ Award-Winning Projects Transforming Spaces Across India
+              </p>
+            </div>
             <CityScrollAnimation speed="medium" pauseOnHover={false} />
           </div>
         </section>

@@ -37,8 +37,8 @@ const Header = ({ isScrolled }: HeaderProps) => {
             <img
               src={logoImage}
               alt="Balaji Design Studio"
-              className={`w-[120px] md:w-[140px] h-auto object-contain transition-all duration-300 ${
-                isScrolled ? "brightness-100" : "brightness-0 invert"
+              className={`w-[100px] md:w-[120px] h-auto object-contain transition-all duration-300 ${
+                isScrolled ? "" : "brightness-0 invert"
               }`}
             />
           </Link>
