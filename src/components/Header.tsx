@@ -2,59 +2,119 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import logoImage from "@/assets/balaji-logo.png";
+
 interface HeaderProps {
   isScrolled: boolean;
 }
-const Header = ({
-  isScrolled
-}: HeaderProps) => {
+
+const Header = ({ isScrolled }: HeaderProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
   const isActive = (path: string) => location.pathname === path;
-  const navItems = [{
-    name: "Home",
-    path: "/"
-  }, {
-    name: "Portfolio",
-    path: "/portfolio"
-  }, {
-    name: "Services",
-    path: "/services"
-  }, {
-    name: "Contact",
-    path: "/contact"
-  }];
-  return <header className={`absolute top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-white/95 backdrop-blur-md shadow-lg" : "bg-transparent"}`}>
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="flex items-center justify-between h-20 md:h-24 lg:h-28">
+
+  const navItems = [
+    { name: "Home", path: "/" },
+    { name: "Portfolio", path: "/portfolio" },
+    { name: "Services", path: "/services" },
+    { name: "Contact", path: "/contact" }
+  ];
+
+  return (
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        isScrolled
+          ? "bg-background/95 backdrop-blur-md border-b border-border"
+          : "bg-transparent"
+      }`}
+    >
+      <div className="container-editorial">
+        <div className="flex items-center justify-between h-20 md:h-24">
           {/* Logo */}
-          <Link to="/" className="flex items-center hover:opacity-90 transition-opacity mt-4 md:mt-5 lg:mt-6 -ml-6 md:-ml-8 lg:-ml-10">
-            <img src={logoImage} alt="Balaji Design Studio" className="w-[130px] md:w-[160px] lg:w-[180px] h-auto object-contain brightness-105 rounded-md opacity-65 shadow-sm" />
+          <Link
+            to="/"
+            className="flex items-center hover:opacity-70 transition-opacity"
+          >
+            <img
+              src={logoImage}
+              alt="Balaji Design Studio"
+              className={`w-[120px] md:w-[140px] h-auto object-contain transition-all duration-300 ${
+                isScrolled ? "brightness-100" : "brightness-0 invert"
+              }`}
+            />
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8 lg:space-x-10">
-            {navItems.map(item => <Link key={item.name} to={item.path} className={`font-lato font-semibold text-base lg:text-lg tracking-wide py-2 px-1 transition-all duration-300 relative group ${isActive(item.path) ? "text-roseGold font-bold" : "text-darkGray hover:text-roseGold"}`}>
+          <nav className="hidden md:flex items-center space-x-10 lg:space-x-12">
+            {navItems.map((item) => (
+              <Link
+                key={item.name}
+                to={item.path}
+                className={`font-inter font-medium text-sm tracking-widest uppercase py-2 transition-all duration-300 relative group ${
+                  isScrolled
+                    ? isActive(item.path)
+                      ? "text-foreground"
+                      : "text-muted-foreground hover:text-foreground"
+                    : isActive(item.path)
+                    ? "text-white"
+                    : "text-white/70 hover:text-white"
+                }`}
+              >
                 {item.name}
-                <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-roseGold transform origin-left transition-transform duration-300 ${isActive(item.path) ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"}`}></span>
-              </Link>)}
+                <span
+                  className={`absolute -bottom-1 left-0 w-full h-px transition-transform duration-300 origin-left ${
+                    isScrolled ? "bg-foreground" : "bg-white"
+                  } ${
+                    isActive(item.path)
+                      ? "scale-x-100"
+                      : "scale-x-0 group-hover:scale-x-100"
+                  }`}
+                />
+              </Link>
+            ))}
           </nav>
 
           {/* Mobile Menu Button */}
-          <button className="md:hidden p-3 text-darkGray hover:text-roseGold transition-colors hover:scale-110 touch-manipulation" onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label={isMenuOpen ? "Close menu" : "Open menu"} aria-expanded={isMenuOpen}>
-            {isMenuOpen ? <X size={26} /> : <Menu size={26} />}
+          <button
+            className={`md:hidden p-3 transition-colors touch-manipulation ${
+              isScrolled
+                ? "text-foreground hover:text-muted-foreground"
+                : "text-white hover:text-white/70"
+            }`}
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={isMenuOpen}
+          >
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
         {/* Mobile Navigation */}
-        {isMenuOpen && <nav className="md:hidden bg-white/95 backdrop-blur-md border-t border-lightGray animate-fade-in" aria-label="Mobile navigation">
-            <div className="py-4">
-              {navItems.map(item => <Link key={item.name} to={item.path} className={`block py-3 px-4 font-lato font-semibold text-base tracking-wide transition-colors ${isActive(item.path) ? "text-roseGold bg-roseGold/10 font-bold" : "text-darkGray hover:text-roseGold hover:bg-roseGold/5"}`} onClick={() => setIsMenuOpen(false)}>
+        {isMenuOpen && (
+          <nav
+            className="md:hidden bg-background border-t border-border animate-fade-in"
+            aria-label="Mobile navigation"
+          >
+            <div className="py-6 space-y-2">
+              {navItems.map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.path}
+                  className={`block py-4 px-4 font-inter font-medium text-sm tracking-widest uppercase transition-colors ${
+                    isActive(item.path)
+                      ? "text-foreground bg-muted"
+                      : "text-muted-foreground hover:text-foreground hover:bg-muted"
+                  }`}
+                  onClick={() => setIsMenuOpen(false)}
+                >
                   {item.name}
-                </Link>)}
+                </Link>
+              ))}
             </div>
-          </nav>}
+          </nav>
+        )}
       </div>
-    </header>;
+    </header>
+  );
 };
+
 export default Header;
