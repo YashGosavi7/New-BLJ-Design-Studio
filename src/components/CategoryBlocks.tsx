@@ -9,29 +9,19 @@ interface CategoryBlock {
 
 const categories: CategoryBlock[] = [
   {
-    name: "Residential Interior",
+    name: "Residential",
     image: "/lovable-uploads/a504f7fa-534e-488f-b1fe-c66ce136ea3f.png",
-    link: "/portfolio?category=Residential"
+    link: "/portfolio#residential"
   },
   {
-    name: "Office Interior",
+    name: "Commercial",
     image: "/lovable-uploads/da34718b-1dd2-467c-9383-52efb9a4556a.png",
-    link: "/portfolio?category=Commercial"
-  },
-  {
-    name: "Architecture",
-    image: "/lovable-uploads/f816dacc-d4a7-442d-a40f-9a19b793bf20.png",
-    link: "/portfolio?category=Hospitality"
-  },
-  {
-    name: "Retail & Restaurants",
-    image: "/lovable-uploads/27e6d26c-b21e-483e-85ef-def00aa16db8.png",
-    link: "/portfolio?category=Commercial"
+    link: "/portfolio#commercial"
   },
   {
     name: "Hospitality",
-    image: "/assets/7-treats-1.jpg",
-    link: "/portfolio?category=Hospitality"
+    image: "/lovable-uploads/27e6d26c-b21e-483e-85ef-def00aa16db8.png",
+    link: "/portfolio#hospitality"
   }
 ];
 

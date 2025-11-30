@@ -48,9 +48,9 @@ const HomePage = () => {
 
           {/* Headline and City Scroll Bar at Bottom */}
           <div className="relative z-10 bg-darkGray/80">
-            <div className="text-center py-5 md:py-6">
+          <div className="text-center py-5 md:py-6 px-4">
               <p 
-                className="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl font-playfair font-medium"
+                className="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl font-playfair font-medium mx-auto"
                 style={{ 
                   letterSpacing: '-0.5px',
                   lineHeight: '115%'
