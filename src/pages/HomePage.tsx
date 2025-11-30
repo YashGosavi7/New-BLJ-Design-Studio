@@ -1,13 +1,10 @@
 import { Link } from "react-router-dom";
 import heroImage from "../assets/hero-mansion.png";
-import ProjectCard from "../components/ProjectCard";
 import OptimizedImage from "../components/OptimizedImage";
-import projectsData from "../data/projectsData";
+import CategoryBlocks from "../components/CategoryBlocks";
 import { Helmet } from "react-helmet";
 
 const HomePage = () => {
-  const featuredProjects = projectsData.filter(project => project.isFeatured);
-
   return (
     <>
       <Helmet>
@@ -66,46 +63,8 @@ const HomePage = () => {
           </div>
         </section>
 
-        {/* Portfolio Section */}
-        <section className="section-padding bg-background">
-          <div className="container-editorial">
-            {/* Section Header */}
-            <div className="mb-16 md:mb-24 animate-fade-in">
-              <div className="separator-thick mb-8" />
-              <h2 className="text-foreground mb-6">Selected Projects</h2>
-              <p className="text-muted-foreground max-w-xl">
-                A curated collection of our finest residential, commercial, and hospitality designs across India.
-              </p>
-            </div>
-
-            {/* Projects Grid - 2 columns */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16">
-              {featuredProjects.map((project, index) => (
-                <ProjectCard
-                  key={project.id}
-                  id={project.id}
-                  title={project.title}
-                  category={project.category}
-                  location={project.location}
-                  image={project.images[0]}
-                  completionYear={project.completionYear}
-                  index={index}
-                  priority={index < 2}
-                />
-              ))}
-            </div>
-
-            {/* View All CTA */}
-            <div className="mt-16 md:mt-24 text-center animate-fade-in">
-              <Link
-                to="/portfolio"
-                className="btn-outline inline-block"
-              >
-                View All Projects
-              </Link>
-            </div>
-          </div>
-        </section>
+        {/* Category Blocks Section - Noaidwin Studio Style */}
+        <CategoryBlocks />
 
         {/* Studio Statement */}
         <section className="section-padding bg-muted">
