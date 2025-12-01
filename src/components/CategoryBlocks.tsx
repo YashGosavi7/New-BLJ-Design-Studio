@@ -14,8 +14,13 @@ const categories: CategoryBlock[] = [
     link: "/projects#residential"
   },
   {
+    name: "Architecture",
+    image: "/assets/lonavala-farmhouse-1.png",
+    link: "/projects#architecture"
+  },
+  {
     name: "Commercial",
-    image: "/lovable-uploads/da34718b-1dd2-467c-9383-52efb9a4556a.png",
+    image: "/lovable-uploads/commercial-bhakti-office.png",
     link: "/projects#commercial"
   },
   {
@@ -27,11 +32,6 @@ const categories: CategoryBlock[] = [
     name: "Hospitality",
     image: "/lovable-uploads/f816dacc-d4a7-442d-a40f-9a19b793bf20.png",
     link: "/projects#hospitality"
-  },
-  {
-    name: "Architecture",
-    image: "/assets/lonavala-farmhouse-1.png",
-    link: "/projects#architecture"
   }
 ];
 
