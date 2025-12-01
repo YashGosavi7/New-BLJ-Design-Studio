@@ -35,7 +35,7 @@ const HomePage = () => {
                 Balaji Design Studio
               </h1>
               <p className="text-white/90 text-base sm:text-lg md:text-xl lg:text-2xl font-inter font-light tracking-wide mb-8">
-                Trusted by clients across India with a track record of 600+ completed projects
+                Creative creation by Creative people
               </p>
               <Link
                 to="/projects"

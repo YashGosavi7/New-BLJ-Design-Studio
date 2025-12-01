@@ -9,7 +9,7 @@ import Layout from "./components/Layout";
 import HomePage from "./pages/HomePage";
 import ProjectsPage from "./pages/ProjectsPage";
 import ProjectPage from "./pages/ProjectPage";
-import ServicesPage from "./pages/ServicesPage";
+import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import ImageUploadPage from "./pages/ImageUploadPage";
 import NotFound from "./pages/NotFound";
@@ -37,7 +37,8 @@ const App: React.FC = () => {
               {/* Redirect old portfolio URLs */}
               <Route path="portfolio" element={<Navigate to="/projects" replace />} />
               <Route path="portfolio/:projectId" element={<Navigate to="/projects" replace />} />
-              <Route path="services" element={<ServicesPage />} />
+              <Route path="services" element={<Navigate to="/about" replace />} />
+              <Route path="about" element={<AboutPage />} />
               <Route path="contact" element={<ContactPage />} />
               <Route path="upload" element={<ImageUploadPage />} />
               <Route path="*" element={<NotFound />} />

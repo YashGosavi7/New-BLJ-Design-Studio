@@ -30,10 +30,10 @@ const getSortedProjects = (projects: typeof projectsData, category: string) => {
 };
 
 const ProjectsPage = () => {
-  const [activeFilter, setActiveFilter] = useState("Architecture");
+  const [activeFilter, setActiveFilter] = useState("Residential");
   const location = useLocation();
   
-  const categories = ["Architecture", "Residential", "Commercial", "Restaurants", "Hospitality"];
+  const categories = ["Residential", "Architecture", "Commercial", "Restaurants", "Hospitality"];
   
   const filteredProjects = projectsData.filter(project => project.category === activeFilter);
 

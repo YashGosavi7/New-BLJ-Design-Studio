@@ -15,7 +15,7 @@ const Header = ({ isScrolled }: HeaderProps) => {
   const navItems = [
     { name: "Home", path: "/" },
     { name: "Projects", path: "/projects" },
-    { name: "Services", path: "/services" },
+    { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" }
   ];
 
