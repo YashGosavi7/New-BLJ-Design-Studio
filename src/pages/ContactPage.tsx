@@ -12,24 +12,24 @@ const ContactPage = () => {
         <meta name="description" content="Get in touch with Balaji Design Studio. Let's build something beautiful together." />
       </Helmet>
       
-      <article className="min-h-screen pt-24 md:pt-32 bg-background">
+      <article className="min-h-screen pt-24 md:pt-28 bg-background">
         {/* Hero Section */}
-        <section className="section-padding border-b border-border">
+        <section className="py-8 md:py-12 border-b border-border">
           <div className="container-editorial">
             <div className="max-w-3xl animate-fade-in">
-              <div className="separator-thick mb-8" />
-              <h1 className="text-foreground mb-8">
-                Let's Build Something<br />Beautiful.
+              <div className="separator-thick mb-6" />
+              <h1 className="text-foreground mb-4 text-3xl md:text-4xl">
+                Let's Build Something Beautiful.
               </h1>
-              <p className="text-muted-foreground text-lg md:text-xl max-w-xl">
-                Ready to transform your space? We'd love to hear about your project and discuss how we can bring your vision to life.
+              <p className="text-muted-foreground text-base md:text-lg max-w-xl">
+                Ready to transform your space? We'd love to hear about your project.
               </p>
             </div>
           </div>
         </section>
 
         {/* Contact Content */}
-        <section className="section-padding">
+        <section className="py-10 md:py-16">
           <div className="container-editorial">
             <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
               {/* Left Column - CTA */}

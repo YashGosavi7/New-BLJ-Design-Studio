@@ -56,7 +56,7 @@ const HomePage = () => {
                   lineHeight: '115%'
                 }}
               >
-                600+ Award-Winning Projects Transforming Spaces Across India
+                Trusted by clients across India with 600+ completed projects
               </p>
             </div>
             <CityScrollAnimation speed="medium" pauseOnHover={false} />
