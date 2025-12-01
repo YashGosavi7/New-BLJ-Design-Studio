@@ -10,11 +10,11 @@ interface HeaderProps {
 const Header = ({ isScrolled }: HeaderProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
-  const isActive = (path: string) => location.pathname === path;
+  const isActive = (path: string) => location.pathname === path || location.pathname.startsWith(path + "/");
 
   const navItems = [
     { name: "Home", path: "/" },
-    { name: "Portfolio", path: "/portfolio" },
+    { name: "Projects", path: "/projects" },
     { name: "Services", path: "/services" },
     { name: "Contact", path: "/contact" }
   ];
@@ -48,7 +48,9 @@ const Header = ({ isScrolled }: HeaderProps) => {
                 key={item.name}
                 to={item.path}
                 className={`font-inter font-medium text-sm tracking-widest uppercase py-2 transition-all duration-300 relative group ${
-                  isActive(item.path)
+                  isActive(item.path) && item.path !== "/"
+                    ? "text-foreground"
+                    : location.pathname === "/" && item.path === "/"
                     ? "text-foreground"
                     : "text-foreground/70 hover:text-foreground"
                 }`}
@@ -56,7 +58,7 @@ const Header = ({ isScrolled }: HeaderProps) => {
                 {item.name}
                 <span
                   className={`absolute -bottom-1 left-0 w-full h-px bg-foreground transition-transform duration-300 origin-left ${
-                    isActive(item.path)
+                    (isActive(item.path) && item.path !== "/") || (location.pathname === "/" && item.path === "/")
                       ? "scale-x-100"
                       : "scale-x-0 group-hover:scale-x-100"
                   }`}

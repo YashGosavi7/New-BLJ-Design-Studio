@@ -35,13 +35,13 @@ const HomePage = () => {
                 Balaji Design Studio
               </h1>
               <p className="text-white/90 text-base sm:text-lg md:text-xl lg:text-2xl font-inter font-light tracking-wide mb-8">
-                Creative Creation by Creative People
+                Trusted by clients across India with a track record of 600+ completed projects
               </p>
               <Link
-                to="/portfolio"
+                to="/projects"
                 className="inline-flex items-center justify-center border border-white text-white px-8 py-3 font-inter font-medium text-sm tracking-widest uppercase transition-all duration-300 hover:bg-white hover:text-black"
               >
-                View Our Portfolio
+                View Our Projects
               </Link>
             </div>
           </div>

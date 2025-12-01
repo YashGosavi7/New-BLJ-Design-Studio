@@ -1,7 +1,7 @@
 export interface Project {
   id: string;
   title: string;
-  category: "Residential" | "Commercial" | "Hospitality";
+  category: "Residential" | "Commercial" | "Restaurants";
   location: string;
   size: string;
   completionYear: string;
@@ -74,7 +74,7 @@ const projectsData: Project[] = [
   },
   {
     id: "shivam-kamthe-residence",
-    title: "Shivam Kamthe",
+    title: "Mr. Shivam Kamthe Residency",
     category: "Residential",
     location: "Pune",
     size: "3,200 sq ft",
@@ -148,7 +148,7 @@ const projectsData: Project[] = [
   },
   {
     id: "akshay-sonawane-residence",
-    title: "Akshay Sonawane Residence",
+    title: "Mr. Akshay Sonawane Residency",
     category: "Residential",
     location: "Pune",
     size: "2,800 sq ft",
@@ -188,7 +188,7 @@ const projectsData: Project[] = [
   {
     id: "7-treats-restaurant",
     title: "7 Treats Family Restaurant & Bar",
-    category: "Hospitality",
+    category: "Restaurants",
     location: "Pune",
     size: "3,500 sq ft",
     completionYear: "2024",
@@ -285,7 +285,7 @@ const projectsData: Project[] = [
   {
     id: "golden-leaf-banquet-hall",
     title: "Golden Leaf Banquet Hall",
-    category: "Hospitality",
+    category: "Restaurants",
     location: "Mumbai, India",
     size: "12,000 sq ft",
     completionYear: "2024",
@@ -368,7 +368,7 @@ const projectsData: Project[] = [
   },
   {
     id: "sunil-jawale-residence",
-    title: "Mr. Sunil Jawale Residence",
+    title: "Mr. Sunil Jawale Residency",
     category: "Residential",
     location: "Mumbai, India",
     size: "2,800 sq ft",
@@ -417,7 +417,7 @@ const projectsData: Project[] = [
   },
   {
     id: "samir-ghule-residence",
-    title: "Mr. Samir Ghule Residence",
+    title: "Mr. Samir Ghule Residency",
     category: "Residential",
     location: "Mumbai, Maharashtra",
     description: "A sophisticated residential project featuring contemporary design with traditional elements. The home showcases elegant entrance areas, spacious living rooms with curved furniture, and a dedicated prayer room that seamlessly blends modern aesthetics with spiritual elements.",
@@ -467,7 +467,7 @@ const projectsData: Project[] = [
   },
   {
     id: "ravi-kale-residence",
-    title: "Mr. Ravi Kale Residence",
+    title: "Mr. Ravi Kale Residency",
     category: "Residential",
     location: "Mumbai, Maharashtra",
     size: "3,500 sq ft",
@@ -524,7 +524,7 @@ const projectsData: Project[] = [
   },
   {
     id: "mr-pathan-residence",
-    title: "Mr. Pathan Residence",
+    title: "Mr. Pathan Residency",
     category: "Residential",
     location: "Mumbai, Maharashtra",
     description: "A contemporary residential project featuring sophisticated interiors with a perfect blend of modern aesthetics and functional design. The home showcases elegant wooden accents, innovative storage solutions, and thoughtfully designed living spaces that reflect the client's lifestyle and preferences.",
@@ -656,7 +656,7 @@ const projectsData: Project[] = [
   {
     id: "ashish-alhat-banquet-hall",
     title: "Ashish Alhat Banquet Hall",
-    category: "Hospitality",
+    category: "Restaurants",
     location: "Maharashtra, India",
     size: "12,000 sq ft",
     completionYear: "2024",
@@ -695,7 +695,7 @@ const projectsData: Project[] = [
   },
   {
     id: "atul-ambale-residence",
-    title: "Atul Ambale Residence",
+    title: "Mr. Atul Ambale Residency",
     category: "Residential",
     location: "Maharashtra, India",
     size: "3,500 sq ft",
@@ -731,7 +731,7 @@ const projectsData: Project[] = [
   {
     id: "fly-air-enjoy-club",
     title: "Fly Air Enjoy Club",
-    category: "Hospitality",
+    category: "Restaurants",
     location: "Maharashtra, India", 
     size: "8,000 sq ft",
     completionYear: "2024",
@@ -776,7 +776,7 @@ const projectsData: Project[] = [
   {
     id: "hotel-knight-rider",
     title: "Hotel Knight Rider",
-    category: "Hospitality",
+    category: "Restaurants",
     location: "Maharashtra, India",
     size: "10,500 sq ft",
     completionYear: "2023",
@@ -822,7 +822,7 @@ const projectsData: Project[] = [
   {
     id: "hotel-room-premium",
     title: "Premium Hotel Room",
-    category: "Hospitality",
+    category: "Restaurants",
     location: "Modern Hotel",
     description: "A sophisticated hotel room design featuring contemporary elegance with warm wood tones, neutral palettes, and functional workspace integration. This premium accommodation combines comfort with modern aesthetics, creating an inviting atmosphere for discerning guests.",
     features: [
@@ -890,7 +890,7 @@ const projectsData: Project[] = [
   {
     id: "luxury-lodge-accommodation",
     title: "Luxury Lodge Accommodation",
-    category: "Hospitality",
+    category: "Restaurants",
     location: "Hill Station Resort",
     description: "An exquisite lodge accommodation featuring premium interior design with rich wooden finishes, elegant drapery, and sophisticated bathroom amenities. The design combines luxury hospitality standards with cozy lodge aesthetics, creating an intimate and upscale guest experience.",
     features: [
@@ -923,7 +923,7 @@ const projectsData: Project[] = [
   },
   {
     id: "mr-dapke-residence",
-    title: "Mr. Dapke Family Residence",
+    title: "Mr. Dapke Family Residency",
     category: "Residential",
     location: "Mumbai, Maharashtra",
     description: "A contemporary family residence showcasing sophisticated modern design with warm neutral tones, premium materials, and functional elegance. The project features custom entrance solutions, open-plan living spaces, state-of-the-art kitchen, luxurious bedrooms, and thoughtfully designed children's spaces.",
@@ -977,7 +977,7 @@ const projectsData: Project[] = [
   },
   {
     id: "gaikwad-residence-2024",
-    title: "Mr. Gaikwad Family Residence",
+    title: "Mr. Gaikwad Family Residency",
     category: "Residential",
     location: "Mumbai, Maharashtra",
     description: "An elegant residential project showcasing luxurious modern design with traditional Indian elements. Features sophisticated entrance design, premium interior spaces with rich wood finishes, marble flooring, and carefully curated lighting creating a perfect blend of contemporary comfort and cultural aesthetics.",
@@ -1031,7 +1031,7 @@ const projectsData: Project[] = [
   },
   {
     id: "suraj-chavat-residence",
-    title: "Mr. Suraj Chavat",
+    title: "Mr. Suraj Chavat Residency",
     category: "Residential",
     location: "Pune, Maharashtra",
     description: "A refined master suite with luxurious bedroom interiors and a minimalist walk-in wardrobe. The design blends warm textures, marble accents, and soft ambient lighting to create a serene, high-end living experience.",
@@ -1062,7 +1062,7 @@ const projectsData: Project[] = [
   },
   {
     id: "datta-ghule-residence",
-    title: "Datta Ghule",
+    title: "Mr. Datta Ghule Residency",
     category: "Residential",
     location: "Mumbai, Maharashtra",
     description: "A contemporary residential design featuring modern living spaces with elegant finishes and thoughtful interior design. The project showcases a blend of comfort and style with premium materials and sophisticated lighting solutions.",
@@ -1118,7 +1118,7 @@ const projectsData: Project[] = [
   },
   {
     id: "mr-deepak-sir",
-    title: "Mr. Deepak Sir",
+    title: "Mr. Deepak Residency",
     category: "Residential",
     location: "Maharashtra, India",
     size: "—",
@@ -1171,7 +1171,7 @@ const projectsData: Project[] = [
   {
     id: "hotel-patilwada",
     title: "Hotel Patilwada",
-    category: "Hospitality",
+    category: "Restaurants",
     location: "Maharashtra, India",
     size: "8,500 sq ft",
     completionYear: "2024",
@@ -1213,7 +1213,7 @@ const projectsData: Project[] = [
   {
     id: "hotel-grand-11",
     title: "Hotel Grand 11",
-    category: "Hospitality",
+    category: "Restaurants",
     location: "Maharashtra, India",
     size: "12,000 sq ft",
     completionYear: "2024",
@@ -1261,7 +1261,7 @@ const projectsData: Project[] = [
   {
     id: "hotel-nightclub",
     title: "Hotel Night Club",
-    category: "Hospitality",
+    category: "Restaurants",
     location: "India",
     completionYear: "2023",
     size: "2,500 sq ft",
@@ -1372,7 +1372,7 @@ const projectsData: Project[] = [
   },
   {
     id: "sachin-tarovade-flat",
-    title: "Sachin Tarovade Flat",
+    title: "Mr. Sachin Tarovade Residency",
     category: "Residential",
     location: "Maharashtra, India",
     completionYear: "2024",
@@ -1411,7 +1411,7 @@ const projectsData: Project[] = [
   },
   {
     id: "mr-navale-flat",
-    title: "Mr. Navale Flat",
+    title: "Mr. Navale Residency",
     category: "Residential",
     location: "Maharashtra, India",
     completionYear: "2024",
@@ -1442,7 +1442,7 @@ const projectsData: Project[] = [
   },
   {
     id: "mr-utture",
-    title: "Mr. Utture",
+    title: "Mr. Utture Residency",
     category: "Residential",
     location: "Maharashtra, India",
     completionYear: "2024",
@@ -1492,7 +1492,7 @@ const projectsData: Project[] = [
   },
   {
     id: "mr-ambedkar-bunglow",
-    title: "Mr. Ambedkar Bunglow",
+    title: "Mr. Ambedkar Residency",
     category: "Residential",
     location: "Maharashtra, India",
     completionYear: "2024",
@@ -1522,7 +1522,7 @@ const projectsData: Project[] = [
   },
   {
     id: "kale-office",
-    title: "Kale Office",
+    title: "Creative Engineers Office",
     category: "Commercial",
     location: "Maharashtra, India",
     completionYear: "2024",

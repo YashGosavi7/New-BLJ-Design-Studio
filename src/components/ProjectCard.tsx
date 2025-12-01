@@ -31,7 +31,7 @@ const ProjectCard = ({
         animationFillMode: 'both'
       }}
     >
-      <Link to={`/portfolio/${id}`} className="block">
+      <Link to={`/projects/${id}`} className="block">
         {/* Project Image */}
         <div className="relative aspect-[4/3] overflow-hidden bg-muted mb-6">
           <OptimizedImage
@@ -56,7 +56,7 @@ const ProjectCard = ({
 
         {/* Project Info */}
         <div className="space-y-2">
-          <h3 className="text-xl md:text-2xl font-playfair text-foreground group-hover:opacity-70 transition-opacity duration-300">
+          <h3 className="text-base md:text-lg font-playfair text-foreground group-hover:opacity-70 transition-opacity duration-300">
             {title}
           </h3>
           <div className="flex items-center justify-between">

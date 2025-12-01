@@ -3,11 +3,11 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as SonnerToaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import Layout from "./components/Layout";
 import HomePage from "./pages/HomePage";
-import PortfolioPage from "./pages/PortfolioPage";
+import ProjectsPage from "./pages/ProjectsPage";
 import ProjectPage from "./pages/ProjectPage";
 import ServicesPage from "./pages/ServicesPage";
 import ContactPage from "./pages/ContactPage";
@@ -32,8 +32,11 @@ const App: React.FC = () => {
           <Routes>
             <Route path="/" element={<Layout />}>
               <Route index element={<HomePage />} />
-              <Route path="portfolio" element={<PortfolioPage />} />
-              <Route path="portfolio/:projectId" element={<ProjectPage />} />
+              <Route path="projects" element={<ProjectsPage />} />
+              <Route path="projects/:projectId" element={<ProjectPage />} />
+              {/* Redirect old portfolio URLs */}
+              <Route path="portfolio" element={<Navigate to="/projects" replace />} />
+              <Route path="portfolio/:projectId" element={<Navigate to="/projects" replace />} />
               <Route path="services" element={<ServicesPage />} />
               <Route path="contact" element={<ContactPage />} />
               <Route path="upload" element={<ImageUploadPage />} />
