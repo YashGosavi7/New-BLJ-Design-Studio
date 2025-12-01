@@ -11,17 +11,17 @@ const categories: CategoryBlock[] = [
   {
     name: "Residential",
     image: "/lovable-uploads/a504f7fa-534e-488f-b1fe-c66ce136ea3f.png",
-    link: "/portfolio#residential"
+    link: "/projects#residential"
   },
   {
     name: "Commercial",
     image: "/lovable-uploads/da34718b-1dd2-467c-9383-52efb9a4556a.png",
-    link: "/portfolio#commercial"
+    link: "/projects#commercial"
   },
   {
-    name: "Hospitality",
+    name: "Restaurants & Hotels",
     image: "/lovable-uploads/27e6d26c-b21e-483e-85ef-def00aa16db8.png",
-    link: "/portfolio#hospitality"
+    link: "/projects#restaurants"
   }
 ];
 

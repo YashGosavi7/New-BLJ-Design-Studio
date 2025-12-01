@@ -35,7 +35,7 @@ const Footer = () => {
             </h4>
             <nav className="space-y-4">
               <Link to="/" className="block text-background/80 hover:text-background transition-colors font-inter text-sm">Home</Link>
-              <Link to="/portfolio" className="block text-background/80 hover:text-background transition-colors font-inter text-sm">Portfolio</Link>
+              <Link to="/projects" className="block text-background/80 hover:text-background transition-colors font-inter text-sm">Projects</Link>
               <Link to="/services" className="block text-background/80 hover:text-background transition-colors font-inter text-sm">Services</Link>
               <Link to="/contact" className="block text-background/80 hover:text-background transition-colors font-inter text-sm">Contact</Link>
             </nav>
