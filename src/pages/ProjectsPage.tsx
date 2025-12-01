@@ -30,10 +30,10 @@ const getSortedProjects = (projects: typeof projectsData, category: string) => {
 };
 
 const ProjectsPage = () => {
-  const [activeFilter, setActiveFilter] = useState("Residential");
+  const [activeFilter, setActiveFilter] = useState("Architecture");
   const location = useLocation();
   
-  const categories = ["Residential", "Commercial", "Restaurants", "Hospitality", "Architecture"];
+  const categories = ["Architecture", "Residential", "Commercial", "Restaurants", "Hospitality"];
   
   const filteredProjects = projectsData.filter(project => project.category === activeFilter);
 
@@ -73,7 +73,10 @@ const ProjectsPage = () => {
             <div className="max-w-3xl animate-fade-in">
               <div className="separator-thick mb-6" />
               <h1 className="text-foreground mb-6 text-3xl md:text-4xl">Our Projects</h1>
-              <p className="text-muted-foreground text-base md:text-lg max-w-xl">
+              <p className="text-muted-foreground text-sm md:text-base max-w-xl italic">
+                Creative creation by creative people
+              </p>
+              <p className="text-muted-foreground text-base md:text-lg max-w-xl mt-2">
                 A curated collection of our finest residential, commercial, and hospitality designs across India.
               </p>
             </div>

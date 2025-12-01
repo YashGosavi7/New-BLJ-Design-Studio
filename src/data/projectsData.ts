@@ -855,7 +855,7 @@ const projectsData: Project[] = [
   {
     id: "modern-ice-cream-shop",
     title: "Modern Ice Cream Shop",
-    category: "Commercial",
+    category: "Restaurants",
     location: "Retail District",
     description: "A vibrant and contemporary ice cream parlor featuring playful design elements with colorful cube pendant lighting, modern counter displays, and comfortable seating areas. The design combines functionality with a fun, welcoming atmosphere that appeals to customers of all ages.",
     features: [
@@ -1019,7 +1019,16 @@ const projectsData: Project[] = [
       "/lovable-uploads/9bc49f57-886b-4bd7-b23d-727def7c7c5e.png",
       "/lovable-uploads/6764bb7a-87a7-41e4-97ca-b115bf771390.png",
       "/lovable-uploads/f23509e4-d8ca-4745-ad2d-2b34087f9108.png",
-      "/lovable-uploads/35f76954-b8df-4d98-9352-6484258b855d.png"
+      "/lovable-uploads/35f76954-b8df-4d98-9352-6484258b855d.png",
+      "/lovable-uploads/gaikwad-view-23.png",
+      "/lovable-uploads/gaikwad-view-24.png",
+      "/lovable-uploads/gaikwad-view-25.png",
+      "/lovable-uploads/gaikwad-view-26.png",
+      "/lovable-uploads/gaikwad-view-27.png",
+      "/lovable-uploads/gaikwad-view-28.png",
+      "/lovable-uploads/gaikwad-view-29.png",
+      "/lovable-uploads/gaikwad-view-30.png",
+      "/lovable-uploads/gaikwad-view-31.png"
     ],
     isFeatured: true,
     designer: "Nirmitee Interior",
@@ -1616,7 +1625,7 @@ const projectsData: Project[] = [
   {
     id: "matoshree-pure-veg-restaurant",
     title: "Matoshree Pure Veg Restaurant",
-    category: "Commercial",
+    category: "Restaurants",
     location: "Pune, Maharashtra",
     size: "2,500 sq ft",
     completionYear: "2024",
