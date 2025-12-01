@@ -5,7 +5,7 @@ const AboutPage = () => {
   const stats = [
     { label: "Executed", value: "600+", sub: "Projects Across India" },
     { label: "Practicing Over", value: "10", sub: "Years of Experience" },
-    { label: "Established", value: "2014", sub: "Pune, India" }
+    { label: "Established", value: "2010", sub: "Pune, India" }
   ];
 
   const values = [
@@ -47,7 +47,7 @@ const AboutPage = () => {
     <>
       <Helmet>
         <title>About Us | Balaji Design Studio</title>
-        <meta name="description" content="Learn about NBalaji Design Studio, founded by Mr. Dalpat Suthar in 2014. Over 600+ projects completed across India with 10+ years of experience." />
+        <meta name="description" content="Learn about Balaji Design Studio, founded by Mr. Dalpat Suthar in 2010. Over 600+ projects completed across India with 10+ years of experience." />
       </Helmet>
 
       <article className="min-h-screen pt-24 md:pt-28 bg-background">
@@ -58,10 +58,10 @@ const AboutPage = () => {
               About Us
             </h1>
             <p className="text-xl md:text-2xl font-playfair text-muted-foreground mb-8">
-              NBalaji Design Studio
+              Balaji Design Studio
             </p>
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-              Founded by Mr. Dalpat Suthar, NBalaji Design Studio is built on the belief that great design goes beyond beauty — it transforms the way you live, work, and feel every day.
+              Founded by Mr. Dalpat Suthar, Balaji Design Studio is built on the belief that great design goes beyond beauty — it transforms the way you live, work, and feel every day.
             </p>
           </div>
         </section>
@@ -78,7 +78,7 @@ const AboutPage = () => {
                   Principal Designer & Founder
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  Mr. Dalpat Suthar established NBalaji Design Studio in 2014 with a vision to create spaces that are original, functional, and deeply personal. Over the years, the studio has grown into a trusted practice for Interior, Architectural, and Landscape Design across India.
+                  Mr. Dalpat Suthar established Balaji Design Studio in 2010 with a vision to create spaces that are original, functional, and deeply personal. Over the years, the studio has grown into a trusted practice for Interior, Architectural, and Landscape Design across India.
                 </p>
               </div>
               <div className="order-1 md:order-2 flex justify-center">
@@ -118,7 +118,7 @@ const AboutPage = () => {
               Design That Works Beautifully
             </h2>
             <p className="text-muted-foreground leading-relaxed text-base md:text-lg">
-              At NBalaji Design Studio, we bring together aesthetics, functionality, and purpose. Our multidisciplinary practice spans Interior Design, Architecture, and Landscaping for Residential and Commercial projects. Every project begins with a blank canvas — ensuring originality, clarity, and thoughtful detailing.
+              At Balaji Design Studio, we bring together aesthetics, functionality, and purpose. Our multidisciplinary practice spans Interior Design, Architecture, and Landscaping for Residential and Commercial projects. Every project begins with a blank canvas — ensuring originality, clarity, and thoughtful detailing.
             </p>
           </div>
         </section>

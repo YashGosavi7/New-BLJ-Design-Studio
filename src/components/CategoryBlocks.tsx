@@ -1,48 +1,69 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import OptimizedImage from "./OptimizedImage";
 
 interface CategoryBlock {
   name: string;
   image: string;
   link: string;
+  anchor: string;
 }
 
 const categories: CategoryBlock[] = [
   {
     name: "Residential",
     image: "/lovable-uploads/a504f7fa-534e-488f-b1fe-c66ce136ea3f.png",
-    link: "/projects#residential"
+    link: "/projects#residential",
+    anchor: "residential"
   },
   {
     name: "Architecture",
     image: "/assets/lonavala-farmhouse-1.png",
-    link: "/projects#architecture"
+    link: "/projects#architecture",
+    anchor: "architecture"
   },
   {
     name: "Commercial",
     image: "/lovable-uploads/commercial-bhakti-office.png",
-    link: "/projects#commercial"
+    link: "/projects#commercial",
+    anchor: "commercial"
   },
   {
     name: "Restaurants & Hotels",
     image: "/lovable-uploads/27e6d26c-b21e-483e-85ef-def00aa16db8.png",
-    link: "/projects#restaurants"
+    link: "/projects#restaurants",
+    anchor: "restaurants"
   },
   {
     name: "Hospitality",
     image: "/lovable-uploads/f816dacc-d4a7-442d-a40f-9a19b793bf20.png",
-    link: "/projects#hospitality"
+    link: "/projects#hospitality",
+    anchor: "hospitality"
   }
 ];
 
 const CategoryBlocks = () => {
+  const navigate = useNavigate();
+
+  const handleCategoryClick = (e: React.MouseEvent, category: CategoryBlock) => {
+    e.preventDefault();
+    navigate(category.link);
+    // Smooth scroll after navigation
+    setTimeout(() => {
+      const element = document.getElementById(category.anchor);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+  };
+
   return (
     <section className="w-full">
       {categories.map((category, index) => (
-        <Link
+        <a
           key={category.name}
-          to={category.link}
-          className="block relative w-full h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[75vh] xl:h-[80vh] overflow-hidden group"
+          href={category.link}
+          onClick={(e) => handleCategoryClick(e, category)}
+          className="block relative w-full h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[75vh] xl:h-[80vh] overflow-hidden group cursor-pointer"
         >
           {/* Background Image */}
           <div className="absolute inset-0">
@@ -73,7 +94,7 @@ const CategoryBlocks = () => {
 
           {/* Subtle bottom line separator */}
           <div className="absolute bottom-0 left-0 right-0 h-px bg-white/10" />
-        </Link>
+        </a>
       ))}
     </section>
   );
