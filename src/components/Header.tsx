@@ -27,8 +27,8 @@ const Header = ({ isScrolled }: HeaderProps) => {
           : "bg-transparent"
       }`}
     >
-      <div className="container-editorial">
-        <div className="flex items-center justify-between h-20 md:h-24">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
+        <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link
             to="/"
@@ -37,7 +37,7 @@ const Header = ({ isScrolled }: HeaderProps) => {
             <img
               src={logoImage}
               alt="Balaji Design Studio"
-              className="w-[110px] md:w-[130px] h-auto object-contain transition-all duration-300"
+              className="w-[90px] md:w-[120px] h-auto object-contain transition-all duration-300"
             />
           </Link>
 
