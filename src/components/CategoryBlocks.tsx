@@ -22,6 +22,16 @@ const categories: CategoryBlock[] = [
     name: "Restaurants & Hotels",
     image: "/lovable-uploads/27e6d26c-b21e-483e-85ef-def00aa16db8.png",
     link: "/projects#restaurants"
+  },
+  {
+    name: "Hospitality",
+    image: "/lovable-uploads/f816dacc-d4a7-442d-a40f-9a19b793bf20.png",
+    link: "/projects#hospitality"
+  },
+  {
+    name: "Architecture",
+    image: "/assets/lonavala-farmhouse-1.png",
+    link: "/projects#architecture"
   }
 ];
 

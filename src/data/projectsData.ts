@@ -1,7 +1,7 @@
 export interface Project {
   id: string;
   title: string;
-  category: "Residential" | "Commercial" | "Restaurants";
+  category: "Residential" | "Commercial" | "Restaurants" | "Hospitality" | "Architecture";
   location: string;
   size: string;
   completionYear: string;
@@ -285,7 +285,7 @@ const projectsData: Project[] = [
   {
     id: "golden-leaf-banquet-hall",
     title: "Golden Leaf Banquet Hall",
-    category: "Restaurants",
+    category: "Hospitality",
     location: "Mumbai, India",
     size: "12,000 sq ft",
     completionYear: "2024",
@@ -656,7 +656,7 @@ const projectsData: Project[] = [
   {
     id: "ashish-alhat-banquet-hall",
     title: "Ashish Alhat Banquet Hall",
-    category: "Restaurants",
+    category: "Hospitality",
     location: "Maharashtra, India",
     size: "12,000 sq ft",
     completionYear: "2024",
@@ -1294,7 +1294,7 @@ const projectsData: Project[] = [
   {
     id: "latur-udyaan",
     title: "Latur Udyaan",
-    category: "Commercial",
+    category: "Hospitality",
     location: "Latur, Maharashtra",
     completionYear: "2023",
     size: "5,000 sq ft",
@@ -1492,8 +1492,8 @@ const projectsData: Project[] = [
   },
   {
     id: "mr-ambedkar-bunglow",
-    title: "Mr. Ambedkar Residency",
-    category: "Residential",
+    title: "Ambekar Residency",
+    category: "Architecture",
     location: "Maharashtra, India",
     completionYear: "2024",
     size: "4,500 sq ft",
@@ -1659,7 +1659,7 @@ const projectsData: Project[] = [
   {
     id: "lonavala-farmhouse",
     title: "Lonavala Farm House",
-    category: "Residential",
+    category: "Architecture",
     location: "Lonavala, Maharashtra",
     size: "—",
     completionYear: "2025",
@@ -1861,7 +1861,7 @@ const projectsData: Project[] = [
   {
     id: "abhishek-bhavan",
     title: "Abhishek Bhavan",
-    category: "Residential",
+    category: "Architecture",
     location: "Pune",
     size: "—",
     completionYear: "2025",

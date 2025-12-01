@@ -4,15 +4,38 @@ import projectsData from "../data/projectsData";
 import ProjectCard from "../components/ProjectCard";
 import { Helmet } from "react-helmet";
 
+// Define priority order for residential projects
+const residentialPriorityOrder = [
+  "mr-harpale",
+  "gaikwad-residence-2024",
+  "ravi-kale-residence",
+  "mr-pathan-residence",
+  "samir-ghule-residence",
+  "suraj-chavat-residence",
+  "datta-ghule-residence",
+  "mr-utture",
+  "mr-navale-flat"
+];
+
+const getSortedProjects = (projects: typeof projectsData, category: string) => {
+  if (category !== "Residential") return projects.filter(p => p.category === category);
+  
+  const categoryProjects = projects.filter(p => p.category === "Residential");
+  const priorityProjects = residentialPriorityOrder
+    .map(id => categoryProjects.find(p => p.id === id))
+    .filter(Boolean) as typeof projectsData;
+  const otherProjects = categoryProjects.filter(p => !residentialPriorityOrder.includes(p.id));
+  
+  return [...priorityProjects, ...otherProjects];
+};
+
 const ProjectsPage = () => {
-  const [activeFilter, setActiveFilter] = useState("All");
+  const [activeFilter, setActiveFilter] = useState("Residential");
   const location = useLocation();
   
-  const categories = ["All", "Residential", "Commercial", "Restaurants"];
+  const categories = ["Residential", "Commercial", "Restaurants", "Hospitality", "Architecture"];
   
-  const filteredProjects = activeFilter === "All" 
-    ? projectsData 
-    : projectsData.filter(project => project.category === activeFilter);
+  const filteredProjects = projectsData.filter(project => project.category === activeFilter);
 
   // Handle hash scroll on page load
   useEffect(() => {
@@ -64,15 +87,13 @@ const ProjectsPage = () => {
               {categories.map((category) => (
                 <a
                   key={category}
-                  href={category === "All" ? "/projects" : `/projects#${category.toLowerCase()}`}
+                  href={`/projects#${category.toLowerCase()}`}
                   onClick={(e) => {
                     e.preventDefault();
                     setActiveFilter(category);
-                    if (category !== "All") {
-                      const element = document.getElementById(category.toLowerCase());
-                      if (element) {
-                        element.scrollIntoView({ behavior: 'smooth' });
-                      }
+                    const element = document.getElementById(category.toLowerCase());
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth' });
                     }
                   }}
                   className={`px-3 py-2 font-inter text-sm tracking-wider uppercase transition-all duration-300 ${
@@ -85,10 +106,7 @@ const ProjectsPage = () => {
                 >
                   {category === "Restaurants" ? "Restaurants & Hotels" : category}
                   <span className="ml-2 text-xs text-muted-foreground">
-                    ({category === "All" 
-                      ? projectsData.length 
-                      : projectsData.filter(p => p.category === category).length
-                    })
+                    ({projectsData.filter(p => p.category === category).length})
                   </span>
                 </a>
               ))}
@@ -97,9 +115,9 @@ const ProjectsPage = () => {
         </section>
 
         {/* Projects by Category */}
-        {["Residential", "Commercial", "Restaurants"].map((category) => {
-          const categoryProjects = projectsData.filter(p => p.category === category);
-          if (activeFilter !== "All" && activeFilter !== category) return null;
+        {categories.map((category) => {
+          const categoryProjects = getSortedProjects(projectsData, category);
+          if (activeFilter !== category) return null;
           if (categoryProjects.length === 0) return null;
           
           return (
