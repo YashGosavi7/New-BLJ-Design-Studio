@@ -37,10 +37,22 @@ const ProjectsPage = () => {
   
   const filteredProjects = projectsData.filter(project => project.category === activeFilter);
 
-  // Handle hash scroll on page load
+  // Handle hash scroll on page load and set active filter
   useEffect(() => {
     if (location.hash) {
       const id = location.hash.replace('#', '');
+      // Map hash to category name
+      const categoryMap: Record<string, string> = {
+        'residential': 'Residential',
+        'architecture': 'Architecture',
+        'commercial': 'Commercial',
+        'restaurants': 'Restaurants',
+        'hospitality': 'Hospitality'
+      };
+      const category = categoryMap[id];
+      if (category) {
+        setActiveFilter(category);
+      }
       setTimeout(() => {
         const element = document.getElementById(id);
         if (element) {
