@@ -1913,6 +1913,34 @@ const projectsData: Project[] = [
     isFeatured: false,
     designer: "Balaji Design Studio",
     tagline: "Modern upscale living"
+  },
+  {
+    id: "bopdev-machi",
+    title: "Bopdev Machi",
+    category: "Restaurants",
+    location: "Pune, India",
+    size: "—",
+    completionYear: "2024",
+    description: "A striking restaurant facade featuring bold architectural elements, vibrant colorful light panels, and traditional artistic murals. The design showcases a contemporary interpretation of local culture with stone-clad pillars, geometric patterns, and eye-catching signage that creates a memorable dining destination.",
+    features: [
+      "Bold illuminated signage with modern typography",
+      "Colorful circular light panel installations",
+      "Traditional artistic murals on facade",
+      "Stone-clad pillars with textured finish",
+      "Diamond-pattern glass facade elements",
+      "Green wall feature with integrated display",
+      "Decorative geometric jali patterns",
+      "Welcoming entrance with planter boxes"
+    ],
+    images: [
+      "/projects/bopdev-machi/1.png",
+      "/projects/bopdev-machi/2.png",
+      "/projects/bopdev-machi/3.png",
+      "/projects/bopdev-machi/4.png"
+    ],
+    isFeatured: true,
+    designer: "Balaji Design Studio",
+    tagline: "Bold contemporary dining destination"
   }
 ];
 
